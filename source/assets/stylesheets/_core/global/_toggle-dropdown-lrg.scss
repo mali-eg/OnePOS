@@ -1,0 +1,40 @@
+.tg-dropdown-lrg {
+	position: relative;
+	width: 100%;
+
+	.tg-dropdown {
+		position: static;
+	}
+
+}
+
+@media only screen and (min-width: $mq-lrg) {
+
+	.tg-dropdown-lrg {
+		position: relative;
+
+		.tg-body {
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 55px;
+		}
+
+		.tg-active {
+			padding-bottom: 27px;
+			margin-bottom: -27px;
+		}
+	}
+}
+
+.no-js .tg-dropdown-lrg {
+
+	.tg-dropdown {
+		width: 100%;
+	}
+
+	.tg-body {
+		position: relative;
+		top: 0;
+	}
+}

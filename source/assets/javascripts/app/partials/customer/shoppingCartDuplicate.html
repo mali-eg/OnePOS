@@ -1,0 +1,60 @@
+<div class="shop-cart-modal">
+
+    <div class="titleBorderMain">
+        <h3>The following item will be duplicated</h3>
+
+        <div class="clear"></div>
+    </div>
+
+    <div class="cart_border">
+        <div class="col w-10">
+            <div class="mobile-icon"></div>
+        </div>
+        <div class="col w-90">
+            <div class="head">
+                <h3>{{vm.selectedCartName}}</h3>
+
+                <p>{{vm.selectedCartType}}&nbsp;und&nbsp;{{vm.selectedCartValue}}</p>
+            </div>
+            <ul class="tariff_plan" ng-repeat="tarrifPlan in vm.selectedCartProduct">
+                <li ng-hide="tarrifPlan.specification=='hardware' || tarrifPlan.specification=='sim-card'">{{tarrifPlan.specification}}&nbsp;(&nbsp;{{tarrifPlan.count}}&nbsp;)</li>
+            </ul>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+
+
+    <div>
+
+        <h3 class="txt-st4">Number of times to duplicate</h3>
+
+        <div class="selection-st1">
+            <a ng-click="vm.decrement()" class="link tol"><i class="ico ico-minus"></i></a>
+                <input type="text" class="link num" value="2"  ng-model="vm.value">
+            <a ng-click="vm.increment()" class="link tol"><i class="ico ico-plus"></i></a>
+        </div>
+    </div>
+
+
+    <div class="grid">
+        <div class="col w-30">
+            <div class="fm-submit">
+                <input class="btn btn-alt-light btn-sml" ng-click="vm.cancel()" type="submit"
+                       value="Zurück zum Dashboard">
+            </div>
+        </div>
+        <div class="col w-40">
+            &nbsp;
+        </div>
+
+        <div class="col w-30">
+            <div class="fm-submit">
+
+                <input class="btn btn-sml" ng-click="vm.duplicateCart()" type="submit" name="clear"
+                       value="Duplicate"/>
+            </div>
+        </div>
+    </div>
+</div>
+

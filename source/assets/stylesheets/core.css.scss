@@ -1,0 +1,42 @@
+// variables
+@import '_core/onepos/_variables';
+
+// compass & utilities
+@import 'compass/css3';
+@import '_core/global/_utility';
+
+// global
+@import '_core/global/_reset';
+@import '_core/global/_enable-inputs';
+@import '_core/global/_fonts';
+@import '_core/global/_layout';
+@import '_core/global/_global';
+@import '_core/onepos/_global';
+@import '_core/global/_helpers';
+
+@import '_core/onepos/_links';
+
+@import '_core/onepos/_button';
+@import '_core/global/_divide';
+@import '_core/global/_services';
+@import '_core/global/_global-classes';
+@import '_core/global/_lists';
+@import '_core/global/_toggle';
+@import '_core/global/_toggle-accordion';
+@import '_core/global/_toggle-tooltip';
+@import '_core/global/_toggle-flyout';
+@import '_core/global/_toggle-modal';
+@import '_core/global/_toggle-tabs';
+@import '_core/global/_toggle-more-less';
+@import '_core/onepos/_alert-messages';
+@import '_core/global/_nav-grid';
+@import '_core/global/_tables';
+@import '_core/global/_toggle-dropdown';
+@import '_core/global/_toggle-dropdown-lrg';
+
+// local core additions
+@import '_core/local/_full-background';
+
+// core
+@import '_core/_search';
+@import '_core/onepos/_header';

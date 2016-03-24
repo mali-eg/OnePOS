@@ -1,0 +1,43 @@
+<div>
+    <main-header></main-header>
+</div>
+<main-menu></main-menu>
+<div class="content mainContent bg-st1" id="content">
+    <ops-stepper states-list="stepsStateObj"></ops-stepper>
+    <div class="belt mt-20">
+        <div class="content-wrapper">
+            <div class="content-header">
+                <div class="content-body">
+                    <div ui-view></div>
+                </div>
+            </div>
+            <!-- TODO: to be created as a directive -->
+            <div class="content-footer">
+                <div class="col w-33 footer_prev">
+                    <a ng-click="prev()" ng-hide="hidePrevBtn">
+                        {{subPrevText}} <br/>
+                        <span>{{prevText}}</span>
+                    </a>
+                </div>
+                <div class="col w-33 footer_speedCO">
+                    <a ng-hide="showFinalConfirmationBtn || hideCheckoutBtn">
+                        Überspringen<!-- Weiter mit --> <br/>
+                        <span>Express checkout</span>
+                    </a>
+                    <a ng-show="showFinalConfirmationBtn">
+                        <!--<a ng-show="showFinalConfirmationBtn" ng-click="next()">-->
+                        Final Speichern<br/>
+                        <span>Bestellübersicht</span>
+                    </a>
+                </div>
+                <div class="col w-33 footer_next">
+                    <a ng-click="next()">
+                        {{subNextText}} <br/>
+                        <span>{{nextText}}</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-strip"></div>
+</div>

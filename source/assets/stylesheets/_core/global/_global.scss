@@ -1,0 +1,230 @@
+* {
+    @include box-sizing(border-box);
+}
+
+body {
+    color: $body-color;
+    font: 400 14px/1.3 $body-font;
+    background: $white;
+}
+
+// Spring wraps content and maintains min-width.
+.spring {
+    min-width: $mq-sml;
+    width: 100%;
+    overflow:hidden;
+}
+
+.dividerSmall {
+    margin-bottom: 5px;
+    display: block;
+}
+
+// Belt enforces max-width and center alignment
+.belt {
+    @extend .cf;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.access {
+    left: -9999em;
+    position: absolute;
+
+
+    &.debug {
+        position: relative;
+        left: 0;
+        background-color: $debug;
+    }
+}
+
+// prevents rhombus from spilling over
+.wrapper {
+    //overflow: hidden;
+}
+
+img {
+
+// Lazy loading
+    display:inline-block;
+
+    // http://stackoverflow.com/questions/10844205/html-5-strange-img-always-adds-3px-margin-at-bottom
+    vertical-align: middle;
+}
+
+.no-js img[data-src] {
+    display: none;
+}
+
+.js img[data-src] {
+    opacity: 0;
+    @include transition(opacity 200ms);
+}
+
+.js img[data-src].lazyloaded {
+    opacity: 1;
+}
+
+.lazyloader {
+    background: url(/assets/images/loader-lrg.gif) no-repeat 50% 50%;
+    display: inline-block;
+    min-width: 50px;
+    min-height: 50px;
+}
+
+// headings
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    color: inherit;
+    margin-bottom: 10px;
+
+    sup {
+        vertical-align: super;
+        font-size: 50%;
+    }
+
+
+    sub {
+        font-size: 50%;
+        position: relative;
+        top: 0.2em;
+    }
+
+}
+
+.h1-test {
+    color: $brand-0;
+    font: 400 30px/1.077 'VodafoneRegular', Arial, sans-serif;
+}
+h1.lhn {
+    position: absolute;
+    left: -9999em;
+}
+
+h1, .h1 {
+    color: $brand-0;
+    font: 400 30px/1.077 'VodafoneRegular', Arial, sans-serif;
+}
+
+h2, .h2 {
+    font: 400 25px/1.158 'VodafoneRegular', Arial, sans-serif;
+}
+
+h3, .h3 {
+    font: 700 20px/1.176 $body-font;
+}
+
+h4, .h4 {
+    font: 700 16px/1.333 $body-font;
+}
+
+h5, .h5,
+h6, .h6 {
+    font: 700 14px/1.3 $body-font;
+    margin-bottom: 5px;
+}
+
+// paragraphs
+p {
+    line-height: 1.5;
+    margin-bottom: $margin-lrg;
+}
+
+// text decoration
+strong, b {
+    font-weight: 700;
+}
+em {
+    font-style: italic;
+}
+.line-through {
+    text-decoration: line-through;
+}
+sup {
+    vertical-align: super;
+    font-size: 70%;
+}
+sub {
+    font-size: 70%;
+    position: relative;
+    top: 0.2em;
+}
+
+// hr
+hr,
+.hr {
+    border: 0;
+    border-top: $border-hr;
+    height: 0;
+    margin: $margin-lrg 0;
+}
+
+// desktop
+@media only screen and (min-width: $mq-lrg) {
+
+    // headings
+    h1, .h1,
+    h2, .h2,
+    h3, .h3 {
+        margin-bottom: $margin-xl;
+    }
+
+    h1, .h1 {
+        font: 45px/1.125 'VodafoneRegular', Arial, sans-serif;
+        margin-bottom: 30px;
+    }
+
+    h2, .h2 {
+        color: inherit;
+        font: 30px/1.182 'VodafoneLight', 'VodafoneRegular', Arial, sans-serif;
+    }
+
+    .belt {
+        padding: 0 15px;
+        max-width: 980px;
+    }
+
+    .content .belt {
+        padding: 0 25px;
+    }
+
+    // layout specific
+    .only-sml {
+        display: none!important;
+    }
+
+    h1 {
+        margin-left: 80px;
+    }
+
+    h1.lhn {
+       position: static;
+    }
+}
+
+// layout specific
+.lt-ie8 .only-lrg {
+    display: none;
+}
+
+@media only screen and (max-width: $mq-lrg - 1) {
+    .only-lrg {
+        display: none!important;
+    }
+
+    .eq-height {
+        min-height:inherit!important;
+    }
+}
+
+@media only screen and (min-width: $mq-xlrg) {
+    h1 {
+        margin-left: 0;
+    }
+}

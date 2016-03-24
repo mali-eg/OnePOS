@@ -1,0 +1,118 @@
+/* ==========================================================================
+Table styles
+========================================================================== */
+// style 1
+.table-st1{
+    margin: 0;
+    width: 100%;
+    font-size: 15px;
+    table-layout: fixed;
+
+    // header
+    th{
+        font-family: $font-vodafoneBold;
+    }
+    // rows
+    tr{
+        border-top: 1px solid #ccc;
+
+        &:last-child{
+            border-bottom: 1px solid #ccc;
+        }
+    }
+    td,th{
+        box-sizing: content-box;
+        padding: 10px 15px;
+
+        &:first-child{
+            padding-left: 10px;
+        }
+        &:last-child{
+            padding-right: 10px;
+        }
+    }
+    // if there is an icon
+    .ico{
+        width: 20px;
+        height: 20px;
+        margin-right: 20px;
+    }
+    // overwrite the ui grid style
+    &.ui-grid{
+        border: 0;
+        .ui-grid-header{
+            border-bottom:0;
+            .ui-grid-top-panel{
+                background:transparent;
+                .ui-grid-header-cell{
+                    font-family: $font-vodafoneBold;
+                    border-right:0;
+                    padding: 10px 15px;
+                    &:first-child{
+                        padding-left: 10px;
+                    }
+                    &:last-child{
+                        padding-right: 10px;
+                    }
+                    .ui-grid-column-resizer{
+                        border-right: 0;
+                    }
+                    .ui-grid-cell-contents{
+                        padding: 0;
+                    }
+                }
+            }
+        }
+        .ui-grid-viewport{
+            .ui-grid-cell{
+                border-top: 1px solid #ccc;
+                border-right:0;
+                padding: 10px 15px;
+                &:first-child{
+                    padding-left: 10px;
+                }
+                &:last-child{
+                    padding-right: 10px;
+                }
+                .ui-grid-cell-contents{
+                    padding: 0;
+                }
+            }
+            .ui-grid-row .ui-grid-cell,
+            .ui-grid-row:nth-child(odd) .ui-grid-cell,
+            .ui-grid-row:nth-child(even) .ui-grid-cell{
+                background:transparent;
+            }
+        }
+    }
+    // list of widths
+    .w-st1{
+        width: 50px;
+    }
+    .w-st2{
+        width: 130px;
+    }
+    .w-st3{
+        width: 210px;
+    }
+    .w-st4{
+        width: 290px;
+    }
+}
+
+.table-st2{
+    @extend .table-st1;
+    tr{
+        border-top: 0;
+    }
+    tr{
+        // odd
+        &:first-child, &.odd{
+            border-bottom: 1px solid #ccc;
+        }
+        // even
+        &:nth-child(even), &.even{
+            background: #eee;
+        }
+    }
+}

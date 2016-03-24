@@ -1,0 +1,18 @@
+<div class="top-header">
+	<a class="menu-actionbar" href="" ng-click="toggleMenu()"></a>
+	<a class="rhombus-action" ui-sref="dashboard.index"></a>
+	<span class="logo-text"><a ui-sref="dashboard.index">One<span>POS</span></a> <span>|</span> {{pageTitle}}</span>
+    <!--<a href="#" class="menu-actionbar"></a>
+    <a href="#" class="logo-text">One<span>POS</span></a>-->
+	<div class="belt">
+		<ul class="links">
+			<li class="username">
+				Benutzername :<br/><a ui-sref="userManagement.viewProfile">{{user.firstName}} {{user.lastName}}</a>
+            </li>
+			<li class="void">
+				VO-ID :<br/><span>{{user.defaultVoID}}</span>
+			</li>
+			<li class="logout"><a ng-click="logout()">Abmelden</a></li>
+		</ul>
+	</div>
+</div>

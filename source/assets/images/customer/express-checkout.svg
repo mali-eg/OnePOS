@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="59px" height="42px" viewBox="0 0 59 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: sketchtool 3.4 (356) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Icons" sketch:type="MSArtboardGroup" transform="translate(-155.000000, -310.000000)" stroke="#666666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <g id="Express-Checkout" sketch:type="MSLayerGroup" transform="translate(125.000000, 311.000000)">
+                <g id="Icon" transform="translate(31.000000, 0.000000)" sketch:type="MSShapeGroup">
+                    <path d="M56.5904554,25.4718416 L55.8114455,37.6239208 C55.8114455,38.9308515 54.7425347,40.0001584 53.4352079,40.0001584 L20.5643168,40.0001584 C19.2569901,40.0001584 18.1880792,38.9308515 18.1880792,37.6239208 L16.9999604,16.8983762 C16.9999604,15.5910495 18.0688713,14.5221386 19.376198,14.5221386 L54.6233267,14.5221386 C55.9306535,14.5221386 56.9995644,15.5910495 56.9995644,16.8983762 L56.9120396,19.0116436" id="Stroke-1"></path>
+                    <path d="M23.6661782,14.5215842 L25.6463762,0.0265346535 L48.0230099,0.0265346535 L50.1683564,14.4982178" id="Stroke-3"></path>
+                    <path d="M27.2970297,21.650297 L27.2970297,33.5314851" id="Stroke-5"></path>
+                    <path d="M33.6336634,21.650297 L33.6336634,33.5314851" id="Stroke-7"></path>
+                    <path d="M39.970297,21.650297 L39.970297,33.5314851" id="Stroke-9"></path>
+                    <path d="M46.3069307,21.650297 L46.3069307,33.5314851" id="Stroke-11"></path>
+                    <path d="M20,4.90772281 L8,4.90772277" id="Stroke-5-Copy"></path>
+                    <path d="M12,20.8811882 L0,20.8811881" id="Stroke-5-Copy-2"></path>
+                    <path d="M15,34.8811882 L3,34.8811881" id="Stroke-5-Copy-3"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

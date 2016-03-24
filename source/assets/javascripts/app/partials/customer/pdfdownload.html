@@ -1,0 +1,85 @@
+<div class="customer-data-wrapper pdf-download">
+    <!-- OPS-1686 Customer Header -->
+    <customer-header customer-header-data="customerHeader"></customer-header>
+    <!-- OPS-1686 Customer Header end -->
+    <div class="box-group top-box-group grid container2">
+        <div class="summary_border">
+            <h3 class="summary_title title-lg">PDF-Erstellung</h3>
+        </div>
+        <div class="grid">
+            <div class="col w-100">
+                <msg-container msg-list="vm.msgList"></msg-container>
+            </div>
+            <!-- status message-->
+            <div class="col w-100">
+                <p class="messages-container align-text-center inform-message" ng-show="vm.attachments.length > 0">
+                    {{vm.attachments.length || 0}} Dokumente stehen zum Download bereit.<br>
+                    Bitte laden Sie diese herunter und lassen Sie den Kunden unterschreiben.
+                </p>
+                <p class="messages-container align-text-center inform-message" ng-show="vm.attachments.length == 0">
+                    There are no contract documents needed and your order was submitted successfully.<br>
+                    You may view in tin the orders overview.
+                </p>
+            </div>
+            <!-- server messages -->
+            <div class="col w-100">
+                <div class="messages-container">
+                    <div class="success-message" ng-show="vm.messages.success">{{vm.messages.success}}</div>
+                    <div class="error-message" ng-show="vm.messages.error" error-data="">{{vm.messages.error}}</div>
+                    <div class="warning-message" ng-show="vm.messages.warning">{{vm.messages.warning}}</div>
+                </div>
+            </div>
+            <!-- attachments table-->
+            <div class="col w-100" ng-if="vm.attachments.length > 0">
+                <table>
+                    <tr>
+                        <th>Dokumententyp</th>
+                        <th>Dokumentname</th>
+                        <th style="width: 141px">Status</th>
+                        <th></th>
+                    </tr>
+                    <tr ng-repeat="attachment in vm.attachments">
+                        <td>
+                            <span class="err-mark" ng-show="attachment.status == 'notCreated'">i</span>
+                            Mobile Contract
+                        </td>
+                        <td>{{attachment.fileName}}</td>
+                        <td>
+                            <span class="red" ng-show="attachment.status == 'notCreated'">Error</span>
+                            <span
+                                ng-show="!attachment.downloadStatus && attachment.status !='notCreated'">In Erstellung</span>
+                            <span ng-show="attachment.downloadStatus == 'ready'">Verfügbar</span>
+                            <span class="green"
+                                  ng-show="attachment.downloadStatus == 'downloaded'">Heruntergeladen</span>
+                        </td>
+                        <td>
+                            <a target="_blank" pdf-download-btn file-name="{{attachment.fileName}}" file-id="{{attachment.documentID}}"
+                               order-id="{{vm.orderId}}" download-status="attachment.downloadStatus"
+                               file-status="attachment.status" download="{{attachment.fileName}}">Download PDF</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col w-100">
+                <p class="note">
+                    Bitte beachten Sie, dass der Auftrag erst nach einem Klick auf “Auftrag senden” an die Vodafone GmbH
+                    übermittelt wird.
+                </p>
+                <msg-container msg-list="vm.messages1" disable-error-listing="true" class="mt-20"></msg-container>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="server-error-dialog" class="di-content">
+    <div class="title-lg">
+        <span>There was an error with the server when trying to create the contract documents:</span>
+    </div>
+    <div class="messages-container">
+        <div class="error-message">
+            {{vm.messages.error}}
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a class="btn btn-sml" ng-click="vm.returnToSummary()">Return to Summary</a>
+    </div>
+</div>

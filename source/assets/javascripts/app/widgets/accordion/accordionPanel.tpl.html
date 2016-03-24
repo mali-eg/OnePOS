@@ -1,0 +1,12 @@
+<div class="panel-body">
+    <div class="panel-title" ng-click="toggleOpen($event)">
+        <div class="panal-head" accordion-panel-header-transclude><span>{{heading}}</span></div>
+        <div class="panel-arrows">
+            <i class="ico ico-size-20 ico-bor-color-8 ico-arrows-down" ng-show="!isOpen"></i>
+            <i class="ico ico-size-20 ico-bor-color-9 ico-arrows-up" ng-show="isOpen"></i>
+        </div>
+    </div>
+    <div class="panel-collaps" uib-collapse="!isOpen">
+        <div ng-transclude></div>
+    </div>
+</div>

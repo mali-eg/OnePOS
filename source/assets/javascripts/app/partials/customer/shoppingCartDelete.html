@@ -1,0 +1,53 @@
+<div class="shop-cart-modal">
+
+    <div class="titleBorderMain">
+        <h3>Delete this element from your shopping cart ?</h3>
+
+        <div class="clear"></div>
+    </div>
+    <!--{{vm.selected.cart}}-->
+    <msg-container msg-list="vm.msg"></msg-container>
+
+    <div class="cart_border">
+        <div class="col w-10">
+            <div class="mobile-icon"></div>
+        </div>
+        <div class="col w-90">
+            <div class="head">
+                <h3>{{vm.selectedCartName}}</h3>
+
+                <p>{{vm.selectedCartType}}&nbsp;und&nbsp;{{vm.selectedCartValue}}</p>
+            </div>
+            <ul class="tariff_plan" ng-repeat="tarrifPlan in vm.selectedCartProduct">
+                <li ng-hide="tarrifPlan.specification=='hardware' || tarrifPlan.specification=='sim-card'">
+                    {{tarrifPlan.specification}}&nbsp;(&nbsp;{{tarrifPlan.count}}&nbsp;)
+                </li>
+            </ul>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+
+
+    <div class="grid">
+        <div class="col w-30">
+            <div class="fm-submit">
+                <!--btn-st btn-st1 btn-st-xbig-->
+                <input class="btn-st btn-st1" ng-click="vm.cancel()" type="submit"
+                       value="Abbrechen">
+            </div>
+        </div>
+        <div class="col w-40">
+            &nbsp;
+        </div>
+
+        <div class="col w-30">
+            <div class="fm-submit">
+                <!--btn btn-sml-->
+                <input class="btn-st btn-st2 fr" ng-click="vm.delete()" type="submit" name="clear"
+                       value="Empty cart"/>
+            </div>
+        </div>
+    </div>
+</div>
+

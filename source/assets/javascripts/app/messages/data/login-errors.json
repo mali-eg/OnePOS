@@ -1,0 +1,107 @@
+{
+    "DEFAULT": {
+        "headline": "Entschuldigung,",
+        "text": "Bitte versuchen Sie es später nochmal."
+    },
+    "401": {
+        "NIL0A0842": {
+            "text": "Ihre TAN ist abgelaufen. Tippen Sie bitte auf den Button, um den Vorgang zu wiederholen."
+        },
+        "NIL0V0410": {
+            "text": "Die TAN, die Sie eingegeben haben, ist falsch. Geben Sie bitte die TAN ein, die auf Ihr Handy geschickt wurde."
+        },
+        "NIL0V0411": {
+            "text": "Sie haben das Captcha falsch eingegeben. Geben Sie jetzt bitte die Zeichen des neuen Captchas ein."
+        },
+        "NIL0A0833": {
+            "text": "Der Benutzername, den Sie eingegeben haben, ist falsch. Geben Sie bitte den richtigen Benutzernamen ein und lösen Sie das neue Captcha."
+        },
+        "NIL0A0835": {
+            "text": "Sie haben Ihren Benutzernamen oder Ihr Passwort falsch eingegeben. Nach _remaining_attempts_ Fehlversuchen wird Ihr Konto gesperrt."
+        },
+        "NIL0A0838": {
+            "text": "Sie haben Ihren Benutzernamen oder Ihr Passwort falsch eingegeben. Nach _remaining_attempts_ Fehlversuchen wird Ihr Konto gesperrt."
+        },
+        "NIL0A0857": {
+            "text": "Sie haben zu oft versucht, sich mit falschen Zugangsdaten einzuloggen. Ihr Konto wurde gesperrt. Wenden Sie sich bitte an Ihren lokalen Shop-Administrator."
+        },
+        "NIL0A0856": {
+            "text": "Sie haben zu oft versucht, sich mit falschen Zugangsdaten einzuloggen. Ihr Konto wurde gesperrt. Wenden Sie sich bitte an Ihren lokalen Shop-Administrator."
+        },
+        "NIL0A0851": {
+            "text": "Ihre TAN ist abgelaufen. Tippen Sie bitte auf den Button, um den Vorgang zu wiederholen."
+        },
+        "NIL00A001": {
+            "text": "Der Benutzername, den Sie eingegeben haben, ist falsch. Geben Sie bitte den richtigen Benutzernamen ein und lösen Sie das neue Captcha."
+        },
+        "NIL0A0840": {
+            "text": "Sie haben zu oft versucht, sich mit falschen Zugangsdaten einzuloggen. Ihr Konto wurde gesperrt. Wenden Sie sich bitte an Ihren lokalen Shop-Administrator."
+        }
+    },
+    "400": {
+        "DEFAULT": {
+            "title": "testing",
+            "text": "Default error message.",
+            "type": "error",
+            "overlay": true
+        },
+        "NIL0V0411": {
+            "text": "Sie haben das Captcha falsch eingegeben. Geben Sie jetzt bitte die Zeichen des neuen Captchas ein."
+        },
+        "NIL0A0857": {
+            "text": "Zu viele erfolglose Login-Versuche. Ihr Konto wurde gesperrt. Bitte kontaktieren Sie Ihren Administrator."
+        },
+        "NIL0A0856": {
+            "text": "Zu viele erfolglose Login-Versuche. Ihr Konto wurde gesperrt. Bitte kontaktieren Sie Ihren Administrator.",
+            "type": "error"
+        },
+        "NIL0A0838": {
+            "text": "Wrong credentials."
+        },
+        "NIL0V0410": {
+            "text": "Die TAN, die Sie eingegeben haben, ist falsch. Geben Sie bitte die richtige TAN ein. Sie haben noch _remaining_attempts_ Versuche."
+        },
+        "NIL0V0413": {
+            "text": "Ihr Passwort ist zu unsicher. Wählen Sie bitte ein anderes neues Passwort."
+        }
+    },
+    "403": {
+        "DEFAULT": {
+            "title": "Entschuldigung, da ist was schiefgelaufen.",
+            "text": "Bitte versuchen Sie es später nochmal.",
+            "overlay": true
+        },
+        "NIL00A003": {
+            "title": "Entschuldigung, da ist was schiefgelaufen.",
+            "text": "Bitte versuchen Sie es später nochmal."
+        },
+        "NIL0V0411": {
+            "text": "Sie haben das Captcha falsch eingegeben. Geben Sie jetzt bitte die Zeichen des neuen Captchas ein."
+        }
+    },
+    "500": {
+        "DEFAULT": {
+            "title": "Entschuldigung, da ist was schiefgelaufen.",
+            "text": "Bitte versuchen Sie es später nochmal.",
+            "overlay": true
+        },
+        "NIL00F101": {
+            "title": "Entschuldigung, da ist was schiefgelaufen.",
+            "text": "Bitte versuchen Sie es später nochmal."
+        }
+    },
+    "503":{
+        "DEFAULT": {
+            "title": "Entschuldigung, da ist was schiefgelaufen.",
+            "text": "Bitte versuchen Sie es später nochmal.",
+            "overlay": true
+        }
+    },
+    "404":{
+        "DEFAULT": {
+            "title": "Entschuldigung, da ist was schiefgelaufen.",
+            "text": "Bitte versuchen Sie es später nochmal.",
+            "overlay": true
+        }
+    }
+}

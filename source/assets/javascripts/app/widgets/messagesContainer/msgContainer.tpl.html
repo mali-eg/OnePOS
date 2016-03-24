@@ -1,0 +1,12 @@
+<div class="notification-st notification-{{msg.type}}" ng-repeat="msg in messagesListTrusted">
+    <div ng-switch="msg.type">
+        <i class="ico ico-size-32 ico-color-8 ico-txt ico-txt-color-2 ico-info mr-20" ng-switch-default>i</i>
+        <i class="ico ico-size-32 ico-color-8 ico-txt ico-txt-color-5 ico-info mr-20" ng-switch-when="error">!</i>
+        <i class="ico ico-size-32 ico-color-8 ico-txt ico-txt-color-6 ico-info mr-20" ng-switch-when="success">i</i>
+        <i class="ico ico-size-32 ico-color-8 ico-txt ico-txt-color-4 ico-info mr-20" ng-switch-when="warning">i</i>
+    </div>
+    <p ng-bind-html="msg.text"></p>
+    <button class="btn-st btn-st1 btn-right" ng-show="msg.btnTitle" ng-click="btnAction($event,$index)">{{msg.btnTitle}}
+    </button>
+    <a class="ico btn-close ico-close-white" ng-show="msg.hasCloseBtn" ng-click="closeMsg($event,$index)"></a>
+</div>

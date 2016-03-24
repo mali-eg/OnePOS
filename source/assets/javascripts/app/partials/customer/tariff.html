@@ -1,0 +1,563 @@
+<div class="page-tariff">
+    <form name="tariffsForm" ng-submit="vm.submit()" autocomplete="off" role="form" class="tariffs-wrapper" novalidate>
+        <!-- OPS-1686 Customer Header -->
+        <customer-header customer-header-data="customerHeader"></customer-header>
+        <!-- OPS-1686 Customer Header end -->
+        <div class="cluster-st1 mb-10">
+            <h2 class="title-st1">Produktauswahl</h2>
+
+            <div class="grid mb-20 combo-selection">
+                <div class="col w-25"><span class="combo-selection-title">Produktfamilie</span></div>
+                <div class="col w-75">
+                    <ops-transaction ng-model="vm.productFamily">
+                        <ops-selection title="Mobilverträge" id="mobilvertrage">
+                        </ops-selection>
+                        <ops-selection title="Prepaid" id="prepaid">
+                        </ops-selection>
+                        <ops-selection title="Festnetz" id="festnetz">
+                        </ops-selection>
+                    </ops-transaction>
+                </div>
+            </div>
+            <div class="grid mb-20 combo-selection">
+                <div class="col w-25"><span class="combo-selection-title">Geschäftsfall</span></div>
+                <div class="col w-75">
+                    <ops-transaction ng-model="vm.businessCase">
+                        <ops-selection title="Aktivierung" id="aktivierung">
+                        </ops-selection>
+                        <ops-selection title="Komfort-Portierung" id="komfort-portierung">
+                        </ops-selection>
+                        <ops-selection title="Normale Portierung" id="normale_portierung">
+                        </ops-selection>
+                    </ops-transaction>
+                </div>
+            </div>
+            <div class="grid combo-selection">
+                <div class="col w-25"><span class="combo-selection-title">Kundentyp</span></div>
+                <div class="col w-75">
+                    <ops-transaction ng-model="vm.customerType">
+                        <ops-selection title="Privat" id="privat">
+                        </ops-selection>
+                        <ops-selection title="SOHO" id="SOHO">
+                        </ops-selection>
+                        <ops-selection title="Geschäftlich" id="geschäftlich">
+                        </ops-selection>
+                    </ops-transaction>
+                </div>
+            </div>
+            <div class="grid mt-40 filterContainer" ng-show="vm.data.filterList">
+                <div class="col w-25"><span class="combo-selection-title">Filter</span></div>
+                <div class="col w-50">
+                    <div class="grid">
+                        <div class="col w-33"
+                             ng-repeat="(key, value) in vm.data.filterList">
+                            <div class="fm-input fm-check">
+                                <input type="checkbox"
+                                       class="field"
+                                       id="{{key | slugify:'_'}}"
+                                       ng-model="value.selected"
+                                       ng-change="vm.filterChange()"
+                                       ng-disabled="vm.isTheOnlyOneSelectedn(value)"/>
+                                <label for="{{key | slugify:'_'}}">{{value.name}}</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col w-25">
+                    <button
+                        ng-disabled="vm.checkAllDisabled"
+                        ng-click="vm.checkAll()"
+                        class="fr">alles anzeigen
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="cluster-st1 mb-10" ng-if="vm.selectedAddress && (vm.productFamily == 'mobilvertrage' || vm.productFamily == 'festnetz')">
+            <h2 class="title-st1">Verfügbarkeitsprüfung</h2>
+
+            <div class="mb-20">Adress</div>
+            <div class="grid">
+                <div class="col w-75">
+                <div>{{vm.selectedAddress.street}} Str.{{vm.selectedAddress.number}}</div>
+                <div>{{vm.selectedAddress.postcode}} {{vm.selectedAddress.city}}</div>
+                </div>
+                <div class="col w-25">
+                    <button class="btn-st btn-st1 fr" type="button" ng-click="vm.checkAvailability($event)">Verfügbarkeitsprüfung</button>
+                </div>
+            </div>
+        </div>
+        <div class="cluster-st1 mb-10">
+            <h2 class="title-st1">Gefundene Tarife <!--( {{vm.filteredTarrifs.length}} gefunden )--></h2>
+
+            <div rel="mobilvertrage" ng-if="vm.productFamily == 'mobilvertrage'">
+                <div class="grid searchBody">
+                    <div class="col w-40">
+                        <ops-textbox
+                            type="text"
+                            inner-id="tariffSearch"
+                            ng-model="vm.tariffSearch"
+                            label="Ich suche nach"
+                            iconed="search">
+                        </ops-textbox>
+                    </div>
+                    <div class="col w-60">
+                        <a class="fr headerLink" ng-click="vm.checkAvailability($event)">Verfügbarkeitsprüfung für mehr
+                            Tarife</a>
+                    </div>
+                </div>
+                <div class="grid mb-20">
+                    <div class="col w-100 carouselContainer">
+                        <!--<div class="scroll-x-cont-st1" scrollbar="{autoUpdate: true, axis:'x'}">
+                            <div class="contentNavHorizontal-st1">
+                                <div
+                                    ng-repeat="tarrif in vm.data.tariffsArr"
+                                    ng-click="vm.selectTariff(tarrif)"
+                                    ng-class="{'active-st3': tarrif == vm.selected}"
+                                    class="contentNav-item">
+                                    <p>
+                                        {{tarrif.name}}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>-->
+                        <div class="scroll-x-cont-st1">
+                            <div class="contentNavHorizontal-st1">
+                                <!--ng-repeat="tariffItem in ( vm.filteredTarrifs = (vm.tariffList | category:vm.filters | searchField:tariffItem.name | filter:vm.tariffSearch))"-->
+                                <div
+                                    ng-repeat="tarrif in vm.data.tariffsArr"
+                                    ng-click="vm.selectTariff(tarrif)"
+                                    ng-class="{'active-st3': tarrif == vm.selected}"
+                                    class="contentNav-item"
+                                    sly-horizontal-repeat
+                                    sly-options="{startAt: (tarrif == vm.selected) ? $index : 0}">
+                                    <p>
+                                        <!--{{(tarrif == vm.selected) ? $index : 0}}-->
+                                        {{tarrif.name}}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="scrollbarContainer">
+                            <div class="scrollbar">
+                                <div class="handle">
+                                    <div class="mousearea"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="controls">
+                            <div class="prevPage">prevPage</div>
+                            <div class="nextPage">nextPage</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="col w-100">
+                        <div class="selectedTariff">
+                            <div class="header">
+                                <div>
+
+                                    <h3>{{vm.selected.name}}</h3>
+                                    <a ng-if="vm.selected.infoURL" class="moreInfo">i</a>
+                                    <!--<a href="{{vm.selected.infoURL}}" class="moreInfo">i</a>-->
+                                </div>
+                            </div>
+                            <div class="body">
+                                <div class="bodyContainer">
+                                    <div>
+
+
+                                        <div class="grid mb-20 combo-selection" ng-if="vm.subsidiesAvailable">
+                                            <div class="col w-25"><span
+                                                class="combo-selection-title">Gerätevergünstigung</span>
+                                            </div>
+                                            <div class="col w-75">
+                                                <ops-transaction ng-model="vm.subsidy">
+                                                    <ops-selection title="SIM Only" id="subsidy-1">
+                                                    </ops-selection>
+                                                    <ops-selection title="Sub 5" id="subsidy-2">
+                                                    </ops-selection>
+                                                    <ops-selection title="Sub 10" id="subsidy-3">
+                                                    </ops-selection>
+                                                    <ops-selection title="Sub 20" id="subsidy-4">
+                                                    </ops-selection>
+                                                </ops-transaction>
+                                            </div>
+                                        </div>
+                                        <div class="grid combo-selection" ng-if="vm.businessCase =='aktivierung'">
+                                            <div class="col w-25"><span class="combo-selection-title">Handout</span>
+                                            </div>
+                                            <div class="col w-75">
+                                                <ops-transaction ng-model="vm.hardware">
+                                                    <ops-selection title="Non-VF hardware" id="nonHardware">
+                                                    </ops-selection>
+                                                    <ops-selection title="VF Hardware handout" id="hardwareHandout">
+                                                    </ops-selection>
+                                                    <ops-selection title="VF Hardware delivery" id="hardwareDelivery">
+                                                    </ops-selection>
+                                                </ops-transaction>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bodyContainer" ng-if="vm.hardware != 'hardwareDelivery' && vm.businessCase =='aktivierung'">
+                                    <div>
+                                        <div class="grid">
+                                            <div class="col w-50" ng-if="!customerHeader.currentCustomer">
+                                                <ops-textbox
+                                                    type="text"
+                                                    inner-id="simNumber"
+                                                    ng-model="vm.inputs.simNumber"
+                                                    label="SIM Seriennummer">
+                                                </ops-textbox>
+                                            </div>
+                                            <div class="col w-50">
+                                                <ops-textbox
+                                                    type="text"
+                                                    inner-id="imeiNumber"
+                                                    ng-model="vm.inputs.imeiNumber"
+                                                    label="IMEI number">
+                                                </ops-textbox>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bodyContainer" ng-if="(vm.selectedHardware) && vm.hardware == 'hardwareDelivery' && vm.businessCase == 'aktivierung'">
+                                    <div>
+                                        <div class="grid">
+                                            <div class="col w-25">
+                                                <div class="mb-5">Hardware</div>
+                                                <div>{{vm.selectedHardware.name}}</div>
+                                            </div>
+                                            <div class="col w-25">
+                                                <div class="mb-5">Seriennummer</div>
+                                                <div>{{vm.selectedHardware.partNumber}}</div>
+                                            </div>
+                                            <div class="col w-25">
+                                                <div class="mb-5">Preis</div>
+                                                <div>{{vm.selectedHardware.price}}<span> €</span></div>
+                                            </div>
+                                            <div class="col w-25">
+                                                <a class="fr headerLink" ng-click="vm.changeHardware()">Geräteauswahl ändern</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bodyContainer">
+                                    <div>
+                                        <div class="grid">
+                                            <div class="col w-50" ng-show="vm.data.promotions">
+                                                <ul class="form-list-st1">
+                                                    <li class="label">Promotions</li>
+                                                    <li ng-repeat="item in vm.data.promotions">
+                                                        <ops-checkbox
+                                                            inner-id="pro{{item.code}}"
+                                                            ng-model="item.selected"
+                                                            label="{{item.name}}">
+                                                        </ops-checkbox>
+                                                        <a class="fr moreInfo">i</a>
+                                                        <!--<a href="{{item.infoURL}}" class="fr moreInfo">i</a>-->
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col w-50" ng-show="vm.data.discounts">
+                                                <ul class="form-list-st1">
+                                                    <li class="label">Discounts</li>
+                                                    <li ng-repeat="item in vm.data.discounts">
+                                                        <ops-checkbox
+                                                            inner-id="disc{{item.code}}"
+                                                            ng-model="item.selected"
+                                                            label="{{item.name}}">
+                                                        </ops-checkbox>
+                                                        <a class="fr moreInfo">i</a>
+                                                        <!--<a href="{{item.infoURL}}" class="fr moreInfo">i</a>-->
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bodyContainer"
+                                     ng-show="vm.porting_data.simTypes && (vm.businessCase == 'komfort-portierung' || vm.businessCase == 'normale_portierung')">
+                                    <div>
+                                        <div class="grid">
+                                            <div class="col w-50">
+                                                <ul class="form-list-st1">
+                                                    <li class="label">Porting SIM type</li>
+                                                    <li ng-repeat="item in vm.porting_data.simTypes">
+                                                        <ops-checkbox
+                                                            inner-id="disc{{item.code}}"
+                                                            ng-model="item.selected"
+                                                            label="{{item.name}}">
+                                                        </ops-checkbox>
+                                                        <a class="fr moreInfo">i</a>
+                                                        <!--<a href="{{item.infoURL}}" class="fr moreInfo">i</a>-->
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div rel="prepaid" ng-if="vm.productFamily == 'prepaid'">
+                <div class="grid searchBody">
+                    <div class="col w-40">
+                        <ops-textbox
+                            type="text"
+                            inner-id="tariffSearch"
+                            ng-model="vm.tariffSearch"
+                            label="Ich suche nach"
+                            iconed="search">
+                        </ops-textbox>
+                    </div>
+                </div>
+
+
+                <div class="grid mb-20">
+                    <div class="col w-100 carouselContainer">
+                        <div class="scroll-x-cont-st1">
+                            <div class="contentNavHorizontal-st1">
+                                <div
+                                    ng-repeat="tarrif in vm.prepaidData_model.tariffsArr"
+                                    ng-click="vm.selectTariff(tarrif)"
+                                    ng-class="{'active-st3': tarrif == vm.selected}"
+                                    class="contentNav-item"
+                                    sly-horizontal-repeat
+                                    sly-options="{startAt: (tarrif == vm.selected) ? $index : 0}">
+                                    <p>
+                                        {{tarrif.name}}
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="scrollbarContainer">
+                            <div class="scrollbar">
+                                <div class="handle">
+                                    <div class="mousearea"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="controls">
+                            <div class="prevPage">prevPage</div>
+                            <div class="nextPage">nextPage</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid">
+                    <div class="col w-100">
+                        <div class="selectedTariff">
+                            <div class="header">
+                                <div>
+                                    <h3>{{vm.selected.name}}</h3>
+                                    <a ng-if="vm.selected.infoURL" class="moreInfo">i</a>
+                                    <!--<a href="{{vm.selected.infoURL}}" class="moreInfo">i</a>-->
+                                </div>
+                            </div>
+                            <div class="body">
+                                <!--<div class="bodyContainer"
+                                     ng-if="vm.businessCase == 'aktivierung'">-->
+
+                                <div class="bodyContainer">
+                                    <div>
+                                        <div class="grid">
+                                            <div class="col w-50">
+                                                <ops-textbox
+                                                    type="text"
+                                                    inner-id="simNumber"
+                                                    ng-model="vm.inputs.simNumber"
+                                                    label="Preregistered phone number"
+                                                    ng-required="true">
+                                                </ops-textbox>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--<div class="bodyContainer"
+                                     ng-show="vm.porting_data.simTypes && (vm.businessCase == 'normale_portierung')">
+                                    <div>
+                                        <div class="grid">
+                                            <div class="col w-50">
+                                                <ul class="form-list-st1">
+                                                    <li class="label">Porting SIM type</li>
+                                                    <li ng-repeat="item in vm.porting_data.simTypes">
+                                                        <ops-checkbox
+                                                            inner-id="disc{{item.code}}"
+                                                            ng-model="item.selected"
+                                                            label="{{item.name}}">
+                                                        </ops-checkbox>
+                                                        <a class="fr moreInfo">i</a>
+                                                        &lt;!&ndash;<a href="{{item.infoURL}}" class="fr moreInfo">i</a>&ndash;&gt;
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div rel="festnetz" ng-if="vm.productFamily == 'festnetz'">
+                <div class="grid searchBody">
+                    <div class="col w-40">
+                        <ops-textbox
+                            type="text"
+                            inner-id="tariffSearch"
+                            ng-model="vm.tariffSearch"
+                            label="Ich suche nach"
+                            iconed="search">
+                        </ops-textbox>
+                    </div>
+                    <div class="col w-60">
+                        <a class="fr headerLink" ng-click="vm.checkAvailability($event)">Verfügbarkeitsprüfung für mehr
+                            Tarife</a>
+                    </div>
+                </div>
+                <div class="grid mb-20">
+                    <div class="col w-100 carouselContainer">
+                        <div class="scroll-x-cont-st1">
+                            <div class="contentNavHorizontal-st1">
+                                <div
+                                    ng-repeat="tarrif in vm.fixednetData_model.tariffsArr"
+                                    ng-click="vm.selectTariff(tarrif)"
+                                    ng-class="{'active-st3': tarrif == vm.selected}"
+                                    class="contentNav-item"
+                                    sly-horizontal-repeat
+                                    sly-options="{startAt: (tarrif == vm.selected) ? $index : 0}">
+                                    <p>
+                                        {{tarrif.name}}
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="scrollbarContainer">
+                            <div class="scrollbar">
+                                <div class="handle">
+                                    <div class="mousearea"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="controls">
+                            <div class="prevPage">prevPage</div>
+                            <div class="nextPage">nextPage</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid">
+                    <div class="col w-100">
+                        <div class="selectedTariff">
+                            <div class="header">
+                                <div>
+
+                                    <h3>{{vm.selected.name}}</h3>
+                                    <a ng-if="vm.selected.infoURL" class="moreInfo">i</a>
+                                    <!--<a href="{{vm.selected.infoURL}}" class="moreInfo">i</a>-->
+                                </div>
+                            </div>
+                            <div class="body">
+                                <div class="bodyContainer">
+                                    <div>
+                                        <div class="grid mb-20 combo-selection">
+                                            <div class="col w-25"><span
+                                                class="combo-selection-title">TV Option</span>
+                                            </div>
+                                            <div class="col w-75">
+                                                <ops-transaction ng-model="vm.tvoptions">
+                                                    <ops-selection title="Super TV Option" id="tvoptions-1">
+                                                    </ops-selection>
+                                                    <ops-selection title="Sample" id="tvoptions-2">
+                                                    </ops-selection>
+                                                    <ops-selection title="Sample" id="tvoptions-3">
+                                                    </ops-selection>
+                                                    <ops-selection title="Sample" id="tvoptions-4">
+                                                    </ops-selection>
+                                                </ops-transaction>
+                                            </div>
+                                        </div>
+                                        <div class="grid combo-selection">
+                                            <div class="col w-25"><span
+                                                class="combo-selection-title">Connection type</span></div>
+                                            <div class="col w-75">
+                                                <ops-transaction ng-model="vm.handout">
+                                                    <ops-selection title="Normal" id="sample-1">
+                                                    </ops-selection>
+                                                    <ops-selection title="Sample" id="sample-2">
+                                                    </ops-selection>
+                                                    <ops-selection title="Sample" id="sample-3">
+                                                    </ops-selection>
+                                                </ops-transaction>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bodyContainer">
+                                    <div>
+                                        <div class="grid">
+                                            <div class="col w-50">
+                                                <div class="mb-5">Bandwidth</div>
+                                                <div>{{vm.fixednetData_model.bandwidth}}</div>
+                                            </div>
+                                            <div class="col w-50">
+                                                <div class="mb-5">Regional fee</div>
+                                                <div>{{vm.fixednetData_model.regionalFee}}</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bodyContainer hardwareCarouselContainer">
+                                    <div>
+                                        <div class="grid">
+                                            <div class="col w-100"><h3>Hardware selection</h3><span>(click on an accessory
+                                                itm to choose it for the discount)</span>
+                                            </div>
+                                        </div>
+                                        <div class="grid">
+
+                                            <div class="col w-100 carouselContainer">
+                                                <div>
+                                                    <div>
+                                                        <div
+                                                            ng-repeat="device in vm.fixednetData_model.hardwareArr"
+                                                            ng-click=""
+                                                            ng-class=""
+                                                            class="hardwareEle"
+                                                            sly-horizontal-repeat
+                                                            sly-options="{startAt: (tarrif == vm.selected) ? $index : 0}">
+                                                            <p>
+                                                                {{device.name}}
+                                                            </p>
+
+                                                            <div class="imageContainer"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="controls">
+                                                    <div class="prevPage">prevPage</div>
+                                                    <div class="nextPage">nextPage</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

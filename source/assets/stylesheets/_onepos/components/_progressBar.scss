@@ -1,0 +1,112 @@
+/* ==========================================================================
+Progress Bars
+========================================================================== */
+//F9.3, F9.4, F9.6
+.progress-bar-container-st1{
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 4000;
+    width: 100%;
+    background: rgba(255,255,255,0.8);
+    // change the positions
+    &.pos-st1{
+        position: relative;
+    }
+    &.pos-st2{
+        position: fixed;
+    }
+    // grid
+    .belt{
+        .col.w-100{
+            position: relative;
+        }
+    }
+    // steps
+    .steps {
+        line-height: 0;
+        text-align: center;
+        padding: 15px 0;
+
+        li{
+            position: relative;
+            z-index: 1;
+            display: inline-block;
+            width: 110px;
+            text-align: center;
+            // bubble
+            .bubble {
+                display: inline-block;
+                vertical-align: middle;
+                background-color: #fff;
+                border: 1px solid #666;
+                width: 13px;
+                height: 13px;
+                line-height: 300px;
+                margin-bottom: 5px;
+                overflow: hidden;
+                @include borderRadius(50%);
+            }
+            &.active .bubble{
+                background-color: $red;
+                border: 1px solid $red;
+            }
+            &.passed .bubble {
+                background-color: #666;
+                border: 1px solid #666;
+            }
+            &.skipped .bubble {
+                background-color: #fff;
+                border: 1px solid #666;
+            }
+            // title
+            .title {
+                display: block;
+                font-family: $font-vodafoneRegular;
+                font-size: 14px;
+                color: #333;
+                line-height: 17px;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+            &.active .title{
+                font-family: $font-vodafoneBold;
+                font-size: 14px;
+                color: $red;
+                line-height: 17px;
+            }
+            // borders
+            &:after{
+                content: "";
+                position: absolute;
+                top: 8px;
+                right: 0;
+                width: calc(50% - 19px);
+                height: 2px;
+                background-color: #EBEBEB;
+            }
+            &:last-child:after{
+                display: none;
+            }
+            &:before{
+                content: "";
+                position: absolute;
+                top: 8px;
+                left: 0;
+                width: calc(50% - 19px);
+                height: 2px;
+                background-color: #EBEBEB;
+            }
+            &:first-child:before{
+                display: none;
+            }
+        }
+    }
+    //F9.4 save button
+    .btn-save{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -20px;
+    }
+}

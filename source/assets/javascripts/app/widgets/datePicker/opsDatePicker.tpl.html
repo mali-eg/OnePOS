@@ -1,0 +1,6 @@
+<div class="fm-input fm-text fm-ico-holder">
+    <input type="text" class="field" name="expiryDate5">
+    <input type="text" class="field" id="{{innerId}}" name="opsName" uib-datepicker-popup="{{opsFormat}}" ng-model="ngModel" ng-required="required" is-open="status.opened" datepicker-options="opsOptions"/>
+    <label for="{{innerId}}">{{opsLabel}}</label>
+    <button type="button" ng-click="open($event)" class="ico ico-date"></button>
+</div>

@@ -1,0 +1,19 @@
+<div class="cluster-st2 mb-10" ng-if="customerHeaderData.showHeader">
+    <i class="ico ico-size-48 ico-user-gray ico-svg mr-10"></i>
+    <div class="txt-hold-st0 mr-10">
+        <p class="txt-st11 mb-0">Kunde:</p>
+        <p class="txt-st12 mb-0 mt-5">{{customerHeaderData.customerAccount.customerMasterData.customerName}}</p>
+    </div>
+    <div class="txt-hold-st1 txt-hold-st1-ch2 mr-10" ng-if="!customerHeaderData.customerNewban">
+        <p class="txt-st11 mb-0">Aktuelle BAN:</p>
+        <p class="txt-st12 mb-0 mt-5">{{customerHeaderData.customerAccount.customerMasterData.customerNumber}}</p>
+    </div>
+    <div class="txt-hold-st1 txt-hold-st1-ch2 mr-10" ng-if="customerHeaderData.customerNewban">
+        <p class="txt-st11 mb-0">Aktuelle BAN:</p>
+        <p class="txt-st12 mb-0 mt-5"><a href="#" class="link-st link-st1">Create new BAN</a></p>
+    </div>
+    <div class="txt-hold-st1 txt-hold-st1-ch2 mr-10" ng-if="customerHeaderData.selectedNBA">
+        <p class="txt-st11 mb-0">Ausgewählte NBAs:</p>
+        <p class="txt-st12 mb-0 mt-5">{{customerHeaderData.customerAccount.customerMasterData.nba}}</p>
+    </div>
+</div>

@@ -1,0 +1,66 @@
+.grid,
+.row {
+    @extend .cf;
+}
+
+#content {
+    min-height: 290px;
+}
+
+@media only screen and (min-width: $mq-lrg) {
+
+    #content {
+        min-height: 600px;
+    }
+
+    .grid {
+        margin-left: -30px;
+
+        &.grid-p20 {
+            margin-left:  -20px;
+        }
+    }
+
+    .col {
+        float: left;
+        padding: 0 0 0 30px;
+
+        &.fr {
+            float: right;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .grid-p20 .col {
+        padding: 0 0 0 20px;
+    }
+
+     .w-5 { width:  5%; }
+    .w-10 { width: 10%; }
+    .w-15 { width: 15%; }
+    .w-20 { width: 20%; }
+    .w-25 { width: 25%; }
+    .w-30 { width: 30%; }
+    .w-35 { width: 35%; }
+    .w-40 { width: 40%; }
+    .w-45 { width: 45%; }
+    .w-50 { width: 50%; }
+    .w-55 { width: 55%; }
+    .w-60 { width: 60%; }
+    .w-65 { width: 65%; }
+    .w-70 { width: 70%; }
+    .w-75 { width: 75%; }
+    .w-80 { width: 80%; }
+    .w-85 { width: 85%; }
+    .w-90 { width: 90%; }
+    .w-95 { width: 95%; }
+    .w-100 { width: 100%; }
+
+    .w-8 { width: 8.3333333%; }
+    .w-16 { width: 16.6666666%; }
+    .w-33 { width: 33.3333333%; }
+    .w-66 { width: 66.6666666%; }
+}

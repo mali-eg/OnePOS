@@ -1,0 +1,495 @@
+
+.nop-l {
+    padding-left: 0px !important;
+}
+.di-content .di-inner{
+ /*   height: auto;*/
+    padding-top: 35px;
+}
+
+.di-content{
+    background: rgba(0,0,0,0.6) !important;
+}
+
+.shop-cart-modal{
+
+    .cart_fields{
+        height: 200px;
+    }
+    .table_box{
+        height: 200px;
+    }
+
+
+    .deleteCart, .deleteItem {
+        padding: 25px 10px 25px 60px;
+        background-color: #666666;
+        background-image: url(/assets/images/dashboard/info-notiification-icon.png);
+        background-repeat: no-repeat;
+        background-position: 20px 24px;
+        background-size: 30px;
+        color: #fff;
+        border-radius: 3px;
+
+        h4 {
+            margin-bottom: 0px;
+            font-size: 16px;
+            margin-top: 6px;
+        }
+    }
+
+    .table {
+        font-size: 12px;
+        font-family: inherit;
+        border: 1px solid #E4E4E4;
+        font-family: inherit;
+        margin-bottom: 35px;
+
+        .tHead:nth-child(1) {
+            font-weight: bold
+        }
+        .tHead {
+            padding: 5px 10px
+        }
+        .tHead:nth-child(odd) {
+            background-color: #F4F4F4;
+        }
+        .tHead:nth-child(even) {
+            background-color: #FFFFFF;
+        }
+    }
+
+/*
+    input[type="text"], input[type="text"]:focus{
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        -ms-box-shadow: none;
+        -o-box-shadow: none;
+        box-shadow: none;
+        border: none;
+        border-bottom: 1px solid #cccccc;
+        font-size: 16px;
+        padding: 0 0 5px 0;
+        width: 100%;
+
+    }*/
+
+        .selector{
+            h4{
+                color: #666666;
+                font-size: 12px;
+                font-family: "VodafoneRegular";
+            }
+        }
+
+            /** Checkboxes and Radio buttons **/
+            /* Base for label styling */
+            [type="checkbox"]:not(:checked),
+            [type="checkbox"]:checked,
+            [type="radio"]:not(:checked),
+            [type="radio"]:checked {
+                position: absolute;
+                left: -9999px;
+            }
+
+            [type="checkbox"]:not(:checked) + label,
+            [type="checkbox"]:checked + label,
+            [type="radio"]:not(:checked) + label,
+            [type="radio"]:checked + label {
+                display: inline-block;
+                position: relative;
+                padding-left: 40px !important;
+                cursor: pointer;
+                font-size: 18px;
+                min-height: 20px;
+                /*text-transform: capitalize;*/
+            }
+            [type="radio"]:not(:checked) + label,
+            [type="radio"]:checked + label{
+                font-size: 16px;
+            }
+            [type="checkbox"]:not(:checked) + label span,
+            [type="checkbox"]:checked + label span {
+                display: inline-block;
+                position: relative;
+                cursor: pointer;
+                font-size: 24px;
+                bottom: 4px;
+
+            }
+
+            [type="radio"]:not(:checked) + label span,
+            [type="radio"]:checked + label span {
+                display: inline-block;
+                position: relative;
+                cursor: pointer;
+                font-size: 16px;
+                bottom: 4px;
+            }
+
+            [type="checkbox"]:checked + label {
+
+                transition: all .2s;
+                color: #007c92;
+
+            }
+
+            [type="checkbox"]:checked + label span {
+                color: #333333 !important;
+                transition: all .2s;
+                font-size: 24px;
+                bottom: 4px;
+
+            }
+
+            [type="radio"]:checked + label {
+
+                transition: all .2s;
+                color: #007c92;
+            }
+
+            [type="radio"]:checked + label span {
+                transition: all .2s;
+                color: #333333;
+            }
+
+            /* checkbox aspect */
+            [type="checkbox"]:not(:checked) + label:before,
+            [type="checkbox"]:checked + label:before,
+            [type="radio"]:not(:checked) + label:before,
+            [type="radio"]:checked + label:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0px;
+                width: 18px;
+                height: 18px;
+                border: 1px solid #007c92;
+                background: transparent;
+                border-radius: 3px;
+            }
+
+            [type="radio"]:not(:checked) + label:before,
+            [type="radio"]:checked + label:before {
+                border-radius: 1000px;
+            }
+
+            [type="checkbox"].specialChecked:not(:checked) + label:before {
+                border: none;
+                border: 1px solid #eaeaea;
+                background: #eaeaea;
+                /*    display:none;*/
+            }
+
+            [type="checkbox"]:checked + label:before {
+                background: #007c92;
+            }
+
+            /* checked mark aspect */
+            [type="checkbox"]:not(:checked) + label:after,
+            [type="checkbox"]:checked + label:after,
+            [type="checkbox"].specialChecked:not(:checked) + label:after,
+            [type="checkbox"].specialChecked:checked + label:after {
+                content: '';
+                position: absolute;
+                width: 14px;
+                height: 6px;
+                background: transparent;
+                top: 3px;
+                left: 2px;
+                border: 3px solid #ffffff;
+                border-top: none;
+                border-right: none;
+                -webkit-transform: rotate(-45deg);
+                -moz-transform: rotate(-45deg);
+                -o-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+                transition: all .2s;
+                display: block;
+            }
+
+            /*[type="radio"]:not(:checked) + label:after,*/
+            [type="radio"]:checked + label:after {
+                content: '';
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                background: #007c92;
+                top: 5px;
+                left: 5px;
+                border-radius: 1000px;
+                transition: all .2s;
+            }
+
+            /* checked mark aspect changes */
+            [type="checkbox"]:not(:checked) + label:after,
+            [type="radio"]:not(:checked) + label:after {
+                opacity: 0;
+                /*transform: scale(0);*/
+            }
+
+            [type="checkbox"]:checked + label:after,
+            [type="radio"]:checked + label:after,
+            [type="checkbox"].specialChecked:not(:checked) + label:after {
+                opacity: 1;
+                /*transform: scale(1);*/
+            }
+
+            /* disabled checkbox */
+            [type="checkbox"]:disabled:not(:checked) + label:before,
+            [type="checkbox"]:disabled:checked + label:before,
+            [type="radio"]:disabled:not(:checked) + label:before,
+            [type="radio"]:disabled:checked + label:before {
+                box-shadow: none;
+                background-color: #ddd;
+                border-color: #dddddd;
+                cursor: default;
+            }
+
+            [type="checkbox"]:disabled:checked + label:after,
+            [type="radio"]:disabled:checked + label:after {
+                color: #999;
+                cursor: default;
+            }
+
+            [type="checkbox"]:disabled + label,
+            [type="radio"]:disabled + label {
+                color: #aaa !important;
+                cursor: default;
+            }
+
+            /* accessibility */
+            [type="checkbox"]:checked:focus + label:before,
+            [type="checkbox"]:not(:checked):focus + label:before,
+            [type="radio"]:checked:focus + label:before,
+            [type="radio"]:not(:checked):focus + label:before {
+                /*border: 1px dotted blue;*/
+            }
+
+            /** end **/
+
+
+
+
+
+    .fm-data {
+
+        padding: 10px 0px 30px 0px;
+        margin-top: 10px;
+        position: relative;
+
+        .fm-select {
+            padding: 0px;
+            position: relative;
+
+            span {
+                top: 1px;
+                padding: 0px 0px 0px 0px;
+                margin-right: 2px;
+            }
+        }
+
+        span {
+            color: #E60000;
+        }
+
+        input {
+            font-size: 16px;
+            color: #117c93;
+            font-family: inherit;
+            padding-bottom: 5px;
+            display: block;
+        }
+
+        label {
+            color: #117c93;
+            font-size: 18px;
+            font-weight: normal;
+            position: absolute;
+            pointer-events: none;
+            top: 10px;
+            transition: 0.2s ease all;
+            -moz-transition: 0.2s ease all;
+            -webkit-transition: 0.2s ease all;
+        }
+        input:focus {
+            outline: none;
+            color: #117c93;
+        }
+
+        /* active state */
+        input:focus ~ label, input:valid ~ label,
+        .selectric-open ~ label {
+            top: -20px;
+            font-size: 14px;
+            color: #666666;
+        }
+
+        /* active state */
+        input:focus ~ .highlight {
+            -webkit-animation: inputHighlighter 0.3s ease;
+            -moz-animation: inputHighlighter 0.3s ease;
+            animation: inputHighlighter 0.3s ease;
+        }
+
+        label {
+            color: #117c93;
+            font-size: 18px;
+            font-weight: normal;
+            position: absolute;
+            pointer-events: none;
+            /* top: 0px;*/
+            transition: 0.2s ease all;
+            -moz-transition: 0.2s ease all;
+            -webkit-transition: 0.2s ease all;
+        }
+
+        /* active state */
+        label.active {
+            top: -20px;
+            font-size: 14px;
+            color: #666666;
+        }
+
+    }
+
+    .cart_border {
+        border-bottom: 1px solid #CCCCCC;
+        margin: 0px 22px 10px 0px;
+        padding-bottom: 9.4px;
+        margin-top: 15px;
+    }
+    .mobile-icon {
+        background-image: url(/assets/images/customer/Vodafone-Mobile.svg);
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+        background-size: 31.7px 59.3px;
+        width: 31.7px;
+        height: 59.3px;
+    }
+
+    .head {
+
+        h3 {
+            color: #e60000;
+            text-decoration: none;
+            font-size: 24px;
+            font-family: "VodafoneLight", "VodafoneRegular", Arial, sans-serif;
+            margin-bottom: 10px;
+
+        }
+        p {
+            font-size: 16px;
+            color: #333333;
+            line-height: 1px;
+            margin-bottom: 5px;
+
+        }
+    }
+
+    .titleBorderMain {
+        border-bottom: 6px solid #f4f4f4;
+        margin-bottom: 10px;
+        h3 {
+            font-size: 24px;
+        }
+    }
+
+    .tariff_plan {
+        float: left;
+
+        margin-top: 5.6px;
+
+        li {
+            font-family: "VodafoneLight", "VodafoneRegular", Arial, sans-serif;
+            font-size: 16px;
+            text-decoration: none;
+            color: #333333;
+
+
+        }
+    }
+    .tariff_plan:nth-child(4),.tariff_plan:nth-child(5){
+        margin-right: 10px;
+    }
+
+    .counter_title{
+        font-family: "VodafoneBold", "VodafoneRegular", Arial, sans-serif;
+        font-size: 14px;
+        color: #3c3d41;
+    }
+    .circle_counter {
+    background: #EEEEEE;
+    width: 32px;
+    height: 32px;
+    border-radius: 300px;
+    position: relative;
+    cursor: pointer;
+    margin: 8px 10px 0px 0px;
+    span, .decrement {
+        position: absolute;
+        top: 5px;
+        right: 11px;
+        color: #3c3d41;
+        font-weight: bolder;
+        font-size: 18px;
+
+    }
+    .decrement {
+        top: 4px;
+        right: 13px;
+    }
+}
+
+.counter {
+    background: #007c93;
+    width: 48px;
+    height: 48px;
+    border-radius: 300px;
+    position: relative;
+    margin-right: 10px;
+    bottom: 10px;
+    .label-field input[type="text"], input[type="text"]:focus{
+        background: none;
+        color: #FFFFFF;
+        font-size: 24px;
+        font-weight: bold;
+        font-family: "VodafoneBold", "VodafoneRegular", Arial, sans-serif;
+        margin-left: 16px;
+        position: absolute;
+        border-bottom: 0px;
+        margin-top: 10px;
+    }
+
+
+    span {
+        color: #FFFFFF;
+        font-size: 24px;
+        font-weight: bold;
+        font-family: "VodafoneBold", "VodafoneRegular", Arial, sans-serif;
+        top: 9px;
+        right: 16px;
+        position: absolute;
+    }
+}
+    .grid{
+        margin-top: 27px;
+    }
+    .btn {
+        width: 100%;
+        font-size: 14px;
+        height: 34px;
+        padding: 10px;
+
+    }
+    .btn-alt-light {
+        background: #fff;
+        color: #333;
+    }
+}

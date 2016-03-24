@@ -1,0 +1,39 @@
+<div class="messageContainer color-green" ng-if="vm.successMessage">{{vm.successMessage}}</div>
+<msg-container msg-list="vm.warning"></msg-container>
+<div class="title">
+    <h1>WILLKOMMEN</h1>
+    <h3>BEI VODAFONE OnePOS</h3>
+    <h6>Bitte wählen Sie eine Kategorie, um zu beginnen.</h6>
+</div>
+<ul class="items">
+    <li class="new-customer">
+        <ops-link ng-model="model1" ui-sref="customer.tariff({flowID: 0})">
+            <img src="/assets/images/dashboard/new-customer.png"/>
+            <span>Neukunden</span>
+        </ops-link>
+    </li>
+    <li class="order-overview">
+        <ops-link ng-model="model2" ui-sref="customer.ordersOverview">
+            <img src="/assets/images/dashboard/order-overview.png"/>
+            <span>Bestellübersicht</span>
+        </ops-link>
+    </li>
+    <li class="existing-customers">
+        <ops-link ng-model="model3" ui-sref="customerSearch.index">
+            <img src="/assets/images/dashboard/existing-customers.png"/>
+            <span>Bestandskunden</span>
+        </ops-link>
+    </li>
+    <li class="otelo">
+        <ops-link ng-model="model4" ui-sref="#">
+            <img src="/assets/images/dashboard/otelo.png"/>
+            <span>Otelo</span>
+        </ops-link>
+    </li>
+    <li class="kabel-deutschland">
+        <ops-link ng-model="model5" ui-sref="#">
+            <img src="/assets/images/dashboard/kabel-deutschland.png"/>
+            <span>Kabel Deutschland</span>
+        </ops-link>
+    </li>
+</ul>

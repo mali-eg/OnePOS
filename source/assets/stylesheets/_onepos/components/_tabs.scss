@@ -1,0 +1,63 @@
+/* ==========================================================================
+Tabs styles
+========================================================================== */
+//F21, F21.0
+.tab-st1{
+    // tab buttons
+    .tab-nav{
+        margin-bottom: 20px;
+        display: flex;
+        li{
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            border-bottom: 2px solid #EBEBEB;
+            //F21.1
+            // tab button
+            .tab-btn{
+                text-align: center;
+                font-family: $font-vodafoneRegular;
+                font-size: 18px;
+                color:#333;
+                padding:0 10px 15px;
+                display: block;
+                text-decoration: none;
+            }
+            //F21.2
+            // active tab
+            &.active{
+                // tab button
+                .tab-btn{
+                    border-bottom: 2px solid #007C93;
+                    font-family: $font-vodafoneBold;
+                    color:#007C93;
+                }
+            }
+        }
+        //inactive
+        &.inactive li, .inactive{
+            //F21.3
+            // tab button
+            .tab-btn{
+                color:#ccc;
+            }
+            //F21.4
+            // active tab
+            &.active{
+                // tab button
+                .tab-btn{
+                    border-bottom: 2px solid #ccc;
+                    color:#ccc;
+                }
+            }
+        }
+    }
+    // tab content
+    .tab-content .tab-pane{
+        display: none;
+        // active
+        &.active{
+            display: block;
+        }
+    }
+}

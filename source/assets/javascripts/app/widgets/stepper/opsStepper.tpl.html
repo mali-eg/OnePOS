@@ -1,0 +1,18 @@
+<!-- F9.3, F9.4, F9.6 -->
+<div class="progress-bar-container-st1">
+    <div class="progress-bar">
+        <div class="belt">
+            <div class="col w-100">
+                <ul class="steps">
+                    <li class="step" ng-repeat="(key, state) in statesList |  orderObjectBy:'index'"
+                    ng-class="{active:(state.index === selectedState.index),passed:(selectedState.index > state.index),skipped:state.isSkipped}">
+                        <span class="bubble">{{state.index+1}}</span>
+                        <span class="title">{{state.title}}</span>
+                    </li>
+                </ul>
+                <ops-link class="ico ico-size-40 ico-color-8 ico-round ico-save-blue btn-save" ng-hide="$parent.showFinalConfirmationBtn || $parent.hideCheckoutBtn" ng-click="$parent.saveBtn()"></ops-link>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- F9.3, F9.4, F9.6 -->

@@ -1,0 +1,152 @@
+<div class="shop-cart-modal">
+
+    <div class="titleBorderMain">
+        <h3>Additional data needed for the duplicated tariffs.</h3>
+
+        <div class="clear"></div>
+    </div>
+
+    <!--{{vm.selected.cart}}-->
+    {{vm.sim}}
+
+
+    <div class="notification-st notification-st1">
+        <i class="ico ico-note"></i>
+        <p>The shopping cart Iitem will be duplicated {{vm.value}} times.
+            Please review the data before duplicating and choose the number of duplications needed.</p>
+    </div>
+
+    <div class="cart_border">
+        <div class="col w-10">
+            <div class="mobile-icon"></div>
+        </div>
+        <div class="col w-90">
+            <div class="head">
+                <h3>{{vm.selectedCartName}}</h3>
+
+                <p>{{vm.selectedCartType}}&nbsp;und&nbsp;{{vm.selectedCartValue}}</p>
+            </div>
+            <ul class="tariff_plan" ng-repeat="tarrifPlan in vm.selectedCartProduct">
+                <li ng-hide="tarrifPlan.specification=='hardware' || tarrifPlan.specification=='sim-card'">{{tarrifPlan.specification}}&nbsp;(&nbsp;{{tarrifPlan.count}}&nbsp;)</li>
+            </ul>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+
+
+    <div ng-init="min = 1">
+        <h3 class="txt-st4">Additional information</h3>
+        <div class="cart_fields" scrollbar="{autoUpdate: true}"><!--ng-show="vm.counterValue"-->
+
+
+            <div>
+
+                <div  ng-repeat="element in vm.duplicateCart | slice:(min-1): vm.value">
+                    <div  ng-if="vm.cartType">
+                    <div class="col w-40 nop-l">
+
+                        <ops-textbox
+                            type="text"
+                            inner-id="{{element.id}}"
+                            ng-model="element.simValue"
+                            label="{{element.SIM}}{{element.id}}"
+                            ng-required="true">
+                        </ops-textbox>
+
+
+                    </div>
+                    <div class="col w-25">
+
+                        <ops-textbox
+                            type="text"
+                            inner-id="{{element.id}}"
+                            ng-model="element.imeiValue"
+                            label="{{element.IMEI}}{{element.id}}"
+                            ng-required="true">
+                        </ops-textbox>
+
+                    </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div  ng-repeat="element in vm.duplicateCart | slice:(min-1): vm.value">
+                    <div ng-if="vm.prepaid">
+                    <div class="col w-45 nop-l">
+
+                        <ops-textbox
+                            type="text"
+                            inner-id="{{element.id}}"
+                            ng-model="element.simValue"
+                            label="{{element.SIM}}{{element.id}}"
+                            ng-required="true">
+                        </ops-textbox>
+
+                    </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+
+                <div ng-repeat="element in vm.duplicateCart | slice:(min-1): vm.value" ng-if="vm.portClassic">
+                    <div >
+                    <div class="col w-30">
+                    <div class="selector">
+                        <ul class="form-list-st1" ng-if="vm.portClassic">
+                        <li class="label">{{element.simSelect}}{{element.id}}</li>
+                        <li>
+                        <ops-radio
+                            inner-id="{{element.simSelect}}{{element.id}}"
+                            ng-model="element.simSelectValue"
+                            value="VF Twin card"
+                            name="{{element.simSelect}}{{element.id}}"
+                            label="VF Twin card">
+                        </ops-radio>
+                        </li>
+                        <li>
+                        <ops-radio
+                            inner-id="{{element.id}}"
+                            ng-model="element.simSelectValue"
+                            value="NFC"
+                            name="{{element.id}}"
+                            label="NFC">
+                        </ops-radio>
+                        </li>
+                            <div class="clear"></div>
+
+                    </ul>
+                        <div class="clear"></div>
+                    </div>
+
+                </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="clear"></div>
+
+    </div>
+
+    <div class="notification-st notification-st3">
+        <i class="ico ico-note"></i>
+        <p>{{vm.value}} items have been duplicated</p>
+    </div>
+
+    <div class="grid">
+
+        <div class="col w-70">
+            &nbsp;
+        </div>
+
+        <div class="col w-30">
+            <div class="fm-submit">
+
+                <input class="btn btn-sml" ng-click="vm.confirm()" type="submit" name="clear"
+                       value="Confirm"/>
+            </div>
+        </div>
+    </div>
+</div>
+

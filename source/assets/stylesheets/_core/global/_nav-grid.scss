@@ -1,0 +1,52 @@
+.nav-grid {
+	.ng-menu {
+		margin-bottom: 35px;
+	}
+
+	.ng-content {
+		padding-bottom: 15px;
+	}
+}
+
+@media only screen and (min-width: $mq-lrg) {
+
+	.nav-grid {
+		overflow: hidden;
+		position: relative;
+
+		&:before {
+			content: '';
+			box-shadow: -6px 0 6px -3px $light-grey inset;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 23%;
+			margin-left: -6px;
+			z-index: 1;
+			width: 8px;
+		}
+
+		h1 {
+			margin-left: 0;
+		}
+		.belt {
+			padding-right: 0;
+		}
+
+		.ng-col {
+			float: left;
+		}
+
+		.ng-menu {
+			width: 23%;
+			border-top: 1px solid $light-grey;
+			position: relative;
+		}
+
+		.ng-content {
+			padding: 0 2px 15px 30px;
+			width: 77%;
+			position: relative;
+		}
+	}
+}

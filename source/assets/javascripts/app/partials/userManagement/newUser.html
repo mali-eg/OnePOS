@@ -1,0 +1,77 @@
+<div class="mt-40 mb-40">
+    <div class="cluster-st1 mb-20">
+        <form name="vm.newUserId" ng-submit="vm.newUserId.$valid && vm.submit()" autocomplete="off" role="form" novalidate>
+            <h2 class="title-st1">Add new user</h2>
+            <msg-container msg-list="vm.messages1" disable-error-listing="true"></msg-container>
+            <ops-tabs ng-model="vm.userTabs">
+                <ops-pane title="General data" id="generalData">
+                    <h3 class="title-st2">Contact data</h3>
+                    <div class="grid">
+                        <div class="col w-40">
+                            <ops-textbox type="text" name="mTanPhoneNumber" ng-model="vm.mTanPhoneNumber" id="mTanPhoneNumber" ng-required="true" label="Contact Number ( used for mTAN )" auto-focus="true"></ops-textbox>
+                        </div>
+                    </div>
+                    <hr class="hr-st3">
+                    <h3 class="title-st2">Profile data</h3>
+                    <div class="grid">
+                        <div class="col w-40">
+                            <ops-textbox type="text" name="title" ng-model="vm.title" id="title" ng-required="true" label="Title"></ops-textbox>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="col w-40">
+                            <ops-textbox type="text" name="firstName" ng-model="vm.firstName" id="firstName" ng-required="true" label="Name"></ops-textbox>
+                        </div>
+                        <div class="col w-40">
+                            <ops-textbox type="text" name="familyName" ng-model="vm.familyName" id="familyName" ng-required="true" label="Family name"></ops-textbox>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="col w-40">
+                            <ops-textbox type="text" name="usernamePuid" ng-model="vm.usernamePuid" id="usernamePuid" ng-required="true" label="Username ( PUID )"></ops-textbox>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="col w-100">
+                            <ops-select ng-model="vm.shop" label="Selected Shop">
+                                <li value="ele" ops-option="ele in vm.shopListData">
+                                    <a>{{ele.shopName}}</a>
+                                </li>
+                            </ops-select>
+                        </div>
+                    </div>
+                </ops-pane>
+                <ops-pane title="Manage VO-IDs {{vm.voidDefaultListData.length ? '( '+ vm.voidDefaultListData.length + ' selected )' : ''}}" id="manageVoid">
+                    <h3 class="title-st2">Please choose the VO-IDs. this user has access to.</h3>
+                    <div class="grid">
+                        <div class="col w-40">
+                            <ops-select ng-model="vm.defaultVoid" label="Default VOID">
+                                <li value="void.voID" ops-option="void in vm.voidDefaultListData">
+                                    <a>{{void.voDescription}}</a>
+                                </li>
+                            </ops-select>
+                        </div>
+                    </div>
+                    <div class="mb-20">
+                        <table class="table-st1">
+                            <tr>
+                                <th>Access</th>
+                                <th>VO-ID</th>
+                            </tr>
+                            <tr ng-repeat="void in vm.voidListData">
+                                <td>
+                                    <ops-checkbox inner-id="void-{{void.voID}}" ng-model="void.checked" ng-click="vm.voidsChanged()" name="voidList[]" ng-init="void.checked=true" label=""></ops-checkbox>
+                                </td>
+                                <td><label for="void-{{void.voID}}">{{void.voDescription}}</label></td>
+                            </tr>
+                        </table>
+                    </div>
+                </ops-pane>
+            </ops-tabs>
+            <div class="buttons">
+                <input type="button" class="btn-st btn-st1" value="Cancel" ng-click="vm.cancelAction()">
+                <input type="submit" class="btn-st btn-st2 f-right" value="Save & send SMS" ng-disabled="!vm.newUserId.$valid">
+            </div>
+        </form>
+    </div>
+</div>

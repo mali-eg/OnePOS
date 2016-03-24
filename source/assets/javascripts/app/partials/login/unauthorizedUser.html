@@ -1,0 +1,17 @@
+<form name="loginForm" ng-submit="vm.submit()" role="form" autocomplete="off" novalidate>
+    <div class="headerContainer">
+        <h2>OnePOS</h2>
+    </div>
+    <div class="messageContainer" ng-if="!vm.errorMessage">Bitte füllen Sie dieses Formular aus,  um ein neuen Passwort zu setzen.</div>
+    <div class="messageContainer color-red" ng-show="vm.errorMessage" error-data>{{vm.errorMessage}}</div>
+
+    <div class="footerContainer">
+        <div class="grid">
+            <div class="col w-50 fr">
+                <button type="submit" class="btn-st btn-st2"
+                        ng-disabled="loginForm.$invalid">Schließen
+                </button>
+            </div>
+        </div>
+    </div>
+</form>

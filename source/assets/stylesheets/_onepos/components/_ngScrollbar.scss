@@ -1,0 +1,155 @@
+/* ==========================================================================
+scroll styles
+========================================================================== */
+
+// horizontal scroll styles
+//F14.2
+.scroll-x-cont-st1 {
+    height: 144px;
+    //overflow: hidden;
+
+    .scroll-bar {
+        height: 5px;
+        top: auto;
+        bottom: 0;
+        right: 0;
+        cursor: pointer;
+    }
+}
+
+// vertical scroll styles
+//F14, F14.1
+.scroll-y-cont-st1 {
+    height: 400px;
+}
+
+//F12 Content NAV
+.scroll-y-cont-st2 {
+    height: 375px;
+}
+
+//F7.1
+.scroll-y-cont-st2 {
+    max-height: 507px;
+}
+
+/* ==========================================================================
+scroll default style
+========================================================================== */
+.scroll-viewport {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+}
+
+.scroll-overview {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.scroll-bar,
+.scrollbar {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 5px;
+    transition: 0.5s ease-in-out opacity;
+    height: 100%;
+    z-index: 10;
+    @include borderRadius();
+    background-color: #ebebeb;
+}
+
+.scroll-bar.disable {
+    display: none;
+}
+
+.scroll-bar.visible {
+    opacity: 1 !important;
+}
+
+.scroll-bar:hover {
+    opacity: 1 !important;
+}
+
+.scroll-thumb,
+.mousearea {
+    min-height: 5px;
+    width: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    z-index: 20;
+    @include borderRadius();
+    background-color: $red;
+}
+
+body.scroll-no-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/** Carousel scrollbar **/
+.scrollbarContainer {
+    height: 5px;
+    top: auto;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    position: relative;
+}
+.scrollbar {
+    top: auto;
+    width: 100%;
+    height: 5px;
+    left: 0px;
+    right: 0;
+}
+
+.scrollbar .handle {
+    width: 100px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.mousearea {
+    width: 100%;
+}
+
+.carouselContainer {
+    position: relative;
+
+    .nextPage,
+    .prevPage {
+        width: 17px;
+        height: 26px;
+        background-image: url("/assets/images/customer/carouselArrows.png");
+        background-position: -117px 0;
+        background-repeat: no-repeat;
+        text-indent: -9999px;
+        position: absolute;
+        top: 54px;
+        right: -47px;
+        cursor: pointer;
+
+        &.disabled {
+            display: none;
+        }
+    }
+
+    .prevPage {
+        right: auto;
+        left: -17px;
+        background-position: 0 0;
+    }
+}

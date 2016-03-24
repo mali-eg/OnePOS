@@ -1,0 +1,67 @@
+<form name="vm.availabilityCheckForm" ng-submit="vm.submit($event,false)" autocomplete="off" role="form" novalidate>
+    <h2 class="title-st1">availability check</h2>
+    <div class="overlay-content">
+        <div class="grid">
+            <div class="col w-40">
+                <ops-textbox type="text" ng-required="true" class="mb-0" name="street" ng-model="vm.street" id="street" label="Street" auto-focus="true"></ops-textbox>
+            </div>
+            <div class="col w-20">
+                <ops-textbox type="text" ng-required="true" class="mb-0" name="number" ng-model="vm.number" id="number" label="Number"></ops-textbox>
+            </div>
+            <div class="col w-20">
+                <ops-textbox type="text" ng-required="true" class="mb-0" name="postcode" ng-model="vm.postcode" id="postcode" label="Postcode"></ops-textbox>
+            </div>
+            <div class="col w-20">
+                <ops-textbox type="text" ng-required="true" class="mb-0" name="city" ng-model="vm.city" id="city" label="City"></ops-textbox>
+            </div>
+        </div>
+        <div class="mt-20">
+            <msg-container msg-list="vm.messages1" disable-error-listing="true"></msg-container>
+            <div ng-show="vm.dispalyList">
+                <ops-radio inner-id="address-1" ng-model="vm.address" name="address" value="{{vm.lastStreet}}" label="{{vm.lastStreet}}"></ops-radio>
+                <hr class="hr-st3 mt-20 mb-20">
+                <ops-radio inner-id="address-{{listItem.id}}" ng-model="vm.address" name="address" value="{{$index}}" label="{{listItem.text}}" class="mb-20" ng-repeat="listItem in vm.dispalyList"></ops-radio>
+            </div>
+        </div>
+    </div>
+    <div class="btns" ng-show="!vm.results">
+        <button class="btn-st btn-st1" type="button" ng-click="vm.closeAction($event)">Cancel</button>
+        <button class="btn-st btn-st2 f-right" type="submit" ng-disabled="!vm.availabilityCheckForm.$valid" ng-show="!vm.messages1.length">Check</button>
+        <button class="btn-st btn-st1 f-right" type="submit" ng-disabled="!vm.availabilityCheckForm.$valid" ng-show="vm.messages1.length">Check again</button>
+    </div>
+    <div ng-show="vm.results">
+        <div class="btns">
+            <button class="btn-st btn-st1" type="submit">Check again</button>
+        </div>
+        <div class="overlay-content mt-30">
+            <h2 class="title-st1">Available tariffs in your area</h2>
+            <h3 class="title-st2">Kabel Voice / Internet</h3>
+            <msg-container msg-list="vm.messages2" disable-error-listing="true"></msg-container>
+            <ul class="list-st2 mb-30">
+                <li ng-repeat="itemList1 in vm.results.VodafoneVoice0.textList"><i class="ico ico-size-28 ico-svg ico-check-green mr-20"></i> {{itemList1}}</li>
+            </ul>
+
+            <h3 class="title-st2">Vodafone Voice / Internet</h3>
+            <msg-container msg-list="vm.messages3" disable-error-listing="true"></msg-container>
+            <ul class="list-st2 mb-30">
+                <li ng-repeat="itemList2 in vm.results.VodafoneVoice1.textList"><i class="ico ico-size-28 ico-svg ico-check-green mr-20"></i> {{itemList2}}</li>
+            </ul>
+
+            <h3 class="title-st2">Vodafone TV for DSL</h3>
+            <msg-container msg-list="vm.messages4" disable-error-listing="true"></msg-container>
+            <ul class="list-st2 mb-30">
+                <li ng-repeat="itemList3 in vm.results.VodafoneVoice2.textList"><i class="ico ico-size-28 ico-svg ico-check-green mr-20"></i> {{itemList3}}</li>
+            </ul>
+
+            <h3 class="title-st2">Vodafone Voice / Internet LTE</h3>
+            <msg-container msg-list="vm.messages5" disable-error-listing="true"></msg-container>
+            <ul class="list-st2 mb-30">
+                <li ng-repeat="itemList4 in vm.results.VodafoneVoice3.textList"><i class="ico ico-size-28 ico-svg ico-check-green mr-20"></i> {{itemList4}}</li>
+            </ul>
+        </div>
+        <div class="btns">
+            <button class="btn-st btn-st1" type="button" ng-click="vm.closeAction($event)">Cancel</button>
+            <button class="btn-st btn-st1 f-right" ng-click="vm.submit($event,'selection')">Tariff selection</button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,66 @@
+/* ==========================================================================
+Overlays styles
+========================================================================== */
+// hide body scroll
+body.modal-open{
+    overflow: hidden !important;
+}
+//F7.0, F7.1, F7.2
+.overlay-st1{
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+
+    // layout
+    .overlay-wrap{
+        display: table;
+        width: 700px;
+        margin: auto;
+        height: 100%;
+    }
+    .overlay-cell{
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .overlay-body{
+        position: relative;
+        background: $white;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.24);
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        padding: 30px;
+        z-index: 9999;
+        margin: 30px 0;
+    }
+    .overlay-body .btn-close{
+        position: absolute;
+        right:10px;
+        top: 10px;
+        width: 20px;
+        height: 20px;
+    }
+    .overlay-content{
+        margin-bottom: 20px;
+
+        &last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+.overlay-bg-st1{
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: rgba(255,255,255,0.75);
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+}

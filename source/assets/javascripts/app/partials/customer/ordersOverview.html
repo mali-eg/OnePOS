@@ -1,0 +1,231 @@
+<div class="orders-overview-wrapper">
+    <!-- OPS-1686 Customer Header -->
+    <customer-header customer-header-data="customerHeader"></customer-header>
+    <!-- OPS-1686 Customer Header end -->
+    <div class="box-group top-box-group first_box container2">
+        <div class="grid">
+            <div class="col w-100">
+                <div class="cf search-header">
+                    <h3>Suchkriterien</h3>
+                    <a class="lnk-reset-filter" ng-click="vm.resetFilter()">alles anzeigen</a>
+                </div>
+            </div>
+        </div>
+        <div class="formContainer">
+            <div class="col w-40">
+                <ops-select ng-model="vm.filter.category" label="ProduktKategorie">
+                    <li value="postpaid" class="nya-bs-option">
+                        <a>Postpaid</a>
+                    </li>
+                    <li value="prepaid" class="nya-bs-option">
+                        <a>Prepaid</a>
+                    </li>
+                    <li value="fixednet" class="nya-bs-option">
+                        <a>Fixed Net</a>
+                    </li>
+                </ops-select>
+            </div>
+            <div class="col w-20">
+                <ops-select ng-model="vm.filter.businessCase" name="filter_business_case" label="Geschäftsfall">
+                    <li value="1" class="nya-bs-option">
+                        <a>Vertragsverlängerung</a>
+                    </li>
+                    <li value="2" class="nya-bs-option">
+                        <a>DC Wechsel</a>
+                    </li>
+                    <li value="3" class="nya-bs-option">
+                        <a>CallYa Registrierung</a>
+                    </li>
+                    <li value="4" class="nya-bs-option">
+                        <a>Call Ya Portierung</a>
+                    </li>
+                    <li value="5" class="nya-bs-option">
+                        <a>MF Aktivierung</a>
+                    </li>
+                    <li value="6" class="nya-bs-option">
+                        <a>FN Aktivierung</a>
+                    </li>
+                    <li value="7" class="nya-bs-option">
+                        <a>Bundle</a>
+                    </li>
+                    <li value="8" class="nya-bs-option">
+                        <a>Portierungsauftrag</a>
+                    </li>                   
+                </ops-select>
+            </div>
+            <div class="col w-40">
+                <ops-select ng-model="vm.filter.advisorName" name="filter_berater_name" label="Name Berater">
+                    <li value="1" class="nya-bs-option">
+                        <a>Name Berater</a>
+                    </li>
+                    <li value="2" class="nya-bs-option">
+                        <a>Name Berater</a>
+                    </li>
+                    <li value="3" class="nya-bs-option">
+                        <a>Name Berater</a>
+                    </li>
+                </ops-select>
+            </div>
+            <div class="clear"></div>
+            <div class="col w-40">
+                <div class="fm-data">
+                    <input id="filter_void"
+                           name="filter_void"
+                           ng-blur="vm.applyFilter()"
+                           ng-keyup="$event.keyCode == 13 && vm.applyFilter()"
+                           type="text"
+                           ng-model="vm.filter.voID"
+                           required ng-minlength="1">
+                    <label>VOID</label>
+                </div>
+            </div>
+            <div class="col w-20">
+                <div class="fm-data">
+                    <input id="filter_start_date" name="filter_start_date" type="text"
+                           ng-blur="vm.applyFilter()"
+                           ng-keyup="$event.keyCode == 13 && vm.applyFilter()"
+                           ng-model="vm.filter.startDate"
+                           required ng-minlength="1">
+                    <label>Startdatum</label>
+                    <div class="date"></div>
+                </div>
+            </div>
+            <div class="col w-20">
+                <div class="fm-data">
+                    <input id="filter_end_date" name="filter_end_date" type="text"
+                           ng-blur="vm.applyFilter()"
+                           ng-keyup="$event.keyCode == 13 && vm.applyFilter()"
+                           ng-model="vm.filter.endDate"
+                           required ng-minlength="1">
+                    <label>Endedatum</label>
+                    <div class="date"></div>
+                </div>
+            </div>
+            <div class="col w-20">
+                <ops-select ng-model="vm.filter.status" name="filter_status" label="Status">
+                     <li value="1" class="nya-bs-option">
+                        <a>Draft</a>
+                    </li>
+                     <li value="2" class="nya-bs-option">
+                        <a>Created</a>
+                    </li>
+                     <li value="3" class="nya-bs-option">
+                        <a>Sent</a>
+                    </li>
+                     <li value="4" class="nya-bs-option">
+                        <a>In Progress</a>
+                    </li>
+                     <li value="5" class="nya-bs-option">
+                        <a>Activated</a>
+                    </li>
+                     <li value="6" class="nya-bs-option">
+                        <a>Declined</a>
+                    </li>                     
+                </ops-select>
+            </div>
+            <div class="clear"></div>
+            <div class="col w-40">
+                <div class="fm-data">
+                    <input id="search_term" name="search_term" type="text"
+                           ng-model="vm.search.searchTerm"
+                           required ng-minlength="1">
+                    <label>Suchbegriff</label>
+                </div>
+            </div>
+            <div class="col w-60">
+                <div class="cf search-bottom-box">
+                    <ops-checkbox
+                        inner-id="advanced-search"
+                        ng-class="showAdvancedSearch ? 'adv-search-active' : ''"
+                        ng-model="vm.search.advancedSearch"
+                        name="advanced-search"
+                        label="Erweiterte Suche"
+                        >
+                    </ops-checkbox>
+                    <div class="fm-submit">
+                        <input class="btn btn-sml" type="submit" name="search" value="Suchen"
+                               ng-click="vm.applySearchBtn()">
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="box-group top-box-group container2">
+        <div class="grid">
+            <div class="col w-100">
+                <div class="cf search-header">
+                    <h3>Bestellungen ({{vm.totalCount}})</h3>
+                </div>
+            </div>
+        </div>
+        <div class="formContainer">
+            <div class="col w-30">
+                <ul class="orders-box" scrollbar="{autoUpdate: true}">
+                    <li id="order-{{order.orderID}}" class="orders-item" ng-click="vm.selectOrder(order.orderID)"
+                        ng-repeat="order in vm.ordersFilterable"
+                        ng-class="vm.selectedOrder.orderID == order.orderID ? 'order-selected' : ''">
+                        <div class="orders-item-inner">
+                            <div class="orders-item-name">{{order.roles.agent.name}}</div>
+                            <div class="orders-item-status">Status: {{order.status}}</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col w-70">
+                <div class="order-header" ng-show="vm.selectedOrder.orderID.length > 0">
+                    <div class="order-agent">
+                        {{vm.selectedOrder.agent}}
+                        <div class="order-void">VOID: {{vm.selectedOrder.voID}}</div>
+                    </div>
+                    <div class="order-created">
+                        <span>Bestelldatum</span><br/>
+                        {{vm.selectedOrder.created | date:'MM/dd/yyyy'}}
+                    </div>
+                    <div class="order-modified">
+                        <span>Letzte Aktion</span><br/>
+                        {{vm.selectedOrder.lastModified | date:'MM/dd/yyyy'}}
+                    </div>
+                </div>
+                <accordion dataaccordion="radio" ng-show="vm.selectedOrder.orderID.length > 0">
+                    <li id="order-item-{{item.id}}" ng-repeat="item in vm.selectedOrder.items" accordion-item-repeat>
+                        <a class="ac-head">
+                            <i class="ico ico-size-20 ico-bor-color-2 ico-arrows-down"></i>
+                            <i class="ico ico-size-20 ico-bor-color-2 ico-arrows-up"></i>
+
+                            <div class="item-header-name">{{item.name}}</div>
+                            <div class="item-header-type">{{item.type}}</div>
+                            <div class="item-header-status">{{item.status}}</div>
+                        </a>
+                        <div class="ac-body" style="display: none;">
+                            <div class="item-content">
+                                <div class="grid item-det-row">
+                                    <div class="col w-30" ng-repeat="detail in item.details">
+                                        <div class="item-det-label">{{detail.key}}</div>
+                                        <div class="item-det-value">{{detail.value}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </accordion>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="box-group top-box-group container2">
+        <div class="grid">
+            <div class="btn-group-bottom col w-100">
+
+                <a class="btn btn-sml" ng-click="vm.loadShoppingCart()">Warenkorb öffnen</a>
+
+                <a class="btn btn-sml" ng-click="vm.openSummaryOrCart($event)">{{vm.summaryOrCart == 'summary' ?  'Zusammenfassung anzeigen' : 'Warenkorb öffnen'}}</a>
+
+                <a class="btn btn-sml">Löschen</a>
+                <a class="btn btn-sml">Aktualisieren</a>
+                <a class="btn btn-sml">Dokumente drucken</a>
+                <a class="btn btn-sml">Bestellung finalisieren</a>
+            </div>
+        </div>
+    </div>
+</div>

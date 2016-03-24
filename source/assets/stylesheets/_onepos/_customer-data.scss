@@ -1,0 +1,699 @@
+.mainContent {
+
+
+    .fl {
+        float: left
+    }
+    .m0 {
+        margin: 0px
+    }
+    .mt {
+        margin-top: 0px !important;
+    }
+    .mb {
+        margin-bottom: 0px
+    }
+    .space30 {
+        margin-top: 30px
+    }
+    .space10 {
+        margin-top: 10px
+    }
+    .space40 {
+        margin-top: 40px
+    }
+    .heading{
+        padding: 30px 90px 20px 90px;
+    }
+    .m070{
+        margin:0px 70px ;
+    }
+    .ml90 {
+        margin-left: 90px;
+    }
+    .ml37{
+        margin-left: -37px;
+    }
+    .mBtn {
+        margin: 34px auto;
+    }
+    .btnWidth {
+        width: 260px
+    }
+
+
+    .bold {
+        font-weight: bold
+    }
+    select {
+        color: #fff;
+        border: none;
+        box-shadow: none;
+        margin-top: 3px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+
+        option {
+            color: #333;
+        }
+    }
+
+    .nop-l {
+        padding-left: 0px !important;
+    }
+    .box-group {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .box-group.top-box-group {
+        .box-set.box-set-left {
+            float: left;
+        }
+        .box-set.box-set-right {
+            float: right;
+        }
+    }
+
+    .box-group.bottom-box-group {
+        .box-set.box-set-left {
+            float: left;
+        }
+        .box-set.box-set-right {
+            float: right;
+        }
+    }
+
+    .container2 {
+        background: #fff;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.24);
+        @include border-radius(3px);
+        height: auto;
+        margin-bottom: 10px;
+
+        &.first_box {
+            @include border-radius(0 0 3px 3px);
+        }
+
+        .block_footer {
+            text-align: center;
+
+            .account-icon {
+                background-image: url("/assets/images/customer/account.svg");
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 60px;
+            }
+            .group-icon {
+                background-image: url("/assets/images/customer/group.svg");
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 60px;
+            }
+            .express-icon {
+                background-image: url("/assets/images/customer/express-checkout.svg");
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 60px;
+            }
+            .search-icon {
+                background-image: url("/assets/images/customer/refresh.svg");
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 60px;
+            }
+            .refresh-icon {
+                background-image: url("/assets/images/customer/refresh.svg");
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 60px;
+            }
+            a {
+                font-size: 16px;
+                color: #9c2aa0;
+                font-weight: bold;
+                font-family: inherit;
+                text-decoration: none;
+            }
+        }
+        .br {
+            border-right: 1px solid #333333;
+        }
+    }
+
+    .deleteCart {
+        padding: 15px 66px;
+        background-color: #999999;
+        background-image: url(/assets/images/dashboard/info-notiification-icon.png);
+        background-repeat: no-repeat;
+        background-position: 20px 10px;
+        background-size: 30px;
+        color: #fff;
+        border-radius: 3px;
+        h4 {
+            margin-bottom: 0px;
+            font-size: 16px;
+        }
+    }
+.content{padding: 0px !important;
+margin-top: 40px;}
+    .formContainer {
+        padding: 0px 90px 0px 60px;
+        font-family: 'VodafoneRegular', Arial, sans-serif;
+        .customer_title2, .customer_title3 {
+            margin-left: 0px;
+        }
+        .space2 {
+            margin-top: 2px
+        }
+        .space3 {
+            margin-top: 3px
+        }
+        .space10 {
+            margin-top: 10px
+        }
+        .space13 {
+            margin-top: 13px
+        }
+        .space15 {
+            margin-top: 15px
+        }
+        .space16 {
+            margin-top: 16px
+        }
+        .space20 {
+            margin-top: 20px
+        }
+        .space23 {
+            margin-top: 23px
+        }
+        .space25 {
+            margin-top: 25px
+        }
+        .space40 {
+            margin-top: 40px;
+        }
+
+        .line{
+            border-top: 1px solid #666;
+            margin-bottom: 35px;
+            margin-top: 0px;
+            margin-left: 30px;
+        }
+
+        input[type="text"], input[type ="date"], input[type="text1"], input[type="tel"], input[type="email"],
+        input[type="password"], select, textarea, input[type="text"]:focus, input[type ="date"]:focus,
+        input[type="text1"]:focus, input[type="tel"]:focus, input[type="email"]:focus,
+        input[type="password"]:focus, select:focus, textarea:focus {
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            -ms-border-radius: 0;
+            -o-border-radius: 0;
+            border-radius: 0;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            -ms-box-shadow: none;
+            -o-box-shadow: none;
+            box-shadow: none;
+            border: none;
+            border-bottom: 1px solid #cccccc;
+            font-size: 16px;
+            padding: 0 0 5px 0;
+            width: 100%;
+
+        }
+
+        input[type="text"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder,
+        input[type="email"]::-webkit-input-placeholder {
+            color: #117c93;
+            font-weight: 500;
+            margin-top: 10px
+        }
+        .required::-webkit-input-placeholder:after {
+            content: '*';
+            color: #e60000;
+            margin-left: 2px;
+        }
+        input[type="text"]:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder,
+        input[type="email"]:-ms-input-placeholder {
+            color: #117c93;
+            font-weight: 500;
+            margin-top: 10px
+        }
+        .required:-ms-input-placeholder:after {
+            content: '*';
+            color: #e60000;
+            margin-left: 2px;
+        }
+        input[type="text"]:-moz-placeholder, input[type="password"]:-moz-placeholder,
+        input[type="email"]:-moz-placeholder {
+            color: #007c92;
+            font-weight: 500;
+            margin-top: 10px
+        }
+
+        .required:-moz-placeholder:after {
+            content: '*';
+            color: #e60000;
+            margin-left: 2px;
+        }
+
+        textarea, textarea:focus {
+            width: 100%;
+            min-height: 127px;
+            border: 1px solid #ccc;
+            margin-top: 22px;
+            font-size: 12px;
+            padding: 4px 8px;
+
+        }
+        textarea:-ms-input-placeholder, textarea::-moz-placeholder, textarea::-webkit-input-placeholder {
+            color: #007c92;
+        }
+        .fm-radio {
+            margin-bottom: 10px;
+        }
+
+        .fm-data {
+
+            padding: 10px 0px 30px 0px;
+            margin-top: 10px;
+            position: relative;
+
+            .fm-select {
+                padding: 0px;
+                position: relative;
+
+                span {
+                    top: 1px;
+                    padding: 0px 0px 0px 0px;
+                    margin-right: 2px;
+                }
+            }
+
+            span {
+                color: #E60000;
+            }
+
+            input {
+                font-size: 16px;
+                color: #117c93;
+                font-family: inherit;
+                padding-bottom: 5px;
+                display: block;
+            }
+
+            label {
+                color: #117c93;
+                font-size: 18px;
+                font-weight: normal;
+                position: absolute;
+                pointer-events: none;
+                top: 10px;
+                transition: 0.2s ease all;
+                -moz-transition: 0.2s ease all;
+                -webkit-transition: 0.2s ease all;
+            }
+            input:focus {
+                outline: none;
+                color: #117c93;
+            }
+
+            /* active state */
+            input:focus ~ label, input:valid ~ label,
+            .selectric-open ~ label {
+                top: -20px;
+                font-size: 14px;
+                color: #666666;
+            }
+
+            /* active state */
+            input:focus ~ .highlight {
+                -webkit-animation: inputHighlighter 0.3s ease;
+                -moz-animation: inputHighlighter 0.3s ease;
+                animation: inputHighlighter 0.3s ease;
+            }
+
+            label {
+                color: #117c93;
+                font-size: 18px;
+                font-weight: normal;
+                position: absolute;
+                pointer-events: none;
+                /* top: 0px;*/
+                transition: 0.2s ease all;
+                -moz-transition: 0.2s ease all;
+                -webkit-transition: 0.2s ease all;
+            }
+
+            /* active state */
+            label.active {
+                top: -20px;
+                font-size: 14px;
+                color: #666666;
+            }
+
+        }
+        .fm-check {
+            margin-bottom: 10px;
+            display: inline;
+            label {
+                margin-bottom: 10px;
+            }
+        }
+
+        .sub_title span {
+            font-size: 18px;
+            font-family: inherit;
+            color: #9b9b9b;
+        }
+        .i-arrow-down-b-xxsml {
+            height: 12px;
+            width: 15px;
+            background-position: 0px -1884px;
+            cursor: pointer;
+
+        }
+        .i-arrow-up-b-xxsml {
+            height: 12px;
+            width: 15px;
+            background-position: 0px -3049px;
+            cursor: pointer;
+        }
+
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 14px;
+        height: 34px;
+        padding: 10px;
+        margin-top: 10px;
+
+    }
+    .btn-alt-light {
+        background: #fff;
+        color: #333;
+        margin-top: 10px;
+    }
+
+    .customer-data-wrapper {
+        /* removed by asaber margin: 20px 0; */
+
+        .mod-accordion .ac-body{
+            background: none;
+        }
+        .mod-accordion .ac-head{
+            display: block;
+            padding: 12px 40px 10px 90px;
+            font-size: 16px;
+            position: relative;
+            z-index: 1;
+            font-size: 20px;
+            color: #333;
+            font-family: "VodafoneLight", Arial, sans-serif;
+        }
+        .mod-accordion{
+            box-shadow: none;
+        }
+        .mod-accordion .ac-active{
+            box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            padding: 15px;
+            margin-bottom: 10px;
+            min-height: 640px;
+        }
+        .container, .container2 {
+
+            label, .fm-label, .fm-submit .btn {
+                width: 100%;
+            }
+            .titleBorder {
+                color: #333333;
+                padding-bottom: 45px;
+                border-bottom: 2px solid #cccccc;
+                margin-bottom: 10px;
+
+            }
+
+            .customer_title1, .customer_title2, .customer_title3, .customer_title6 {
+                font-size: 24px;
+                font-family: "VodafoneLight", "VodafoneRegular", Arial, sans-serif;
+
+            }
+            .customer_title1 {
+                font-color: #333333;
+                margin-bottom: 11.5px;
+            }
+            .customer_title4 {
+                font-size: 12px;
+                font-family: "VodafoneRegular";
+                color: #666666;
+                margin-top: 20px;
+                font-weight: 500;
+            }
+
+            .customer_title5 {
+                font-size: 16px;
+                font-family: "VodafoneRegular";
+                color: #333333;
+                margin-top: 20px;
+                margin-bottom: 17px;
+            }
+            .customer_title7, .customer_title8 {
+                font-size: 18px;
+                font-family: "VodafoneRegular";
+                color: #333333;
+                margin-top: 26.5px;
+                margin-bottom: 17px;
+                font-weight: bold;
+            }
+            .customer_title8 {
+                margin-top: 0px
+            }
+
+            .customer_title, .customer_title2, .customer_title3, .customer_title6 {
+                color: #4a4a4a;
+                margin-top: 5px;
+            }
+
+            .customer_title3 {
+                margin-bottom: 20px
+            }
+
+            .customer_title6 {
+                margin-bottom: 0px;
+            }
+
+            .summary_headTitle {
+                margin-top: 20px;
+                margin-left: 0px;
+                font-size: 20px;
+                font-family: "Arial-MT", sans-serif;
+                color: #333333;
+            }
+
+            .customer_border {
+                border-bottom: 5px solid #ebebeb;
+                margin: 30px 90px;
+            }
+
+            .summary_part_border {
+                margin: 20px 0;
+                border-width: 5px;
+                border-color: #666;
+            }
+
+            .list-apps {
+                .panel {
+                    background-color: #fff;
+                    padding-top: 0px;
+                    margin-bottom: 20px;
+
+                    .head {
+                        background: #f4f4f4;
+                        border-radius: 0px 0px 3px 3px;
+                        margin: 0 -20px;
+                        padding: 25px 0px 15px 20px;
+
+                        a:link, a:hover, a:visited, a:focus {
+                            text-decoration: none;
+                        }
+
+                        .head_tarrif {
+                            color: #E60000;
+                            font-size: 20px;
+                            margin-bottom: 0;
+                            font-weight: 700;
+
+                            span {
+                                color: #E60000;
+                                font-size: 20px;
+                                margin-bottom: 0;
+                                font-weight: 100;
+                            }
+                        }
+                    }
+
+                    .icon {
+                        background-image: url(/assets/images/bitmap.png), url(/assets/images/oval-1.png);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        padding-right: 17px;
+                        margin-right: 10px;
+                    }
+                    .icon2 {
+                        background-image: url(/assets/images/bitmap2.png), url(/assets/images/oval-1.png);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        padding-right: 17px;
+                        margin-right: 10px;
+                    }
+                    .icon3 {
+                        background-image: url(/assets/images/bitmap3.png), url(/assets/images/oval-1.png);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        padding-right: 17px;
+                        margin-right: 10px;
+                    }
+                    .tarrif {
+                        color: #333333;
+                        padding-bottom: 110px;
+                        border-bottom: 1px solid #e1e1e1;
+                        margin-top: 15px;
+                        margin-bottom: 20px;
+
+                        p {
+                            font-size: 14px;
+                            float: left;
+                            width: 100%;
+                            font-family: "VodafoneLight", "VodafoneRegular", ArialMT;
+                            line-height: 20px;
+                            font-weight: bold;
+                        }
+                    }
+
+                    h3 {
+                        padding-bottom: 25px;
+                        border-bottom: 1px solid #e1e1e1;
+                        float: left;
+                        width: 100%;
+                        color: #E60000;
+                        padding-top: 15px;
+
+                        a, a:link, a:hover, a:visited, a:focus {
+                            text-decoration: none;
+                            color: #E60000;
+                        }
+
+                    }
+                }
+            }
+        }
+        .date {
+            background-image: url(/assets/images/dashboard/date.svg);
+            background-repeat: no-repeat;
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            right: -5px;
+            top: 11px;
+        }
+
+        //summary data
+        .tg-accord, .tg-accord-lrg {
+            margin-top: 15.8px;
+        }
+
+        .tg-accord-lrg .tg-head, .tg-dropdown .tg-accord-lrg .tg-head {
+            text-decoration: none
+        }
+
+        .summaryTitle {
+            color: #666666;
+            font-size: 12px;
+            font-family: "VodafoneRegular", Arial, sans-serif;
+            margin-bottom: 12px;
+        }
+
+
+        .list-lined {
+            margin-bottom: 15px;
+            /*border: 1px dotted #979797;*/
+            padding: 0px 70px;
+        }
+
+    }
+
+}
+
+.hidden {
+    display: none
+}
+
+ul li span i {
+    position: absolute;
+    right: 0px;
+    top: 15px;
+}
+
+.dropdown {
+    margin-top: -3px;
+    .i-arrow-up-b-xxsml {
+        margin-right: 6px;
+    }
+}
+
+.dropdown-main {
+    border: 1px solid #ccc;
+    border-width: 0px 1px 1px 1px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    z-index: 100000;
+    box-shadow: -1px 1px 1px #ccc;
+}
+
+.dropdown-main li {
+    padding: 5px 10px;
+}
+
+.dropdown-main li span {
+    cursor: pointer;
+    font-size: 16px;
+    color: #333333 !important;
+}
+
+.dropdown-main li:hover {
+    background: #F4F4F4;
+    cursor: pointer;
+}
+
+.dropdown-border {
+    border: 1px solid #ccc;
+    border-width: 0px 1px 1px 1px;
+    border-radius: 3px;
+    border-bottom: 0px !important;
+    padding: 3px 5px;
+    box-shadow: 0px 0px 0px #000;
+
+}
+
+.mainContent .formContainer input.activated {
+    border: 1px solid #ccc;
+    border-width: 1px 1px 0px 1px;
+    border-radius: 3px;
+    width: 100%;
+    background: #fff;
+    padding: 5px 10px;
+    box-shadow: -1px 0px 1px #ccc;
+}

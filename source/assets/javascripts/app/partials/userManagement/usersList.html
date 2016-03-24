@@ -1,0 +1,16 @@
+<div class="cluster-st1 mt-20 mb-20 cf">
+    <h2 class="title-st1">List of user created so far</h2>
+
+    <h3 class="txt-st4 mb-20">User information</h3>
+
+    <div class="grid">
+        <div class="col w-40">
+            <ops-textbox type="text" name="filterValue" ng-model="vm.filterValue" id="filterValue"
+                         ng-required="false"
+                         label="Ich suche nach" auto-focus="true"></ops-textbox>
+        </div>
+    </div>
+    <msg-container msg-list="vm.warnMessage" ng-if="vm.displayMessage"></msg-container>
+    <div id="grid1" class="table-st1 topics" ui-grid="vm.gridOptions" ui-grid-resize-columns>
+    </div>
+</div>

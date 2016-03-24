@@ -1,0 +1,51 @@
+// Anchors & buttons
+a,
+.link,
+.link-big,
+.link-body {
+    color: $body-color;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
+
+    &:focus{
+        outline: $outline;
+    }
+    &:visited {
+        color: $body-color;
+    }
+}
+
+.link-big {
+    font-size: 16px;
+}
+
+.link-line {
+    text-decoration: underline;
+}
+
+// inline body links
+p a,
+.link-body {
+    text-decoration: underline;
+}
+
+// Outline
+
+.btn {
+
+    &:focus{
+        outline: $outline;
+        border: 1px solid $brand-2;
+        box-shadow: none;
+    }
+}
+.mouse-active {
+    a:focus, .btn:focus{
+        outline: 0;
+    }
+}

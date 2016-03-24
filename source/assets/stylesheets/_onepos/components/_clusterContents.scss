@@ -1,0 +1,20 @@
+/* ==========================================================================
+Clusters
+========================================================================== */
+//B3. Cluster Contents
+//CONTAINER WITH CONTAINER HEADER H3 AND CONTENT
+.cluster-st1, .cluster-st2{
+    background: $white;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.24);
+    @include borderRadius();
+
+    padding: 30px 90px 40px;
+
+    > p{
+        margin-bottom: 20px;
+    }
+
+}
+.cluster-st2 {
+    padding: 10px 90px 10px;
+}

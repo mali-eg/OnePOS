@@ -1,0 +1,21 @@
+<h2 class="title-st1">Do you want to deactivate the following user?</h2>
+<div class="overlay-content">
+    <div class="grid">
+        <div class="col w-30">
+            <p class="txt-st11 mb-0">Last name</p>
+            <p class="txt-st12 mb-0 mt-5">{{vm.currentUser.onlineUser.familyName}}</p>
+        </div>
+        <div class="col w-30">
+            <p class="txt-st11 mb-0">First name</p>
+            <p class="txt-st12 mb-0 mt-5">{{vm.currentUser.onlineUser.firstName}}</p>
+        </div>
+        <div class="col w-30">
+            <p class="txt-st11 mb-0">PU-ID</p>
+            <p class="txt-st12 mb-0 mt-5">{{vm.currentUser.username}}</p>
+        </div>
+    </div>
+</div>
+<div class="btns">
+    <button class="btn-st btn-st1" ng-click="vm.closeAction()">Cancel</button>
+    <button class="btn-st btn-st2 f-right" ng-click="vm.submit()">Deactivate user</button>
+</div>

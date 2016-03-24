@@ -1,0 +1,118 @@
+.main-menu {
+	position: absolute;
+	top: 64px;
+	margin-bottom: 20px;
+	width: 255px;
+	z-index: -1;
+	//border-top: 1px solid #D5D5D5;
+
+	&.visible {
+		z-index: 0;
+	}
+
+	.user-info {
+		margin-top: 10px;
+		margin-bottom: 15px;
+		padding-left: 15px;
+
+		.user-image {
+			width: 65px;
+			height: 65px;
+			border-radius: 50%;
+			border: 2px solid #999999;
+			margin-bottom: 10px;
+		}
+		.user-name, .user-role {
+			font-family: 'VodafoneBold', Arial, sans-serif;
+			font-size: 16px;
+		}
+	}
+
+	.accordion-st1 {
+		padding: 0 20px;
+		margin-top: 20px;
+		box-shadow: none;
+
+		.panel-body {
+
+			.panel-title {
+				padding: 0;
+				border-bottom: 1px solid $light-grey;
+
+				.panal-head {
+					font-size: 18px;
+					line-height: 1.2;
+					font-family: $font-vodafoneBold;
+				}
+
+				.panel-arrows {
+					width: 25px;
+
+					.ico {
+						width: 15px;
+						height: 15px;
+						margin-left: -8px;
+
+						&.ico-arrows-up {
+							border-top-width: 4px;
+							border-right-width: 4px;
+							margin-top: -6px;
+						}
+					}
+				}
+			}
+
+			.panel-collaps {
+
+				.panel-content {
+					padding: 20px 0 0;
+					border-bottom: 0;
+
+					ul {
+
+						> li {
+							margin-bottom: 15px;
+
+							&:last-child {
+								margin-bottom: 0;
+							}
+
+							a {
+								color: $blue;
+								font-size: 16px;
+								line-height: 1.3;
+							}
+
+							> .item-title {
+								font-family: 'VodafoneBold', Arial, sans-serif;
+								font-size: 16px;
+								color: #117C91;
+								vertical-align: middle;
+							}
+
+							> ul {
+								padding-left: 70px;
+
+								> li {
+									font-family: 'VodafoneLight', Arial, sans-serif;
+									font-size: 16px;
+									margin-top: 20px;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			&.ops-opened {
+
+				.panel-title {
+
+					.panel-arrows {
+						border-bottom: 2px solid $blue;
+					}
+				}
+			}
+		}
+	}
+}

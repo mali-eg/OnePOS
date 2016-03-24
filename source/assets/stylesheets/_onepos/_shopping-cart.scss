@@ -1,0 +1,177 @@
+.mainContent {
+
+    .mt30 {
+        margin-top: 30px
+    }
+    .pl {
+        padding-left: 5px
+    }
+    .m090{
+        margin: 0px 90px;
+    }
+    .m0{
+        margin: 0px !important;
+    }
+
+    .shop-cart-wrapper {
+        /*removed by asaber margin: 20px 0; */
+
+        .cart_border {
+            border-bottom: 1px solid #CCCCCC;
+            margin: 0px 22px 10px 0px;
+        }
+
+
+
+        .di-content .di-close {
+            box-shadow: none;
+            border: none;
+        }
+        .i-close-b-xxsml {
+            height: 30px;
+            width: 28px;
+            background-position: 0px -5838px;
+        }
+
+        .container {
+            padding: 15px;
+            min-height: 640px;
+            .main_container {
+                margin: 36.2px 90px 35px 90px;
+            }
+            .cart_box{
+                //max-height: 426px;
+                //min-height: 200px;
+                //.scroll-viewport{
+                //    max-height: 600px;
+                //    min-height: 150px;
+                //}
+            }
+            .cart_container {
+
+                padding: 10px 0px 0px 0px;
+                margin: 10px 90px 35px 90px;
+
+                .btn_space {
+                    li a {
+                        margin-bottom: 10px;
+                    }
+                    li a:first-child {
+                        margin-top: 0px;
+                    }
+
+                }
+            }
+            .shopping_link {
+                float: right;
+                font-size: 14px;
+                margin-top: 10px;
+                color: #007c93;
+                text-decoration: none;
+            }
+            .head {
+
+                h3 {
+                    color: #e60000;
+                    text-decoration: none;
+                    font-size: 24px;
+                    font-family: "VodafoneLight", "VodafoneRegular", Arial, sans-serif;
+                    margin-bottom: 10px;
+
+                }
+                p {
+                    font-size: 16px;
+                    color: #333333;
+                    line-height: 1px;
+                    margin-bottom: 5px;
+
+                }
+            }
+            .tariff_plan {
+                float: left;
+
+                margin-top: 5.6px;
+
+                li {
+                    font-family: "VodafoneLight", "VodafoneRegular", Arial, sans-serif;
+                    font-size: 16px;
+                    text-decoration: none;
+                    color: #333333;
+                    display: inline-block;
+                    margin-right: 5px;
+                }
+            }
+            .tariff_plan:nth-child(4),.tariff_plan:nth-child(5){
+                margin-right: 10px;
+            }
+
+            label, .fm-label, .fm-submit .btn {
+                width: 100%;
+            }
+            .titleBorder {
+                color: #333333;
+                border-bottom: 2px solid #cccccc;
+                margin: 30px 90px 10px 90px;
+
+            }
+            .btn-alt-dark {
+                background: #333333;
+                color: #FFFFFF;
+            }
+
+            .tarrif_title {
+                font-size: 24px;
+                font-family: "VodafoneLight", "VodafoneRegular", Arial, sans-serif;
+
+            }
+
+            .tarrif_title {
+                color: #333333;
+            }
+            .di-content .di-inner {
+                height: auto;
+            }
+
+
+            .mobile-icon {
+                background-image: url(/assets/images/customer/Vodafone-Mobile.svg);
+                background-repeat: no-repeat;
+                background-position: 0px 0px;
+                background-size: 36.6px 68.6px;
+                width: 50px;
+                height: 70px;
+            }
+            .fixedNet-icon {
+                background-image: url(/assets/images/customer/fixedNet.svg);
+                background-repeat: no-repeat;
+                background-position: 0px 0px;
+                background-size: 62.6px 70.6px;
+                width: 70px;
+                height: 70px;
+            }
+
+            .deleteCart, .deleteItem {
+                padding: 8px 10px 8px 30px;
+                background-color: #999999;
+                background-image: url(/assets/images/dashboard/info-notiification-icon.png);
+                background-repeat: no-repeat;
+                background-position: 20px 10px;
+                background-size: 30px;
+                color: #fff;
+                border-radius: 3px;
+
+                h4 {
+                    margin-bottom: 0px;
+                    font-size: 16px;
+                    margin-top: 6px;
+                }
+            }
+            .deleteItem {
+                background-color: #666666
+            }
+
+        }
+    }
+}
+
+

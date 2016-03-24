@@ -1,0 +1,89 @@
+/* ==========================================================================
+Content Nav style
+========================================================================== */
+//F12
+.orders-box{
+    //F12.1
+    // item
+    .orders-item-st1{
+        @include borderRadius();
+        padding: 10px 15px;
+        cursor: pointer;
+        border-bottom:1px solid #ebebeb;
+
+        // order name
+        .orders-item-name{
+            font-size: 15px;
+            line-height: 19px;
+            color: #333;
+            font-family: $font-vodafoneRegular;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        // order status
+        .orders-item-status{
+            font-size: 11px;
+            line-height: 15px;
+            color: #333;
+            font-family: $font-vodafoneRegular;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        //F12.2, F12.2.1
+        //active
+        &.active{
+            cursor: default;
+            border-bottom:0;
+            background:$red;
+            // order name
+            .orders-item-name{
+                font-size: 20px;
+                line-height: 24px;
+                color: #fff;
+            }
+            // order status
+            .orders-item-status{
+                font-size: 14px;
+                line-height: 18px;
+                color: #fff;
+            }
+        }
+    }
+    //F12.3
+    // item
+    .orders-item-st2{
+        @include borderRadius();
+        padding: 10px 15px;
+        cursor: pointer;
+        min-height: 58px;
+        border-bottom:1px solid #ccc;
+        //F12.3.1
+        // order name
+        .orders-item-name{
+            font-size: 24px;
+            line-height: 28px;
+            color: #333;
+            font-family: $font-vodafoneLight;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            text-align: center;
+        }
+        //F12.4
+        //active
+        &.active{
+            cursor: default;
+            min-height: 60px;
+            border-bottom:0;
+            background:$red;
+            // order name
+            .orders-item-name{
+                font-size: 36px;
+                line-height: 40px;
+                color: #fff;
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+// -- more
+
+.tg-more .tg-head i,.tg-more .tg-head svg {
+	display: inline-block;
+	margin-left: 10px;
+	position: static;
+}
+
+.tg-accord .tg-more {
+
+	.tg-head {
+		font: inherit;
+		padding: 0;
+		box-shadow: none;
+	}
+
+	.tg-display {
+		padding: 0;
+	}
+}
+
+.no-js .tg-more .tg-head {
+	display: none;
+}

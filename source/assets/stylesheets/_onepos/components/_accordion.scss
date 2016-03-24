@@ -1,0 +1,135 @@
+/* ==========================================================================
+Accordion styles
+========================================================================== */
+//F10.1.1, F10.2.1
+.accordion-st1 {
+    cursor: default;
+    background: $white;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.24);
+
+    //F10.2
+    // Accordion item
+    .panel-body{
+        // title
+        .panel-title{
+            padding:10px 100px 10px 90px;
+            position: relative;
+            margin-top:-1px;
+            z-index: 1;
+
+            .panal-head{
+                font-family: $font-vodafoneRegular;
+                font-size:20px;
+                line-height: 24px;
+                color:$grey;
+                overflow: hidden;
+            }
+            .panel-arrows{
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 60px;
+                height: 100%;
+                background-color: $blue;
+                text-align: center;
+                // icon
+                .ico{
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    margin-top: -10px;
+                    margin-left: -10px;
+                }
+            }
+        }
+        .panel-collaps{
+            overflow: hidden;
+            .panel-content{
+                padding:20px 90px 40px;
+                border-bottom: 1px solid #ccc;
+
+                .filterationContainer {
+                    table {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        //F10.1
+        // opend
+        &.ops-opened{
+            > .panel-title{
+                border-bottom: 1px solid #ccc;
+                .panel-arrows{
+                    background-color: $white;
+                    border-bottom: 5px solid $blue;
+                    padding-top: 15px;
+                }
+            }
+        }
+    }
+}
+//F10.0
+.cluster-st1{
+    .accordion-st1 {
+        box-shadow: none;
+        @include borderRadius(0);
+        margin:0 -90px;
+        // Accordion item
+        .panel-body{
+            // title
+            .panel-title{
+                @include borderRadius(0);
+                padding:10px 100px 10px 90px;
+                border-top: 1px solid #ccc;
+                border-bottom: 1px solid #ccc;
+                .panel-arrows{
+                    @include borderRadius(0);
+                }
+            }
+            // opend
+            &.ops-opened{
+                .panel-title{
+                    .panel-arrows{
+                        @include borderRadius(0);
+                    }
+                }
+            }
+            //F10.5
+            // last Accordion item
+            &:last-child{
+                .panel-title{
+                    @include borderRadius(0 0 3px 3px);
+
+                    .panel-arrows{
+                        @include borderRadius(0 0 3px 0);
+                    }
+                }
+            }
+            //F10.6
+            &.ops-opened:last-child{
+                .panel-title{
+                    @include borderRadius(0);
+
+                    .panel-arrows{
+                        @include borderRadius(0);
+                    }
+                }
+            }
+        }
+    }
+}
+// child
+.accordion-st1{
+    .accordion-st1 {
+        // Accordion item
+        .panel-body{
+            // title
+            .panel-title{
+                padding:10px 100px 10px 90px;
+                border-top: 1px solid #ccc;
+                border-bottom: 1px solid #ccc;
+            }
+        }
+    }
+}

@@ -1,0 +1,106 @@
+.div-background {
+	border-top: 1px solid $light-grey;
+	border-bottom: 1px solid $light-grey;
+	background: #f4f4f4;
+	position: relative;
+	z-index: 2;
+}
+
+.panel,
+.panel-shadow {
+	@include border-radius(3px);
+	border: 1px solid $light-grey;
+	padding: 15px;
+}
+
+.panel-shadow {
+	box-shadow: 0 2px 3px -3px #000;
+	margin: 0 0 20px;
+
+	.panel-head {
+		border-bottom: 1px solid $light-grey;
+		margin-left: -15px;
+		margin-right: -15px;
+		padding-bottom: 18px;
+		padding-left: 10px;
+	}
+}
+
+.container {
+	@include white-box(20px);
+}
+
+.container-alt {
+	@include grey-box(20px);
+
+}
+
+.container-shadow {
+	@include shadow-box(20px);
+}
+
+
+@media only screen and (min-width:$mq-lrg) {
+
+	.div-shadow,
+	.div-shadow-inline {
+		background: $white;
+		margin-bottom: 15px;
+		position: relative;
+		border-bottom: 1px solid $light-grey;
+		margin-bottom: 25px;
+
+	}
+
+	.div-gradient.div-shadow {
+		border-bottom: 1px solid $light-grey;
+	}
+
+	.div-shadow {
+		margin-bottom: 35px;
+
+		&:after {
+			margin: 0 auto;
+			width: 95%;
+			max-width: 920px;
+		}
+	}
+
+    .div-shadow.m0 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .div-shadow.m10 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .div-shadow.m20 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .div-shadow.m30 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .div-shadow.m40 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+	.div-shadow-inline {
+		padding-bottom: 10px;
+	}
+
+	.div-background {
+		border-bottom: 0;
+	}
+
+	.panel,
+	.panel-shadow {
+		padding: 20px;
+	}
+}

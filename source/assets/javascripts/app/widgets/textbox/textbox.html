@@ -1,0 +1,27 @@
+<div class="fm-input fm-text" ng-class="{'fm-ico-holder':iconed}">
+    <!-- LIB_ID:F1.0 -->
+    <input ng-attr-type="{{type}}"
+        placeholder="{{placeholder}}"
+        name="{{innerId}}"
+        id="{{innerId}}"
+        ng-minlength="{{ngMinlength}}"
+        ng-maxlength="{{ngMaxlength}}"
+        ng-model="ngModel"
+        ng-required="{{ngRequired}}"
+        ng-disabled="ngDisabled"
+        class="field"
+        ng-readonly="ngReadonly"
+        auto-focus="{{autoFocus || false}}"
+        ng-pattern="{{ngPattern}}"
+    />
+    <label for="{{innerId}}" ng-class="{'active': ngModel}">
+        {{label}}
+        <span ng-if="ngRequired">*</span>
+    </label>
+    <i ng-if="iconed" class="ico" ng-class="{'ico-date': iconed=='date', 'ico-search': iconed=='search'}"></i>
+    <div ng-if="desc" class="txt desc">{{desc}}</div>
+    <div ng-if="counterLabel" class="txt characters">
+        {{ngModel.length||0}}/{{ngMaxlength}} {{counterLabel}}
+    </div>
+    <!-- <p class="error-txt"></p> -->
+</div>

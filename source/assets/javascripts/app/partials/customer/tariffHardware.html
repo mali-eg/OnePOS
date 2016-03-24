@@ -1,0 +1,49 @@
+<div class="shop-cart-modal">
+
+    <div class="titleBorderMain">
+        <h3>Mobilfunkgerät wählen</h3>
+    </div>
+
+    <div>
+        <p>Bitte wählen Sie das gewünschte Mobilfunkgerät zu Ihrem Vertrag</p>
+
+        <div class="hardwareContainer">
+            <div scrollbar="{autoUpdate: true}">
+
+                <div class="hardwareEle"
+                     ng-repeat="device in vm.hardwareArr"
+                     ng-click="vm.selectDevice(device)"
+                     ng-class="{'selected': device == vm.selectedHardware}">
+                    <div class="grid">
+                        <div class="col w-70">
+                            <h3 class="eleHeader">{{device.name}}</h3>
+
+                            <div class="eleNumber">Art.-Nr.: {{device.partNumber}}</div>
+                        </div>
+                        <div class="col w-30">
+                            <div class="elePrice fr">{{device.price}}<span> €</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="col w-50">
+            <div class="fm-submit fl">
+                <input class="btn btn-alt-light btn-sml" ng-click="vm.cancel()" type="submit"
+                       value="Abbrechen">
+            </div>
+        </div>
+
+        <div class="col w-50">
+            <div class="fm-submit fr">
+
+                <input class="btn btn-sml" ng-click="vm.select()" type="submit"
+                       value="Auswählen"/>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,134 @@
+// buttons
+button {
+	background: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	font: inherit;
+	overflow: visible; /* IE7 width fix */
+
+}
+
+.btn {
+	@include appearance(none);
+	background: $brand-9;
+	border-radius: $border-radius;
+	box-shadow: $box-shadow;
+	color: $white;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 700;
+	margin: 0 ($margin-med - $inline-block-margin) 10px 0;
+	padding: 13px 15px 12px;
+	text-align: center;
+	line-height: 1; /* Firefox forces this */
+	width: 100%;
+	border:1px solid transparent; /* Fixes firefox margin on click */
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	&:focus,
+	&:visited {
+		color: $white;
+	}
+
+	&:hover,
+	&:focus {
+		background: $brand-8;
+		text-decoration: none;
+	}
+
+	&:active {
+		background: $brand-8;
+		box-shadow: $box-shadow;
+	}
+}
+
+.btn-em {
+	background: $btn-color-3;
+	/*border-color: transparent;*/
+	box-shadow: $box-shadow;
+	text-shadow: none;
+
+	&:hover,
+	&:focus {
+		background: #000;
+	}
+
+	&:active {
+		background: $btn-color-3;
+		box-shadow: 0 1px 0 $black inset;
+	}
+}
+
+.btn-alt {
+	background: $white;
+	color: $body-color;
+	@include vf-box-shadow($box-shadow);
+
+	&:focus,
+	&:visited {
+		color: $body-color;
+	}
+
+	&:hover,
+	&:focus {
+		background: $btn-color-7;
+	}
+
+	&:active {
+		background: $btn-color-7;
+		@include vf-box-shadow($box-shadow-inset);
+	}
+}
+.btn:disabled,
+.btn-disabled {
+	color: $btn-color-8;
+	background: $btn-color-7;
+	pointer-events: none;
+	text-shadow: none;
+	@include vf-box-shadow($box-shadow);
+
+	&:hover {
+		color: $btn-color-8;
+		background: $btn-color-7;
+		text-shadow: none;
+	}
+
+	&:active {
+		@include vf-box-shadow($box-shadow);
+	}
+}
+
+.btn-inline {
+	display: inline-block;
+	width: auto;
+}
+
+// desktop
+@media only screen and (min-width: $mq-lrg) {
+
+	// buttons
+	.btn {
+		width: auto;
+		font-size: 14px;
+		padding: 13px 15px 12px;
+		&:hover,
+		&:focus {
+			cursor: pointer;
+		}
+	}
+	.btn:disabled:hover,
+	.btn-disabled:hover {
+		cursor: default;
+	}
+}
+
+/* handling andriod tap highlight color */
+.btn{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent; /* For some Androids */
+    outline: 0;
+}

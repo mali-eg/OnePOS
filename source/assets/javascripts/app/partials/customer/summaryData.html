@@ -1,0 +1,626 @@
+<div class="customer-data-wrapper">
+    <!-- OPS-1686 Customer Header -->
+    <customer-header customer-header-data="customerHeader"></customer-header>
+    <!-- OPS-1686 Customer Header end -->
+    <div class="box-group top-box-group grid container2">
+        <div class="customer_border">
+            <h3 class="txt-st2">Zusammenfassung</h3>
+        </div>
+        <div class="onePos-bodyContainer">
+            <div class="cluster-st1 mb-10">
+                <div class="grid">
+                    <div class="col w-100">
+                        <div ops-accordion>
+                            <div accordion-panel is-open="vm.panels.accountInfo.isOpened">
+                                <div class="panel-content">
+                                    <div accordion-panel-heading>
+                                        Kundendaten
+                                    </div>
+                                 <div ng-repeat="customer in vm.customerModel.customerAccountVBO">
+                                    <div>
+                                        <h3 class="txt-st4 nop-l col w-100">Vertragsdaten</h3>
+
+                                        <div class="clear"></div>
+                                        <div class="nop-l col w-40">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Kundenkennwort</h3>
+
+                                                <p class="txt-st7">{{customer.details.password}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="nop-l col w-40">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Rahmenvertragsnummer</h3>
+
+                                                <p class="txt-st7">{{customer.skeletonContractNumber}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="nop-l col w-20">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Kundentyp</h3>
+
+                                                <p class="txt-st7">{{customer.category}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <hr class="summary_part_border">
+                                    </div>
+                                    <div>
+                                        <h3 class="txt-st4 nop-l col w-100">Kundendaten</h3>
+
+                                        <div class="nop-l col w-20">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Anrede</h3>
+
+                                                <p class="txt-st7">{{customer.parts.individual.salutation}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="nop-l col w-20">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Akademischer Titel</h3>
+
+                                                <p class="txt-st7">{{customer.parts.individual.title}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="nop-l col w-40">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Vorname</h3>
+
+                                                <p class="txt-st7">{{customer.parts.individual.firstName}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="nop-l col w-20">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Nachname</h3>
+
+                                                <p class="txt-st7">{{customer.parts.individual.familyName}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="nop-l col w-20">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Geburtsdatum</h3>
+                                                <p class="txt-st7">{{customer.parts.individual.birthDate}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="nop-l col w-40">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Ausweisnummer</h3>
+
+                                                <p class="txt-st7">{{customer.parts.individual.idCard.documentNumber}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <hr class="summary_part_border">
+                                    </div>
+                                    <div class="clear"></div>
+                         <div ng-repeat="contact in customer.parts.contactPoints">
+                                    <div>
+                                        <h3 class="txt-st4 nop-l col w-100">Kundenanschrift</h3>
+
+                                        <div class="nop-l col w-30">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Straße</h3>
+
+                                                <p class="txt-st7">{{contact.postal.street}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="nop-l col w-10">
+                                            <div class="summary_field">
+
+                                                <h3 class="summaryTitle">Hausnummer</h3>
+                                                <p class="txt-st7">{{contact.postal.streetNumber}}</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="nop-l col w-10">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Postleitzahl</h3>
+                                                <p class="txt-st7">{{contact.postal.postCode}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="nop-l col w-20">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Ort</h3>
+
+                                                <p class="txt-st7">{{contact.postal.city}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="nop-l col w-20">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Land</h3>
+
+                                                <p class="txt-st7">{{contact.postal.country}}</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="clear"></div>
+                                        <div class="nop-l col w-10">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">PLZ</h3>
+
+                                                <p class="txt-st7">{{contact.postal.postCode}}</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="clear"></div>
+                                        <hr class="summary_part_border">
+
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div>
+                                        <h3 class="txt-st4 nop-l col w-100">Kontaktdaten Ansprechpartner</h3>
+
+                                        <div class="nop-l col w-40">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Ansprechpartner</h3>
+
+                                                <p class="txt-st7">{{contact.contactPerson}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="nop-l col w-40">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Rückrufnummer</h3>
+
+                                                <p class="txt-st7">{{contact.telephone.subscriberNumber}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="nop-l col w-40">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">E-Mail</h3>
+
+                                                <p class="txt-st7">{{contact.email.fullAddress}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <hr class="summary_part_border">
+                                    </div>
+                                    <div class="clear"></div>
+                            </div>
+                                    <div> <!--Telefonbucheintrag-->
+                                        <h3 class="txt-st4 nop-l col w-100">Telefonbucheintrag</h3>
+                                        <div class="nop-l col w-20">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Vorwahl</h3>
+                                                <p class="txt-st7">{{}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="nop-l col w-20">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Kundentyp</h3>
+                                                <p class="txt-st7">{{}} </p>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <!--Eintrag 1-->
+                                        <div class="nop-l col w-20">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Akademischer Titel</h3>
+                                                <p class="txt-st7">{{customer.parts.phoneBook.individual.title}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="nop-l col w-20">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Aristokratischer Titel</h3>
+                                                <p class="txt-st7">{{customer.parts.phoneBook.individual.aristocraticTitle}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div>
+                                        <h3 class="txt-st4 nop-l col w-100">Rechnung</h3>
+
+                                        <div class="nop-l col w-20">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">SMS-Benachrichtigung</h3>
+
+                                                <p class="txt-st7">{{customer.parts.billingAccount.hasSMSNotification}}</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+
+                                        <div class="nop-l col w-40">
+                                            <div class="summary_field">
+
+                                                <h3 class="summaryTitle">Vorname</h3>
+                                                <p class="txt-st7">{{customer.parts.phoneBook.individual.firstname}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="nop-l col w-20">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Vorsatzwort</h3>
+                                                <p class="txt-st7">{{customer.parts.phoneBook.individual.prefix}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="nop-l col w-20">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Nachname</h3>
+                                                <p class="txt-st7">{{customer.parts.phoneBook.individual.familyName}}</p>
+
+                                                <h3 class="summaryTitle">Rechnungstyp</h3>
+
+                                                <p class="txt-st7">{{customer.parts.billingAccount.invoiceDeliveryType}}</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="nop-l col w-40">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Straße</h3>
+                                                <p class="txt-st7">{{customer.parts.phoneBook.address.street}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="nop-l col w-40">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Hausnummer</h3>
+                                                <p class="txt-st7">{{customer.parts.phoneBook.address.streetNumber}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="nop-l col w-10">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Postleitzahl</h3>
+                                                <p class="txt-st7">{{customer.parts.phoneBook.address.postCode}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="nop-l col w-40">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Ort</h3>
+                                                <p class="txt-st7">{{customer.parts.phoneBook.address.city}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="nop-l col w-40">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Ortsteil</h3>
+                                                <p class="txt-st7">{{customer.parts.phoneBook.address.subLocality}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="nop-l col w-40">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Beruf</h3>
+                                                <p class="txt-st7">{{customer.parts.phoneBook.individual.occupation}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="nop-l col w-40">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Suchbegriff</h3>
+                                                <p class="txt-st7">{{customer.parts.phoneBook.searchTerm}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                         <div class="nop-l col w-40">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Art des Eintrags</h3>
+                                                <p class="txt-st7">{{customer.parts.phoneBook.entryType}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="nop-l col w-40">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Auskunft</h3>
+                                                <p class="txt-st7">{{customer.parts.phoneBook.informationExchange}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="nop-l col w-40">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Art der Veröffentlichung</h3>
+                                                <p class="txt-st7">{{customer.parts.phoneBook.publicationType}}</p>
+                                            </div>
+                                        </div>
+                                        <!--
+                                        <div class="nop-l col w-40">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">§ - Symbol</h3>
+                                                <p class="txt-st7"> </p>
+                                            </div>
+                                        </div>-->
+
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div>
+                                        <h3 class="txt-st4 nop-l col w-100">Bankeinzug erwünscht</h3>
+
+                                        <div class="clear"></div>
+                                        <div class="nop-l col w-40">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Kontoinhaber</h3>
+                                                <p class="txt-st7">{{customer.parts.billingAccount.paymentMethod.bankPayment.accountOwnerName}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="nop-l col w-40">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">IBAN</h3>
+
+                                                <p class="txt-st7">{{customer.parts.billingAccount.paymentMethod.bankPayment.iban}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="nop-l col w-40">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">BIC</h3>
+
+                                                <p class="txt-st7">{{customer.parts.billingAccount.paymentMethod.bankPayment.bic}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="nop-l col w-40">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Kreditinstitut</h3>
+
+                                                <p class="txt-st7">{{customer.parts.billingAccount.paymentMethod.bankPayment.bankName}}</p>
+                                            </div>
+                                        </div>
+<!---->
+                                        <div class="nop-l col w-40">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Kontoinhaber</h3>
+
+                                                <p class="txt-st7">{{customer.parts.billingAccount.paymentMethod.bankPayment.accountOwnerName}}</p>
+                                            </div>
+                                        </div>
+<!---->
+                                        <div class="clear"></div>
+                                        <div class="nop-l col w-30">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Straße</h3>
+
+                                                <p class="txt-st7">{{customer.parts.billingAccount.paymentMethod.bankAddress.street}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="nop-l col w-10">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Hausnummer</h3>
+
+                                                <p class="txt-st7">{{customer.parts.billingAccount.paymentMethod.bankAddress.streetNumber}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="nop-l col w-10">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Postleitzahl</h3>
+                                                <p class="txt-st7">{{customer.parts.billingAccount.paymentMethod.bankAddress.postCode}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="nop-l col w-20">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Ort</h3>
+
+                                                <p class="txt-st7">{{customer.parts.billingAccount.paymentMethod.bankAddress.city}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="nop-l col w-30">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Land</h3>
+
+                                                <p class="txt-st7">{{customer.parts.billingAccount.paymentMethod.bankAddress.country}}</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="clear"></div>
+                                        <div class="nop-l col w-10">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">PLZ</h3>
+
+                                                <p class="txt-st7">{{customer.parts.billingAccount.paymentMethod.bankAddress.postCode}}</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="clear"></div>
+                                        <hr class="summary_part_border">
+                                    </div>
+                                    <div class="clear"></div>
+
+                                    <div>
+                                        <h3 class="txt-st4 nop-l col w-100">Berechtigungen und Einstellungen</h3>
+
+                                        <div class="nop-l col w-40">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Datennutzung</h3>
+
+                                                <p class="txt-st7">{{customer.parts.preferences.marketingUseDataIndicator}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <!--  <hr class="summary_part_border">
+                                      </div>-->
+                                        <div class="clear"></div>
+                                        <!--  <div>
+                                              <h3 class="txt-st4 nop-l col w-100">Nachricht an AVD</h3>
+                                              <div class="nop-l col w-50">
+                                                  <div class="summary_field">
+                                                      <h3 class="summaryTitle">Nachricht an AVD</h3>
+                                                      <p class="txt-st7"> {{vm.custMessage}}</p>
+                                                  </div>
+                                              </div>
+                                          </div>-->
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div>
+                                        <h3 class="txt-st4 nop-l col w-100">Rechnungsdaten</h3>
+                                        <div class="nop-l col w-20">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">SMS-Benachrichtigung</h3>
+                                                <p class="txt-st7">{{customer.parts.billingAccount.hasSMSNotification}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="nop-l col w-40">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Rechnungstyp</h3>
+                                                <p class="txt-st7">{{customer.parts.billingAccount.invoiceDeliveryType}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <hr class="summary_part_border">
+                                    </div>
+                                    <div class="clear"></div>
+
+                                    <div>
+                                        <h3 class="txt-st4 nop-l col w-100">Nachricht an AVD</h3>
+                                        <div class="nop-l col w-30">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Nachricht an AVD</h3>
+                                                <p class="txt-st7">{{customer.parts.preferences.messageToBackOffice}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+
+
+
+                            </div>
+                                </div>
+                            <div accordion-panel heading="Teilnehmerdaten" is-open="vm.panels.subscriberData.isOpened">
+                                <div class="panel-content">
+                                    <div ng-repeat="subscriber in vm.subscriberModel.subscriptions">
+                                    <h3 ng-repeat="item in vm.tariff"
+                                        class="summary_headTitle nop-l col w-100"
+                                        style="margin-top: 20px;margin-left: 0px">
+                                        {{item.productOffering.name}}&nbsp;|&nbsp;{{item.productOffering.characteristicValue[0].value}}
+                                    </h3>
+                                    <div>
+                                        <div class="nop-l col w-33">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Rabatte</h3>
+
+                                                <p ng-repeat="item in vm.discounts">
+                                                    {{item.code}}
+                                                </p>
+
+                                                <p ng-if="vm.discounts == ''">None</p>
+                                            </div>
+                                        </div>
+                                        <div class="nop-l col w-33">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Promotions</h3>
+
+                                                <p ng-repeat="item in vm.promotions">
+                                                    {{item.code}}</p>
+
+                                                <p ng-if="vm.promotions == ''">None</p>
+                                            </div>
+                                        </div>
+                                        <div class="nop-l col w-33">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Optionen</h3>
+
+                                                <p ng-repeat="item in vm.addons">
+                                                    {{item.code}}</p>
+
+                                                <p ng-if="vm.addons == ''">None</p>
+                                            </div>
+                                        </div>
+                                        <h3 class="txt-st4 nop-l col w-100">Vertragsdaten</h3>
+
+                                        <div class="clear"></div>
+
+                                        <div class="nop-l col w-30">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Vertragsbeginn</h3>
+
+                                                <p class="txt-st7">{{subscriber.contractDetails.startDate}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="nop-l col w-40">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Reservierte VF-Rufnummer</h3>
+
+                                                <p class="txt-st7">{{subscriber.details.reservedPhoneNumber}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="nop-l col w-30">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Teilnehmerkennwort</h3>
+                                                <p class="txt-st7">{{subscriber.security.password}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <hr class="summary_part_border">
+                                    </div>
+                                    <div>
+                                        <h3 class="txt-st4 nop-l col w-100">Teilnehmeranschrift</h3>
+
+                                        <div class="nop-l col w-20">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Kundenadresse:</h3>
+
+                                                <p class="txt-st7">{{subscriber.address.street}}
+                                                    {{subscriber.address.streetNumberSuffix}} {{subscriber.address.postCode}}
+                                                    {{subscriber.address.city}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="clear"></div>
+                                        <hr class="summary_part_border">
+                                    </div>
+                                    <!--where can i get it -->
+                                    <div class="clear"></div>
+                                    <div>
+                                        <h3 class="txt-st4 nop-l col w-100">Rabatte</h3>
+
+                                        <div class="nop-l col w-33">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Name der Hochschule / Berufsbezeichnung:</h3>
+
+                                                <p class="txt-st7">{{subscriber.porting.organization.name}} </p>
+                                            </div>
+                                        </div>
+                                        <div class="nop-l col w-33">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Matrikelnummer:</h3>
+                                                <p class="txt-st7">{{subscriber.porting.organization.type}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="nop-l col w-33">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Geburtsdatum:</h3>
+
+                                                <p class="txt-st7">{{subscriber.porting.individual.birthDate}} </p>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="clear"></div>
+                                        <hr class="summary_part_border">
+                                    </div>
+                                    <div>
+                                        <h3 class="txt-st4 nop-l col w-100">Verbindungseinstellungen</h3>
+
+                                        <div class="nop-l col w-33">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Einzelverbindungsnachweis:</h3>
+                                                <p class="txt-st7">{{subscriber.preference.desiredOverview}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="nop-l col w-33">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Darstellung der Rufnummern:</h3>
+                                                <p class="txt-st7">{{subscriber.preference.desiredNumber}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="nop-l col w-33">
+                                            <div class="summary_field">
+                                                <h3 class="summaryTitle">Rufnummer bei Anrufen anzeigen:</h3>
+                                                <p class="txt-st7">{{subscriber.preference.displayedNumber}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

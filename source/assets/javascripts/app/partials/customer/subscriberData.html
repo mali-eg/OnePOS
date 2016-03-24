@@ -1,0 +1,975 @@
+<form name="customerDataForm" ng-submit="vm.submit()" autocomplete="off" role="form" novalidate>
+    <!-- OPS-1686 Customer Header -->
+    <customer-header customer-header-data="customerHeader"></customer-header>
+    <!-- OPS-1686 Customer Header end -->
+    <div class="cluster-st1 mb-10">
+        <h2 class="title-st1">Zusätzliche Teilnehmerdaten</h2>
+        <div class="grid">
+            <div class="col w-100">
+            <!--<div ops-accordion>
+               <div ng-repeat="cart in vm.carts" accordion-panel>
+                  <div class="panel-content">
+                     <div  accordion-panel-heading>
+                        {{cart.productOffering.name}}
+                     </div>-->
+                     <div>
+                        <div>
+                           <div>
+                              <div class="mb-40">
+                                 <h3 class="title-st2">Vertragsdaten</h3>
+                                 <div class="grid">
+                                    <div class="col w-30">
+                                       <ops-textbox
+                                          type="text"
+                                          inner-id="startDate"
+                                          ng-model="vm.startDate"
+                                          ng-required="required"
+                                          label="Vertragsbeginn"
+                                          iconed="date">
+                                       </ops-textbox>
+                                    </div>
+                                    <div class="col w-40">
+                                       <ops-textbox
+                                          type="text"
+                                          inner-id="vfNum"
+                                          ng-model="vm.reservedPhoneNumber"
+                                          label="Reservierte Vodafone-Rufnummer">
+                                       </ops-textbox>
+                                    </div>
+                                    <div class="col w-30">
+                                       <ops-textbox
+                                          type="password"
+                                          inner-id="password"
+                                          ng-model="vm.password"
+                                          label="Teilnehmerkennwort">
+                                       </ops-textbox>
+                                    </div>
+                                 </div>
+                              </div>
+                              <hr class="hr-st3 mt-20 mb-20">
+                              <div class="mb-40">
+                                 <h3 class="title-st2">Teilnehmeranschrift</h3>
+                                 <div class="grid">
+                                    <div class="col w-30">
+                                       <ops-radio
+                                          inner-id="invoiceAddress-1"
+                                          ng-model="vm.invoiceAddress"
+                                          name="invoiceAddress"
+                                          value="Kundenadresse"
+                                          label="Kundenadresse"
+                                          desc="Herr Peter Müller Ferdinand-Braun-Platz 1 40549 Düsseldorf">
+                                       </ops-radio>
+                                    </div>
+                                    <div class="col w-30">
+                                       <ops-radio
+                                          inner-id="invoiceAddress-3"
+                                          ng-model="vm.invoiceAddress"
+                                          name="invoiceAddress"
+                                          value="Rechnungsadresse"
+                                          label="Rechnungsadresse"
+                                          desc="Frau Steffi Müller Otherstraße 20 b D- 12345 Citystadt">
+                                       </ops-radio>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="mb-40">
+                                 <h3 class="title-st2">Rufnummernmitnahme</h3>
+                                 <div class="grid">
+                                    <div class="col w-40">
+                                       <ops-textbox
+                                          type="text"
+                                          inner-id="numPortLName"
+                                          ng-model="vm.numPortLName"
+                                          ng-required="required"
+                                          label="Nachname">
+                                       </ops-textbox>
+                                    </div>
+                                    <div class="col w-40">
+                                       <ops-textbox
+                                          type="text"
+                                          inner-id="numPortFName"
+                                          ng-model="vm.numPortFName"
+                                          ng-required="required"
+                                          label="Vorname">
+                                       </ops-textbox>
+                                    </div>
+                                    <div class="col w-20">
+                                       <ops-textbox
+                                          type="text"
+                                          inner-id="numPortDate"
+                                          ng-model="vm.numPortDate"
+                                          ng-required="required"
+                                          label="Geburtsdatum"
+                                          iconed="date">
+                                       </ops-textbox>
+                                    </div>
+                                    <div class="col w-40">
+                                       <ops-textbox
+                                          type="text"
+                                          inner-id="numAway"
+                                          ng-model="vm.numAway"
+                                          ng-required="required"
+                                          label="Mitzunehmende Rufnummer">
+                                       </ops-textbox>
+                                    </div>
+                                    <div class="col w-30">
+                                       <ops-select
+                                          ng-model="vm.currentOp"
+                                          label="Bisheriger Anbieter">
+                                          <li ops-option="option in vm.selectboxData">
+                                             <a>{{option}}</a>
+                                          </li>
+                                       </ops-select>
+                                    </div>
+                                    <div class="col w-30">
+                                       <ops-textbox
+                                          type="text"
+                                          inner-id="prevCustNum"
+                                          ng-model="vm.prevCustNum"
+                                          label="Bisherige Kundennummer">
+                                       </ops-textbox>
+                                    </div>
+                                    <div class="col w-40">
+                                       <ops-select
+                                          ng-model="vm.prevSupplier"
+                                          label="Kundentyp beim bisherigen Anbieter"
+                                          ng-required="true">
+                                          <li ops-option="option in vm.selectboxData">
+                                             <a>{{option}}</a>
+                                          </li>
+                                       </ops-select>
+                                    </div>
+                                 </div>
+                                 <div class="grid">
+                                    <div class="col w-40">
+                                       <ul class="form-list-st1">
+                                          <li class="label">Portierungszeitpunkt</li>
+                                          <li class="space30">
+                                             <ops-radio
+                                                inner-id="portingTime-1"
+                                                ng-model="vm.portingTime"
+                                                value="So bald wie möglich"
+                                                name="portingTime"
+                                                label="So bald wie möglich">
+                                             </ops-radio>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="grid">
+                                    <div class="col w-40">
+                                       <ul class="form-list-st1">
+                                          <li class="space30">
+                                             <ops-radio
+                                                inner-id="portingTime-2"
+                                                ng-model="vm.portingTime"
+                                                value="Zu einem bestimmten Datum"
+                                                name="portingTime"
+                                                label="Zu einem bestimmten Datum">
+                                             </ops-radio>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <div class="col w-30">
+                                       <!--ng-show="vm.portingTime == 'Zu einem bestimmten Datum'"-->
+                                       <ops-textbox
+                                          type="text"
+                                          inner-id="portingTimeDate"
+                                          ng-model="vm.portingTimeDate"
+                                          ng-required="required"
+                                          label="Datum"
+                                          iconed="date">
+                                       </ops-textbox>
+                                    </div>
+                                 </div>
+                                 <div class="grid">
+                                    <div class="col w-40">
+                                       <ul class="form-list-st1">
+                                          <li class="space30">
+                                             <ops-radio
+                                                inner-id="portingTime-3"
+                                                ng-model="vm.portingTime"
+                                                value="Zum Vertragsende"
+                                                name="portingTime"
+                                                label="Zum Vertragsende">
+                                             </ops-radio>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <div >
+                                       <!--ng-show="vm.portingTime == 'Zum Vertragsende'"-->
+                                       <div class="col w-30">
+                                          <ops-textbox
+                                             type="text"
+                                             inner-id="portingTimeDateSec"
+                                             ng-model="vm.portingTimeDateSec"
+                                             ng-required="required"
+                                             label="Datum"
+                                             iconed="date">
+                                          </ops-textbox>
+                                       </div>
+                                       <div class="col w-30">
+                                          <ops-textbox
+                                             type="text"
+                                             inner-id="portingTimeDatethird"
+                                             ng-model="vm.portingTimeDatethird"
+                                             ng-required="required"
+                                             label="Kündigungsdatum"
+                                             iconed="date">
+                                          </ops-textbox>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <hr class="hr-st3 mt-20 mb-20">
+                           <div class="mb-40">
+                              <h2 class="txt-st2">Rabatte</h2>
+                              <h3 class="title-st2">Studierendenrabatt</h3>
+                              <div class="grid">
+                                 <div class="col w-50">
+                                    <ops-textbox
+                                       type="text"
+                                       inner-id="Hochschule"
+                                       ng-model="vm.college"
+                                       label="Name der Hochschule / Berufsbezeichnung">
+                                    </ops-textbox>
+                                 </div>
+                                 <div class="col w-30">
+                                    <ops-textbox
+                                       type="text"
+                                       inner-id="Hochschule"
+                                       ng-model="vm.idNum"
+                                       label="Matrikelnummer">
+                                    </ops-textbox>
+                                 </div>
+                                 <div class="col w-20">
+                                    <ops-textbox
+                                       type="text"
+                                       inner-id="Geburtsdatum"
+                                       ng-model="vm.birthDate"
+                                       label="Geburtsdatum"
+                                       iconed ="date">
+                                    </ops-textbox>
+                                 </div>
+                              </div>
+                              <h3 class="title-st2">Studierendenrabatt</h3>
+                              <div class="grid">
+                                 <div class="col w-40">
+                                    <ops-select
+                                       ng-model="vm.disability"
+                                       label="Grad der Behinderung">
+                                       <li ops-option="option in vm.selectboxData">
+                                          <a>{{option}}</a>
+                                       </li>
+                                    </ops-select>
+                                 </div>
+                                 <div class="col w-30">
+                                    <ops-textbox
+                                       type="text"
+                                       inner-id="studentId"
+                                       ng-model="vm.studentId"
+                                       label="Ausweisnummer">
+                                    </ops-textbox>
+                                 </div>
+                              </div>
+                           </div>
+                           <hr class="hr-st3 mt-20 mb-20">
+                           <h3 class="title-st2">Verbindungseinstellungen</h3>
+                           <div class="grid mb-40">
+                              <div class="col w-40">
+                                 <ul class="form-list-st1">
+                                    <li class="label">Einzelverbindungsnachweis</li>
+                                    <li>
+                                       <ops-radio
+                                          inner-id="completeChoice-1"
+                                          ng-model="vm.desiredOverview"
+                                          value="completeChoice-1"
+                                          name="completeChoice"
+                                          label="Komplett">
+                                       </ops-radio>
+                                    </li>
+                                    <li>
+                                       <ops-radio
+                                          inner-id="completeChoice-2"
+                                          ng-model="vm.desiredOverview"
+                                          value="completeChoice-2"
+                                          name="completeChoice"
+                                          label="Kurzübersicht">
+                                       </ops-radio>
+                                    </li>
+                                    <li>
+                                       <ops-radio
+                                          inner-id="completeChoice-3"
+                                          ng-model="vm.desiredOverview"
+                                          value="completeChoice-3"
+                                          name="completeChoice"
+                                          label="Kein EVN">
+                                       </ops-radio>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="col w-40">
+                                 <ul class="form-list-st1 mb-40">
+                                    <li class="label">Darstellung der Rufnummern</li>
+                                    <li>
+                                       <ops-radio
+                                          inner-id="overview-1"
+                                          ng-model="vm.desiredNumber"
+                                          value="overview-1"
+                                          name="overview"
+                                          label="Komplett">
+                                       </ops-radio>
+                                    </li>
+                                    <li>
+                                       <ops-radio
+                                          inner-id="overview-2"
+                                          ng-model="vm.desiredNumber"
+                                          value="overview-2"
+                                          name="overview"
+                                          label="Gekürzt">
+                                       </ops-radio>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="grid">
+                              <div class="col w-40">
+                                 <ul class="form-list-st1">
+                                    <li class="label">Rufnummer bei Anrufen anzeigen</li>
+                                    <li>
+                                       <ops-radio
+                                          inner-id="complete-1"
+                                          ng-model="vm.displayedNumber"
+                                          value="complete-1"
+                                          name="complete"
+                                          label="Fallweise einschalten">
+                                       </ops-radio>
+                                    </li>
+                                    <li>
+                                       <ops-radio
+                                          inner-id="complete-2"
+                                          ng-model="vm.displayedNumber"
+                                          value="complete-2"
+                                          name="complete"
+                                          label="Fallweise abschalten">
+                                       </ops-radio>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <hr class="hr-st3 mt-20 mb-20">
+                           <h3 class="title-st2">VodafoneZuhause</h3>
+                           <div class="grid mb-40">
+                              <div class="col w-33">
+                                 <ops-radio
+                                    inner-id="vfHome-1"
+                                    ng-model="vm.vfHome"
+                                    name="vfHome"
+                                    value="Kundenadresse"
+                                    label="Kundenadresse"
+                                    desc="Mrs. Johanna Johnson Roadweg 123 12345 Johanngeorgenstadt">
+                                 </ops-radio>
+                              </div>
+                              <div class="col w-33">
+                                 <ops-radio
+                                    inner-id="vfHome-2"
+                                    ng-model="vm.vfHome"
+                                    name="vfHome"
+                                    value="Rechnungsadresse"
+                                    label="Rechnungsadresse"
+                                    desc="Mr. John Jansen Straßroad 123 12345 Ville">
+                                 </ops-radio>
+                              </div>
+                              <div class="col w-33">
+                                 <ops-radio
+                                    inner-id="vfHome-3"
+                                    ng-model="vm.vfHome"
+                                    name="vfHome"
+                                    value="Abweichende Anschrift"
+                                    label="Abweichende Anschrift">
+                                 </ops-radio>
+                              </div>
+                              <div class="clear mb-40"></div>
+                              <div class="col w-100">
+                                 <h3 class="txt-st6">Adresse</h3>
+                              </div>
+                              <div class="col w-40">
+                                 <ops-textbox
+                                    type="text"
+                                    inner-id="vfHomeAdress"
+                                    ng-model="vm.vfHomestreet"
+                                    label="Straße">
+                                 </ops-textbox>
+                              </div>
+                              <div class="col w-10">
+                                 <ops-textbox
+                                    type="text"
+                                    inner-id="expiryDate2"
+                                    ng-model="vm.vfHomeArea"
+                                    label="Nr.">
+                                 </ops-textbox>
+                              </div>
+                              <div class="clear"></div>
+                              <div class="col w-40">
+                                 <ops-select
+                                    ng-model="vfHomecountry"
+                                    label="Land">
+                                    <li ops-option="option in vm.countriesData">
+                                       <a>{{option}}</a>
+                                    </li>
+                                 </ops-select>
+                              </div>
+                              <div class="col w-10">
+                                 <ops-textbox
+                                    type="text"
+                                    inner-id="vfHomeAdress"
+                                    ng-model="vm.vfHomePostal"
+                                    label="PLZ">
+                                 </ops-textbox>
+                              </div>
+                              <div class="col w-40">
+                                 <ops-textbox
+                                    type="text"
+                                    inner-id="vfHomeAdress"
+                                    ng-model="vm.vfHomeCity"
+                                    label="Ort">
+                                 </ops-textbox>
+                              </div>
+                           </div>
+                           <div>
+                              <ops-checkbox
+                                 inner-id="checkbox-title-1"
+                                 ng-model="vm.portieren"
+                                 name="checkbox-title-1"
+                                 label="Festnetznummer portieren:">
+                              </ops-checkbox>
+                              <div ng-show="vm.portieren">
+                                 <div class="grid">
+                                    <div class="col w-40">
+                                       <ops-textbox
+                                          type="text"
+                                          inner-id="portLand"
+                                          ng-model="vm.portLandLName"
+                                          label="Nachname">
+                                       </ops-textbox>
+                                    </div>
+                                    <div class="col w-30">
+                                       <ops-textbox
+                                          type="text"
+                                          inner-id="portLand"
+                                          ng-model="vm.portLandFName"
+                                          label="Vorname">
+                                       </ops-textbox>
+                                    </div>
+                                    <div class="col w-25 space10">
+                                       <button class="btn-st btn-st1">Namen hinzufügen</button>
+                                    </div>
+                                    <div class="col w-40">
+                                       <ops-textbox
+                                          type="text"
+                                          inner-id="portLand"
+                                          ng-model="vm.portLandStreet"
+                                          label="Straße">
+                                       </ops-textbox>
+                                    </div>
+                                    <div class="col w-10">
+                                       <ops-textbox
+                                          type="text"
+                                          inner-id="portLand"
+                                          ng-model="vm.portLandNum"
+                                          label="Nr.">
+                                       </ops-textbox>
+                                    </div>
+                                    <div class="col w-10">
+                                       <ops-textbox
+                                          type="text"
+                                          inner-id="portLand"
+                                          ng-model="vm.portLandPostal"
+                                          label="PLZ">
+                                       </ops-textbox>
+                                    </div>
+                                    <div class="col w-40">
+                                       <ops-textbox
+                                          type="text"
+                                          inner-id="portLand"
+                                          ng-model="vm.portLandCity"
+                                          label="Ort">
+                                       </ops-textbox>
+                                    </div>
+                                    <div class="col w-40">
+                                       <ops-textbox
+                                          type="text"
+                                          inner-id="portLand"
+                                          ng-model="vm.portLandName"
+                                          label="Name des bisherigen Anbieters">
+                                       </ops-textbox>
+                                    </div>
+                                    <div class="col w-30">
+                                       <ops-textbox
+                                          type="text"
+                                          inner-id="portLand"
+                                          ng-model="vm.portLandDate"
+                                          iconed = "date"
+                                          label="Wunschdatum">
+                                       </ops-textbox>
+                                    </div>
+                                    <div access="clear"></div>
+                                    <div class="col w-100">
+                                       <h3 class="txt-st6">Zu portierende Telefonnummern:</h3>
+                                    </div>
+                                    <div class="col w-30">
+                                       <ops-select
+                                          ng-model="vm.inputs.portLand.termination"
+                                          label="Anschlussart">
+                                          <li ops-option="option in vm.selectboxData">
+                                             <a>{{option}}</a>
+                                          </li>
+                                       </ops-select>
+                                    </div>
+                                    <div class="col w-25">
+                                       <ops-textbox
+                                          type="text"
+                                          inner-id="telTransport"
+                                          ng-model="vm.telTransportCode"
+                                          label="Vorwahl">
+                                       </ops-textbox>
+                                    </div>
+                                    <div class="col w-30">
+                                       <ops-textbox
+                                          type="text"
+                                          inner-id="telTransport"
+                                          ng-model="vm.telTransportNum"
+                                          label="Hauptnummer">
+                                       </ops-textbox>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="col w-40 space30">
+                                       <ops-checkbox
+                                          inner-id="telTransport"
+                                          ng-model="vm.telTransportPortNum"
+                                          name="telTransport"
+                                          label="Alle Rufnummern portieren">
+                                       </ops-checkbox>
+                                    </div>
+                                    <div class="col w-30">
+                                       <ops-textbox
+                                          type="text"
+                                          inner-id="telTransport"
+                                          ng-model="vm.telTransportAdd"
+                                          label="Zusätzliche Nummer 1">
+                                       </ops-textbox>
+                                    </div>
+                                    <div class="col w-30 space10">
+                                       <button class="btn-st btn-st1">Rufnummer  hinzufügen</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <hr class="hr-st3 mt-20 mb-20">
+                           <div>
+                              <ops-checkbox
+                                 inner-id="checkbox-title-2"
+                                 ng-model="vm.checkedTelSub"
+                                 name="checkbox-title-2"
+                                 label="Telefonbucheintrag">
+                              </ops-checkbox>
+                              <div ng-show="vm.checkedTelSub">
+                                 <div class="grid">
+                                    <div class="col w-30">
+                                       <ops-select
+                                          ng-model="vm.inputs.phonebook.title"
+                                          label="Titel">
+                                          <li ops-option="option in vm.selectboxData">
+                                             <a>{{option}}</a>
+                                          </li>
+                                       </ops-select>
+                                    </div>
+                                    <div class="col w-30">
+                                       <ops-select
+                                          ng-model="vm.inputs.phonebook.subTitle"
+                                          label="Adelstitel">
+                                          <li ops-option="option in vm.selectboxData">
+                                             <a>{{option}}</a>
+                                          </li>
+                                       </ops-select>
+                                    </div>
+                                    <div class="col w-30">
+                                       <ops-select
+                                          ng-model="vm.inputs.phonebook.prefix"
+                                          label="Namenspräfix">
+                                          <li ops-option="option in vm.selectboxData">
+                                             <a>{{option}}</a>
+                                          </li>
+                                       </ops-select>
+                                    </div>
+                                 </div>
+                                 <div class="grid">
+                                    <div class="col w-40">
+                                       <ops-textbox
+                                          type="text"
+                                          inner-id="checkedTelSub"
+                                          ng-model="vm.checkedTelSubFName"
+                                          label="Vorname">
+                                       </ops-textbox>
+                                    </div>
+                                    <div class="col w-40">
+                                       <ops-textbox
+                                          type="text"
+                                          inner-id="checkedTelSub"
+                                          ng-model="vm.checkedTelSubLName"
+                                          label="Nachname">
+                                       </ops-textbox>
+                                    </div>
+                                 </div>
+                                 <div class="grid">
+                                    <div class="col w-40">
+                                       <ops-textbox
+                                          type="text"
+                                          inner-id="checkedTelSub"
+                                          ng-model="vm.checkedTelSubStreet"
+                                          label="Straße">
+                                       </ops-textbox>
+                                    </div>
+                                    <div class="col w-10">
+                                       <ops-textbox
+                                          type="text"
+                                          inner-id="checkedTelSub"
+                                          ng-model="vm.checkedTelSubNum"
+                                          label="Nr.">
+                                       </ops-textbox>
+                                    </div>
+                                    <div class="col w-10">
+                                       <ops-textbox
+                                          type="text"
+                                          inner-id="checkedTelSub"
+                                          ng-model="vm.checkedTelSubArea"
+                                          label="Zusatz">
+                                       </ops-textbox>
+                                    </div>
+                                 </div>
+                                 <div class="grid">
+                                    <div class="col w-30">
+                                       <ops-select
+                                          ng-model="vm.inputs.phonebook.country"
+                                          label="Land">
+                                          <li ops-option="option in vm.countriesData">
+                                             <a>{{option}}</a>
+                                          </li>
+                                       </ops-select>
+                                    </div>
+                                    <div class="col w-10">
+                                       <ops-textbox
+                                          type="text"
+                                          inner-id="checkedTelSub"
+                                          ng-model="vm.checkedTelSubPostal"
+                                          label="PLZ">
+                                       </ops-textbox>
+                                    </div>
+                                    <div class="col w-40">
+                                       <ops-textbox
+                                          type="text"
+                                          inner-id="checkedTelSub"
+                                          ng-model="vm.checkedTelSubPlace"
+                                          label="Ort">
+                                       </ops-textbox>
+                                    </div>
+                                    <div class="col w-20">
+                                       <ops-textbox
+                                          type="text"
+                                          inner-id="checkedTelSub"
+                                          ng-model="vm.checkedTelSubLocation"
+                                          label="Ortsteil">
+                                       </ops-textbox>
+                                    </div>
+                                 </div>
+                                 <div class="grid mb-20">
+                                    <div class="col w-40">
+                                       <ops-textbox
+                                          type="text"
+                                          inner-id="checkedTelSub"
+                                          ng-model="vm.checkedTelSubPosition"
+                                          label="Beruf">
+                                       </ops-textbox>
+                                    </div>
+                                    <div class="col w-30">
+                                       <ops-select
+                                          ng-model="vm.inputs.phonebook.searchTerm"
+                                          label="Suchbegriff">
+                                          <li ops-option="option in vm.selectboxData">
+                                             <a>{{option}}</a>
+                                          </li>
+                                       </ops-select>
+                                    </div>
+                                 </div>
+                                 <div class="grid mb-40">
+                                    <div class="col w-40">
+                                       <ul class="form-list-st1">
+                                          <li class="label">Art des Eintrags</li>
+                                          <li>
+                                             <ops-radio
+                                                inner-id="entryTyp-1"
+                                                ng-model="vm.entryTyp"
+                                                value="Gedruckt / elektronisch"
+                                                name="entryType"
+                                                label="Gedruckt / elektronisch">
+                                             </ops-radio>
+                                          </li>
+                                          <li>
+                                             <ops-radio
+                                                inner-id="entryTyp-2"
+                                                ng-model="vm.entryTyp"
+                                                value="Gedruckter Eintrag"
+                                                name="entryType"
+                                                label="Gedruckter Eintrag">
+                                             </ops-radio>
+                                          </li>
+                                          <li>
+                                             <ops-radio
+                                                inner-id="entryTyp-3"
+                                                ng-model="vm.entryTyp"
+                                                value="Elektronischer Eintrag"
+                                                name="entryType"
+                                                label="Elektronischer Eintrag">
+                                             </ops-radio>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <div class="col w-40">
+                                       <ul class="form-list-st1">
+                                          <li class="label">Auskunft</li>
+                                          <li>
+                                             <ops-radio
+                                                inner-id="information-1"
+                                                ng-model="vm.phonebookInformation"
+                                                value="Vollständige Auskunft"
+                                                name="information"
+                                                label="Vollständige Auskunft">
+                                             </ops-radio>
+                                          </li>
+                                          <li>
+                                             <ops-radio
+                                                inner-id="information-2"
+                                                ng-model="vm.phonebookInformation"
+                                                value="Nur für VF-Nummern"
+                                                name="information"
+                                                label="Nur für VF-Nummern">
+                                             </ops-radio>
+                                          </li>
+                                          <li>
+                                             <ops-radio
+                                                inner-id="information-3"
+                                                ng-model="vm.phonebookInformation"
+                                                value="Keine Auskunft"
+                                                name="information"
+                                                label="Keine Auskunft">
+                                             </ops-radio>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="grid mb-40">
+                                    <div class="col w-40">
+                                       <ul class="form-list-st1">
+                                          <label class="label">Art der Veröffentlichung</label>
+                                          <li>
+                                             <ops-radio
+                                                inner-id="publicationTyp-1"
+                                                ng-model="vm.phonebookPublicationType"
+                                                value="Vollständige Adresse"
+                                                name="publicationType"
+                                                label="Vollständige Adresse">
+                                             </ops-radio>
+                                          </li>
+                                          <li>
+                                             <ops-radio
+                                                inner-id="publicationTyp-2"
+                                                ng-model="vm.phonebookPublicationType"
+                                                value="Keine Adresse"
+                                                name="publicationType"
+                                                label="Keine Adresse">
+                                             </ops-radio>
+                                          </li>
+                                          <li>
+                                             <ops-radio
+                                                inner-id="publicationTyp-3"
+                                                ng-model="vm.phonebookPublicationType"
+                                                value="Nur Ort"
+                                                name="publicationType"
+                                                label="Nur Ort">
+                                             </ops-radio>
+                                          </li>
+                                          <li>
+                                             <ops-radio
+                                                inner-id="publicationTyp-4"
+                                                ng-model="vm.phonebookPublicationType"
+                                                value="Ort und Straße"
+                                                name="publicationType"
+                                                label="Ort und Straße">
+                                             </ops-radio>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <div class="col w-40">
+                                       <ul class="form-list-st1">
+                                          <label class="label">Übertragung</label>
+                                          <li>
+                                             <ops-radio
+                                                inner-id="transmission-1"
+                                                ng-model="vm.phonebookTransmission"
+                                                value="kompletter Datensatz"
+                                                name="transmission"
+                                                label="kompletter Datensatz">
+                                             </ops-radio>
+                                          </li>
+                                          <li>
+                                             <ops-radio
+                                                inner-id="transmission-2"
+                                                ng-model="vm.phonebookTransmission"
+                                                value="Nur für VF-Nummern"
+                                                name="transmission"
+                                                label="Nur für VF-Nummern">
+                                             </ops-radio>
+                                          </li>
+                                          <li>
+                                             <ops-radio
+                                                inner-id="transmission-3"
+                                                ng-model="vm.phonebookTransmission"
+                                                value="Keine Daten"
+                                                name="transmission"
+                                                label="Keine Daten">
+                                             </ops-radio>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="grid">
+                                    <div class="col w-100">
+                                       <ul class="form-list-st1">
+                                          <li class="label">Weitere Optionen</li>
+                                          <li>
+                                             <ops-checkbox
+                                                inner-id="reverseSearch"
+                                                ng-model="vm.phonebookReverseSearch"
+                                                name="reverseSearch"
+                                                label="Rückwärtssuche verhindern">
+                                             </ops-checkbox>
+                                          </li>
+                                          <li>
+                                             <ops-checkbox
+                                                inner-id="commercialUse"
+                                                ng-model="vm.phonebookCommercialUse"
+                                                name="commercialUse"
+                                                label="Kommerzielle Verwendung erlauben">
+                                             </ops-checkbox>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <hr class="hr-st3 mt-20 mb-20">
+                           <div>
+                              <ops-checkbox
+                                 inner-id="checkbox-title-3"
+                                 ng-model="vm.deliveryAddress"
+                                 name="checkbox-title-3"
+                                 label="Lieferung an abweichende Lieferadresse">
+                              </ops-checkbox>
+                              <div ng-show="vm.deliveryAddress">
+                                 <div class="grid">
+                                    <div class="col w-40">
+                                       <ops-textbox
+                                          type="text"
+                                          inner-id="phoneBook_profession"
+                                          ng-model="vm.phonebookProfessionFName"
+                                          label="Vorname">
+                                       </ops-textbox>
+                                    </div>
+                                    <div class="col w-40">
+                                       <ops-textbox
+                                          type="text"
+                                          inner-id="phoneBook_profession"
+                                          ng-model="vm.phonebookProfessionLName"
+                                          label="Nachname">
+                                       </ops-textbox>
+                                    </div>
+                                 </div>
+                                 <div class="grid">
+                                    <div class="col w-40">
+                                       <ops-textbox
+                                          type="text"
+                                          inner-id="phoneBook_fName"
+                                          ng-model="vm.phonebookProfessionStreet"
+                                          label="Straße">
+                                       </ops-textbox>
+                                    </div>
+                                    <div class="col w-10">
+                                       <ops-textbox
+                                          type="text"
+                                          inner-id="phoneBook_lName"
+                                          ng-model="vm.phonebookProfessionNum"
+                                          label="Nr.">
+                                       </ops-textbox>
+                                    </div>
+                                 </div>
+                                 <div class="grid">
+                                    <div class="col w-30">
+                                       <ops-select
+                                          ng-model="vm.phonebookProfessionSearchTerm"
+                                          label="Suchbegriff">
+                                          <li ops-option="option in vm.selectboxData">
+                                             <a>{{option}}</a>
+                                          </li>
+                                       </ops-select>
+                                    </div>
+                                    <div class="col w-10">
+                                       <ops-textbox
+                                          type="text"
+                                          inner-id="phoneBook_lName"
+                                          ng-model="vm.phonebookProfessionPostal"
+                                          label="PLZ">
+                                       </ops-textbox>
+                                    </div>
+                                    <div class="col w-40">
+                                       <ops-textbox
+                                          type="text"
+                                          inner-id="phoneBook_lName"
+                                          ng-model="vm.phonebookProfessionCity"
+                                          label="Ort">
+                                       </ops-textbox>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <hr class="hr-st3 mt-20 mb-20">
+                           <h3 class="title-st2">Ultra Cards</h3>
+                           <div class="grid">
+                              <div class="col w-40">
+                                 <ops-textbox
+                                    type="text"
+                                    inner-id="cards"
+                                    ng-model="vm.cardsSimFirst"
+                                    label="Ultra Card #1 SIM Seriennummer">
+                                 </ops-textbox>
+                              </div>
+                              <div class="col w-40">
+                                 <ops-textbox
+                                    type="text"
+                                    inner-id="cards"
+                                    ng-model="vm.cardsSimSec"
+                                    label="Ultra Card #2 SIM Seriennummer">
+                                 </ops-textbox>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="clear"></div>
+                     </div>
+                  <!--</div>
+               </div>
+            </div>-->
+         </div>
+      </div>
+   </div>
+   </div>
+</form>

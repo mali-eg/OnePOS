@@ -1,0 +1,45 @@
+<form name="loginForm" ng-submit="vm.submit()" autocomplete="off" role="form" novalidate>
+    <div class="headerContainer">
+        <h2>OnePOS</h2>
+    </div>
+    <div class="messageContainer color-green" ng-if="vm.showDefaultMessage">Eine TAN wurde auf Ihr Handy geschickt.
+        Geben Sie sie bitte ein.
+    </div>
+    <div class="messageContainer color-red" ng-show="vm.errorMessage" error-data>
+        <span ng-hide="vm.hideDefaultError">{{err.text}}</span>
+        <span ng-show="vm.hideDefaultError">{{vm.errorMessage}}</span>
+    </div>
+    <div class="bodyContainer">
+        <ops-textbox
+            class="tan-data"
+            type="text"
+            inner-id="tan"
+            ng-model="vm.credentials.mtan"
+            label="TAN"
+            ng-required="true"
+            ng-minlength="vm.tan_minimumLength"
+            ng-maxlength="vm.tan_maximumLength"
+            auto-focus="true">
+        </ops-textbox>
+    </div>
+    <div class="footerContainer">
+        <div class="grid">
+            <div class="col w-50">
+                <button type="reset" class="btn-st btn-st1"
+                        ng-click="vm.backLogin()">Einloggen
+                </button>
+            </div>
+            <div class="col w-50">
+                <button type="submit" class="btn-st btn-st2"
+                        ng-disabled="loginForm.$invalid">Weiter
+                </button>
+            </div>
+        </div>
+    </div>
+</form>
+
+<form id="federationForm" method="post" action="{{vm.federationURL}}" ng-show="vm.showSSOConfirmation">
+  <input type="hidden" name="SAMLResponse" value="{{vm.asserion}}" />
+  <input type="hidden" name="RelayState" value="{{vm.relayState}}" />
+  <input type="submit" value="Submit" />
+</form>

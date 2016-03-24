@@ -1,0 +1,11 @@
+<div class="fm-data captchaContainer">
+    <img class="captchaImage" ng-src="{{imageBase64}}" ng-click="reloadCaptcha()"/>
+</div>
+<ops-textbox
+    class="captcha-data"
+    type="text"
+    inner-id="captchaText"
+    ng-model="ngModel"
+    label="Captcha"
+    ng-required="true">
+</ops-textbox>

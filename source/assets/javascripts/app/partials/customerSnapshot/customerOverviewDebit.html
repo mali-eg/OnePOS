@@ -1,0 +1,64 @@
+<div class="page-customer-overview-debit mt-40 mb-20">
+    <h1 class="txt-st0 mb-0">Bestandskunden</h1>
+
+    <div class="cluster-st1 mb-10">
+        <h2 class="title-st1">{{vm.customerAccount.customerMasterData.customerName}}
+            ({{vm.customerAccount.customerMasterData.customerNumber}})</h2>
+
+        <h2 class="txt-st9 mb-25">{{vm.customerAccount.customerMasterData.product}}</h2>
+
+        <div class="grid">
+            <div class="col w-70">
+                <div class="grid">
+                    <div class="col w-25">
+                        <p class="txt-st11 mb-0">Rufnummer</p>
+
+                        <p class="txt-st12 mb-0 mt-5" ng-class="{'text-st12-ch1': vm.customerAccount.customerSubscribers[0].mobileNumberColor == 'red', 'text-st12-ch2': vm.customerAccount.customerSubscribers[0].mobileNumberColor == 'gray' }">{{vm.customerAccount.customerMasterData.customerNumber}}</p>
+                    </div>
+                    <div class="col w-50">
+                        <div class="txt-hold-st1 txt-hold-st1-ch1">
+                            <p class="txt-st11 mb-0">Markt</p>
+
+                            <p class="txt-st12 mb-0 mt-5">{{vm.customerAccount.customerMasterData.market}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid mt-25">
+                    <div class="col w-25">
+                        <p class="txt-st11 mb-0">Aktueller Kontostand</p>
+
+                        <p class="txt-st12 mb-0 mt-5">{{vm.customerAccount.customerSubscribers[0].currentBalance}}</p>
+                    </div>
+                    <div class="col w-50">
+                        <div class="txt-hold-st1 txt-hold-st1-ch1">
+                            <p class="txt-st11 mb-0">Guthaben Verfallsdatum</p>
+
+                            <p class="txt-st12 mb-0 mt-5">{{vm.customerAccount.customerSubscribers[0].balanceExpiryDate | date:'dd.MM.yyyy'}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col w-30">
+                <a href="" class="link-st link-st1 link-block align-text-right mb-20">Debit zu Credit Wechsel</a>
+                <a href="" class="link-st link-st1 link-block align-text-right">Neues Kundenkonto auf BAN</a>
+            </div>
+        </div>
+    </div>
+    <div ng-if="vm.customerAccount.availabilityList.length > 0" class="cluster-st1 mb-10">
+        <h2 class="title-st1">Verfügbarkeitsprüfung<a href="#" class="link-st1 f-right">Verfügbarkeitsprüfung für
+            Neukunde</a></h2>
+
+        <div ng-repeat="aval in vm.customerAccount.availabilityList" class="media-st1 clearfix">
+            <div class="media-object mr-15 f-left">
+                <i class="ico ico-size-32 ico-txt ico-info"
+                   ng-class="{'ico-color-5': aval.iconColor == 'red', 'ico-color-6': aval.iconColor == 'green','ico-color-7': aval.iconColor == 'yellow', 'ico-color-1': aval.iconColor == 'black' }">i</i>
+            </div>
+            <div class="media-body">
+                <h3 class="txt-st4">{{aval.serviceName}}</h3>
+
+                <p class="txt-st7">{{aval.description}}</p>
+                <hr ng-if="!$last">
+            </div>
+        </div>
+    </div>
+</div>

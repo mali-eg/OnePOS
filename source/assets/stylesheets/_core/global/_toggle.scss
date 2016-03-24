@@ -1,0 +1,144 @@
+.mod-toggle .tg-head:hover {
+	cursor: pointer;
+}
+
+.tg-head, .ttg-head {
+	@extend .cf;
+	position: relative;
+}
+
+.js {
+	.tg-container {
+		display: none;
+	}
+
+	.tg-body {
+		display: none;
+		position: relative;
+	}
+
+	.tg-display {
+		display: block;
+	}
+
+	tbody.tg-body {
+		position: static
+	}
+
+	tbody.tg-display {
+		display: table-row-group;
+	}
+
+}
+
+.tg-progress {
+	text-align: center;
+}
+
+.tg-close {
+	display: none;
+}
+
+i, svg {
+
+	&.tg-hide,
+	&.tg-show,
+	&.tg-link {
+		margin-top: -4px;
+		position: absolute;
+		right: $margin-lrg;
+		top: 50%;
+	}
+
+}
+
+.tg-show {
+	display: inline-block;
+}
+
+.tg-hide {
+	display: none;
+}
+
+.tg-active {
+
+	.tg-show, {
+		display: none;
+	}
+
+	.tg-hide {
+		display: inline-block;
+	}
+
+	i, svg {
+
+		&.tg-hide,
+		&.tg-show,
+		&.tg-link {
+
+			// Increase the i element right position .tg-head has a negative margin for branding guidelines
+			right: ($margin-lrg + $margin-sml)
+
+		}
+	}
+
+}
+
+.tg-progress {
+	background: $black;
+	background: rgba(0, 0, 0, .8);
+	@include border-radius(3px);
+	color: $white;
+	font: 700 20px $body-font;
+	left: 50%;
+	margin: 50px 0 -50px -80px;
+	padding: 30px 35px;
+	position: relative;
+	width: 165px;
+	height: 150px;
+	z-index: 100;
+
+	img {
+		margin-bottom: 20px;
+	}
+
+}
+
+@media only screen and (min-width: $mq-lrg) {
+
+	.tg-modal .mod-toggle .tg-body {
+		position: static;
+		background: none;
+	}
+
+	.mod-toggle[data-scope="sml"] {
+
+		.tg-body {
+			display: block;
+		}
+
+		.tg-hide,
+		.tg-show {
+			display: none;
+		}
+
+		.tg-tooltip .tg-body {
+			display: none;
+		}
+		.tg-tooltip .tg-display {
+			display: block;
+		}
+	}
+
+	.tg-link {
+		display: none;
+	}
+
+	.tg-close {
+		display: block;
+		position: absolute;
+		right: 20px;
+		top: 20px;
+	}
+
+}

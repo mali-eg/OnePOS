@@ -1,0 +1,74 @@
+// -- flyouts
+.tg-flyout {
+
+	&>.tg-body {
+		// background: #3d3d3c;
+		@include vf-box-shadow($box-shadow-inset);
+
+		background: $brand-4;
+		margin: 10px -10px 15px;
+		padding: 20px;
+		position: relative;
+		
+		&:before {
+			content: '';
+			border: 10px solid transparent;
+		    border-bottom-color: $brand-2;
+		    top: -20px;
+		    left: 18px;
+		    position: absolute;
+		}
+
+		&:after {
+			content: '';
+			border: 11px solid transparent;
+		    border-bottom-color: $lightest-grey;
+		    top: -19px;
+		    left: 17px;
+		    position: absolute;
+		}
+	}
+
+	.tg-close .i-close-lrg, .tg-close .icon-close-i-lrg {
+		left: -9999em;
+		position: absolute;
+	}
+}
+
+@media only screen and (min-width: $mq-lrg) {
+
+	// -- flyouts
+	.tg-flyout {
+		position: relative;
+
+		.tg-body {
+			@include border-radius(3px);
+			@include box-shadow(0 1px 4px 0 #555);
+			background: $white;
+			border: 1px solid #ababab;
+			padding-right: 40px;
+			position: absolute;
+			z-index: 10;
+
+			// &:before {
+			// 	left: 100px;
+			// }
+		}
+
+		.tg-body:after {
+		    border-bottom-color: $white;
+		}
+
+		.tg-close {
+
+			.btn {
+				left: -9999em;
+				position: absolute;
+			}
+
+			.i-close-lrg, .icon-close-i-lrg {
+				position: static;
+			}
+		}
+	}
+}

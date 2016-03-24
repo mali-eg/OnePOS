@@ -1,0 +1,28 @@
+/* ==========================================================================
+Hr tag
+========================================================================== */
+hr{
+    height:0;
+    border-width: 1px;
+    border-color: #ccc;
+    //F4.2 Main divider
+    &.hr-st1{
+        border-width: 5px;
+        border-color: #666;
+    }
+    //F4.3 Sub divider
+    &.hr-st2{
+        border-width: 5px;
+        border-color: #ccc;
+    }
+    //F4.4 Subsub divider 2px
+    &.hr-st3{
+        border-width: 2px;
+        border-color: #ccc;
+    }
+    //F4.5 ACC Content Divider
+    &.hr-st4{
+        /* border-width: 2px; unknown*/
+        border-color: #ccc;
+    }
+}

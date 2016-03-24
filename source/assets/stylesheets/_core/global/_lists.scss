@@ -1,0 +1,243 @@
+// lists
+.wysiwyg ul,
+.wysiwyg ol,
+.list {
+    margin-bottom: $margin-lrg;
+    padding-left: $margin-lrg;
+    list-style-position: outside;
+
+    li {
+        margin-bottom: $margin-sml;
+    }
+
+    .list,
+    ul,
+    ol {
+        margin: $margin-sml 0 0;
+        padding-left: $margin-xl;
+    }
+}
+
+.wysiwyg ul,
+.list ul,
+ul.list {
+    list-style-type: disc;
+
+    ul {
+        list-style-type: circle;
+
+        ul {
+            list-style-type: square;
+        }
+    }
+}
+
+.wysiwyg ol,
+.list ol,
+ol.list {
+    list-style-type: decimal;
+}
+
+.wysiwyg .list-link-arrow,
+.wysiwyg .list-icon {
+    list-style: none;
+    padding-left: 0;
+}
+
+.checklist,
+.wysiwyg .checklist {
+
+    list-style-type: none;
+    margin-bottom: 15px;
+
+    li {
+        background: url('/assets/images/misc/list-tick-b-xsml.png') no-repeat;
+        padding-left: 26px;
+        margin-bottom: 5px;
+
+    }
+
+}
+.arrowlist {
+    list-style-type: none;
+    margin-bottom: 15px;
+
+    li {
+        background: url('/assets/images/misc/arrow-right-b-xxsml.png') no-repeat 0 2px;
+        padding-left: 26px;
+        margin-bottom: 5px;
+
+    }
+}
+.checkmarks,
+.wysiwyg .checkmarks {
+
+    list-style-type: none;
+    margin-bottom: 15px;
+
+    li {
+        background: url('/assets/images/misc/list-tick-b-xsml.png') no-repeat;
+        padding-left: 26px;
+        margin-bottom: 5px;
+
+        &:before {
+            content: 'yes ';
+            position: absolute;
+            left: 10000em;
+        }
+    }
+
+}
+
+.wysiwyg .checkmarks li {
+    margin-left: -15px;
+}
+
+// list link arrow
+.list-link-arrow,
+.list-icon {
+
+    li {
+        margin-bottom: 5px;
+    }
+
+}
+
+.list-icon li,
+.link-icon {
+    margin-bottom: 10px;
+    @extend .cf;
+
+    span {
+        padding-left: 35px;
+        display: block;
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+    }
+
+    .icon-wrap {
+        display: inline;
+        float: left;
+        height: 32px;
+        width: 32px;
+        margin-right: 0;
+        margin-top: -4px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+}
+
+.inline-link-icon {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+// lined lists
+.list-lined {
+    margin-bottom: $margin-lrg;
+
+    li {
+        border-top: 1px solid #ccc;
+        padding: $pad-med;
+
+        &:first-child {
+            border-top: 0;
+        }
+    }
+}
+
+.list-lined .wm-arrow {
+    display: none;
+}
+
+.list-extras {
+    @include border-radius($border-radius);
+    @include vf-box-shadow($box-shadow);
+}
+
+.le-item {
+    border-top: 1px solid #d5d5d5;
+    margin: 0 $margin-sml;
+
+    &:first-child {
+        border-top: 0;
+    }
+
+    .i-arrow-right-black-lrg, .icon-arrow-right-i-lrg {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        margin-top: -6px;
+    }
+
+    .le-bit {
+        color: #666;
+    }
+}
+
+.le-head {
+    display: block;
+    color: $body-color;
+    padding: 10px 15px;
+    position: relative;
+
+    h3 {
+        margin-bottom: 0;
+        font-weight: 400;
+    }
+
+}
+
+.le-body {
+    display: none;
+}
+
+@media only screen and (min-width: $mq-lrg) {
+
+    .list-extras {
+        box-shadow: none;
+        border: 0;
+
+        .icon-wrap {
+            width: auto;
+            margin: -7px 10px 0 0;
+        }
+
+        .le-item {
+            border: 0;
+
+            // Reset negative margins above in mobile for brand guidelines
+            margin: 0;
+
+            margin-bottom: $margin-xl;
+
+            .le-bit,
+            .i-arrow-right-black-lrg, .icon-arrow-right-i-lrg {
+                display: none;
+            }
+
+            h3 {
+                margin-bottom: $margin-lrg;
+                font-weight: 700;
+            }
+
+        }
+
+        .le-head {
+            padding: $margin-med 0 0;
+
+            &:active {
+                background-color: $white;
+            }
+        }
+
+        .le-body {
+            clear: left;
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "DEFAULT": {
+        "headline": "Entschuldigung,",
+        "text": "Bitte versuchen Sie es später nochmal."
+    },
+    "400": {
+        "DEFAULT": {
+            "title": "testing",
+            "text": "Default error message.",
+            "type":"error",
+            "overlay": true
+        },
+        "NIL0A0857":{
+            "text": "Zu viele erfolglose Login-Versuche. Ihr Konto wurde gesperrt. Bitte kontaktieren Sie Ihren Administrator."
+        },
+        "NIL0A0856":{
+            "text": "Zu viele erfolglose Login-Versuche. Ihr Konto wurde gesperrt. Bitte kontaktieren Sie Ihren Administrator.",
+            "type":"error"
+        },
+        "NIL0A0838":{
+            "text": "Wrong credentials."
+        }
+    },
+    "403": {
+        "DEFAULT": {
+            "title": "Entschuldigung, da ist was schiefgelaufen.",
+            "text": "Bitte versuchen Sie es später nochmal.",
+            "overlay": true
+        },
+        "NIL00A003": {
+            "title": "Entschuldigung, da ist was schiefgelaufen.",
+            "text": "Bitte versuchen Sie es später nochmal."
+        }
+    },
+    "500": {
+        "DEFAULT": {
+            "title": "Entschuldigung, da ist was schiefgelaufen.",
+            "text": "Bitte versuchen Sie es später nochmal.",
+            "overlay": true
+        },
+        "NIL00F101": {
+            "title": "Entschuldigung, da ist was schiefgelaufen.",
+            "text": "Bitte versuchen Sie es später nochmal."
+        }
+    }
+}

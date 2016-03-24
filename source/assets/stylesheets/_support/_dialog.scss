@@ -1,0 +1,186 @@
+.di-content {
+    position: absolute;
+    left: -9999em;
+    right: auto;
+    background: $white;
+    display: none; // This is added specifically to fix an issue on IE that if the element is not totally hidden it will preserve a huge white space below the footer */
+
+    &.di-iframe {
+        .di-scrollable-iframe {
+          overflow: auto;
+          height: 100%;
+          -webkit-overflow-scrolling: touch;
+        }
+        iframe{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &.di-show {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 100;
+        overflow: hidden;
+        display: block; // This is added specifically to fix an issue on IE that if the element is not totally hidden it will preserve a huge white space below the footer */
+    }
+
+    .di-inner {
+        width: 100%;
+        padding: 50px 15px 15px;
+        position: relative;
+        height: 100%;
+    }
+
+    .di-wrap {
+        position: relative;
+        overflow-x: auto;
+    }
+
+    .di-close {
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        cursor: pointer;
+        padding: 8px 9px;
+        @include vf-box-shadow($box-shadow);
+        @include border-radius(3px);
+        line-height: 0;
+        background: $white;
+    }
+
+}
+
+.di-image {
+    img {
+        max-width: 100%;
+    }
+
+    .di-inner {
+        height: 100%;
+        max-width: 100%;
+    }
+}
+
+.di-iframe.di-content {
+  .di-inner {
+    overflow: hidden;
+  }
+}
+
+.zoom-content,.video-content {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    max-width: 100%;
+
+    &:after {
+        position: absolute;
+        z-index: 1;
+        content: '';
+        top: 50%;
+        left: 50%;
+        margin: -40px 0 0 -40px;
+        pointer-events: none;
+    }
+
+    &:before {
+        background: rgba(0, 0, 0, .1);
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        pointer-events: none;
+    }
+}
+
+.video-content {
+    overflow: hidden;
+    &:after {
+        background: url('../../assets/css/img/play-button.png') no-repeat;
+        width: 102px;
+        height: 75px;
+    }
+}
+
+.zoom-content {
+    img {
+        @include vf-box-shadow($box-shadow);
+        max-width: 100%;
+    }
+
+    &:after {
+        background: url('../../assets/css/img/zoom-overlay.png') no-repeat;
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.di-image-inner {
+    overflow: auto;
+    height: 100%;
+
+    img {
+        max-width: inherit;
+    }
+}
+
+.di-duplicate-inner {
+    overflow: auto;
+    height: 100%;
+
+    > div {
+        overflow: visible;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: $mq-lrg) {
+    .teaser .img-wrap .video-content {
+        &:after {
+            top: 30%;
+            right: 27%;
+            left: auto;
+        }
+    }
+}
+
+@media only screen and (min-width: $mq-xlrg) {
+    .zoom-content {
+        cursor: default;
+
+
+        &:after {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-width: $mq-lrg) {
+
+    .di-content {
+        background: rgba(0, 0, 0, .75);
+        padding: 40px 0;
+
+        .di-inner {
+            width: 767px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: $border-radius;
+            overflow: auto;
+        }
+    }
+
+    .di-content.di-iframe .di-scrollable-iframe {
+        -webkit-overflow-scrolling: touch;
+        overflow-y: scroll;
+        width: 800px;
+        height: 100%;
+    }
+
+    .di-content.di-iframe iframe  { width: 767px; }
+}

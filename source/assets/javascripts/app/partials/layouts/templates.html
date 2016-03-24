@@ -1,0 +1,912 @@
+<!-- F9.3, F9.4, F9.6 -->
+<ops-stepper states-list="stepsStateObj"></ops-stepper>
+<!-- F9.3, F9.4, F9.6 -->
+<div class="belt mt-95">
+    <!-- F27. Infobar -->
+    <div class="cluster-st2 mb-10">
+        <i class="ico ico-size-48 ico-user-gray ico-svg mr-10"></i>
+        <div class="txt-hold-st0 mr-10">
+            <p class="txt-st11 mb-0">Customer</p>
+            <p class="txt-st12 mb-0 mt-5">Franz Ferdinand</p>
+        </div>
+        <div class="txt-hold-st1 txt-hold-st1-ch2 mr-10">
+            <p class="txt-st11 mb-0">Current BAN</p>
+            <p class="txt-st12 mb-0 mt-5">123 456 789</p>
+        </div>
+        <div class="txt-hold-st1 txt-hold-st1-ch2">
+            <p class="txt-st11 mb-0">Selected NBA´s</p>
+            <p class="txt-st12 mb-0 mt-5">1/0/3</p>
+        </div>
+        <div class="f-right">
+            <i class="ico ico-size-48 ico-color-1 ico-svg mr-10"></i>
+            <div class="txt-hold-st0 mr-10">
+                <p class="txt-st11 mb-0">Your basket contains</p>
+                <p class="mb-0 mt-5"><a class="link-st link-st1" href="#">Vodafone Red 6GB</a> with ( 0 ) <a class="link-st link-st1">addons</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- F27. Infobar end -->
+
+    <!-- tabs F21 -->
+    <div class="cluster-st1 mb-10">
+        <h2 class="title-st1">Tabs</h2>
+        <!-- F21 -->
+        <ops-tabs ng-model="modelName">
+            <ops-pane title="Tab1" id="tabName1" disabled="true">
+                <p>tab1 content</p>
+            </ops-pane>
+            <ops-pane title="Tab2" id="tabName2">
+                <p>tab2 content</p>
+            </ops-pane>
+            <ops-pane title="Tab2" id="tabName3">
+                <p>tab3 content</p>
+            </ops-pane>
+        </ops-tabs>
+        <!-- F21 end -->
+    </div>
+    <!-- tabs F21 end -->
+
+    <!-- Accordion F10 -->
+    <div class="cluster-st1 mb-10">
+        <h2 class="title-st1">Accordion</h2>
+        <!-- F10 -->
+        <div ops-accordion>
+            <div accordion-panel>
+                <div accordion-panel-heading>
+                    header is here
+                    <i class="ico ico-size-28 ico-color-6 ico-svg ico-round ico-check-white f-right"></i>
+                </div>
+                <div class="panel-content">7amada 3ml directive w b2a kowis</div>
+            </div>
+            <div accordion-panel heading="header is here">
+                <div class="panel-content">7amada 3ml directive w b2a kowis</div>
+            </div>
+            <div accordion-panel heading="header is here">
+                <div class="panel-content">7amada 3ml directive w b2a kowis</div>
+            </div>
+            <div accordion-panel heading="header is here">
+                <div class="panel-content">7amada 3ml directive w b2a kowis</div>
+            </div>
+        </div>
+        <!-- F10 end -->
+    </div>
+    <!-- Accordion F10 end -->
+
+    <!-- Accordion standalone with childs -->
+    <div class="mb-10" ops-accordion>
+        <!-- parent accordion -->
+        <div accordion-panel heading="F10.2.1 standalone accordion header closed">
+            <div class="panel-content">Parent</div>
+            <!-- child accordion -->
+            <div ops-accordion>
+                <div accordion-panel heading="F10.2.1 standalone accordion header closed">
+                    <div class="panel-content">Parent > Child 1</div>
+                    <!-- child accordion -->
+                    <div ops-accordion>
+                        <div accordion-panel heading="F10.2.1 standalone accordion header closed">
+                            <div class="panel-content">Child 1 > Child 2</div>
+                        </div>
+                    </div>
+                    <!-- child accordion end -->
+                </div>
+            </div>
+            <!-- child accordion end -->
+        </div>
+        <!-- parent accordion -->
+    </div>
+    <!-- Accordion standalone with childs end -->
+
+    <!-- F22. Subscriber module -->
+    <div class="cluster-st1 mb-20">
+        <h2 class="txt-st9 mb-25">Edward Müller ( 1234 4567890 )</h2>
+        <div class="grid">
+            <div class="col w-70">
+                <div class="grid">
+                    <div class="col w-25">
+                        <p class="txt-st11 mb-0">BAN Status</p>
+                        <p class="txt-st12 mb-0 mt-5">Tentative</p>
+                    </div>
+                    <div class="col w-25">
+                        <div class="txt-hold-st1 txt-hold-st1-ch1">
+                            <p class="txt-st11 mb-0">Markt</p>
+                            <p class="txt-st12 mb-0 mt-5">Festnetz</p>
+                        </div>
+                    </div>
+                    <div class="col w-50">
+                        <div class="txt-hold-st1 txt-hold-st1-ch1">
+                            <p class="txt-st11 mb-0">Type</p>
+                            <p class="txt-st12 mb-0 mt-5">Privat</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid mt-30">
+                    <div class="col w-25">
+                        <p class="txt-st11 mb-0">Skeleton</p>
+                        <p class="txt-st12 mb-0 mt-5">123456</p>
+                    </div>
+                    <div class="col w-25">
+                        <div class="txt-hold-st1 txt-hold-st1-ch1">
+                            <p class="txt-st11 mb-0">Solvency</p>
+                            <p class="txt-st12 mb-0 mt-5">No info</p>
+                        </div>
+                    </div>
+                    <div class="col w-50">
+                        <div class="txt-hold-st1 txt-hold-st1-ch1">
+                            <p class="txt-st11 mb-0">Sub-Type</p>
+                            <p class="txt-st12 mb-0 mt-5">Ford Verkehrstelematic</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col w-30">
+                <a href="" class="link-st inactive link-block align-text-right mb-20">Neuer Teilnehmer auf BAN</a>
+                <a href="" class="link-st link-st1 link-block align-text-right">Neues Kundenkonto auf BAN</a>
+            </div>
+        </div>
+        <h2 class="title-st1 mt-45">Subscribers (3)</h2>
+        <div class="grid">
+            <div class="col w-80">
+                <!-- F23. Indicator -->
+                <div class="txt-hold-st2 txt-hold-st2-ch1">
+                    <h2 class="txt-st9 mb-25">Red 20GB <span>member</span></h2>
+                    <div class="grid">
+                        <div class="col w-25">
+                            <p class="txt-st11 mb-0">MSISDN</p>
+                            <p class="txt-st12 text-st12-ch1 mb-0 mt-5">01723456789</p>
+                        </div>
+                        <div class="col w-50">
+                            <div class="txt-hold-st1 txt-hold-st1-ch1">
+                                <p class="txt-st11 mb-0">Subscriber Name (Bronze)</p>
+                                <p class="txt-st12 mb-0 mt-5">Edward Meyerosei</p>
+                            </div>
+                        </div>
+                        <div class="col w-25">
+                            <div class="txt-hold-st1 txt-hold-st1-ch1">
+                                <p class="txt-st11 mb-0">Next regular Sub. Date</p>
+                                <p class="txt-st12 mb-0 mt-5">10/10/20</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- F23. Indicator end -->
+            </div>
+            <div class="col w-20">
+                <a href="" class="link-st link-st1 link-block align-text-right mb-20">Prolongation</a>
+                <a href="" class="link-st link-st1 link-block align-text-right mb-20">Modify product</a>
+                <a href="" class="link-st link-st1 link-block align-text-right">Subscriber details</a>
+            </div>
+        </div>
+        <hr class="hr-st3 mt-20 mb-20">
+        <div class="grid">
+            <div class="col w-80">
+                <!-- F23. Indicator -->
+                <div class="txt-hold-st2 txt-hold-st2-ch2">
+                    <h2 class="txt-st9 mb-25">Red 6GB with Smartphone <span>member</span></h2>
+                    <div class="grid">
+                        <div class="col w-25">
+                            <p class="txt-st11 mb-0">MSISDN</p>
+                            <p class="txt-st12 text-st12-ch2 mb-0 mt-5">01723456789</p>
+                        </div>
+                        <div class="col w-50">
+                            <div class="txt-hold-st1 txt-hold-st1-ch1">
+                                <p class="txt-st11 mb-0">Subscriber Name (Bronze)</p>
+                                <p class="txt-st12 mb-0 mt-5">Edward Meyerosei</p>
+                            </div>
+                        </div>
+                        <div class="col w-25">
+                            <div class="txt-hold-st1 txt-hold-st1-ch1">
+                                <p class="txt-st11 mb-0">Next regular Sub. Date</p>
+                                <p class="txt-st12 mb-0 mt-5">10/10/20</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- F23. Indicator end -->
+            </div>
+            <div class="col w-20">
+                <a href="" class="link-st link-st2 link-block align-text-right mb-20">Prolongation</a>
+                <a href="" class="link-st link-st2 link-block align-text-right mb-20">Modify product</a>
+                <a href="" class="link-st link-st1 link-block align-text-right">Subscriber details</a>
+            </div>
+        </div>
+        <hr class="hr-st3 mt-20 mb-20">
+        <div class="grid">
+            <div class="col w-80">
+                <!-- F23. Indicator -->
+                <div class="txt-hold-st2 txt-hold-st2-ch3">
+                    <h2 class="txt-st9 mb-25">Red 6GB with Smartphone <span>member</span></h2>
+                    <div class="grid">
+                        <div class="col w-25">
+                            <p class="txt-st11 mb-0">MSISDN</p>
+                            <p class="txt-st12 mb-0 mt-5">01723456789</p>
+                        </div>
+                        <div class="col w-50">
+                            <div class="txt-hold-st1 txt-hold-st1-ch1">
+                                <p class="txt-st11 mb-0">Subscriber Name (Bronze)</p>
+                                <p class="txt-st12 mb-0 mt-5">Edward Meyerosei</p>
+                            </div>
+                        </div>
+                        <div class="col w-25">
+                            <div class="txt-hold-st1 txt-hold-st1-ch1">
+                                <p class="txt-st11 mb-0">Next regular Sub. Date</p>
+                                <p class="txt-st12 mb-0 mt-5">10/10/20</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- F23. Indicator end -->
+            </div>
+            <div class="col w-20">
+                <a href="" class="link-st link-st2 link-block align-text-right mb-20">Prolongation</a>
+                <a href="" class="link-st link-st1 link-block align-text-right mb-20">Modify product</a>
+                <a href="" class="link-st link-st1 link-block align-text-right">Subscriber details</a>
+            </div>
+        </div>
+    </div>
+    <!-- F22. Subscriber module end -->
+
+    <!-- vd -->
+    <div class="cluster-st1 mb-20">
+        <h2 class="title-st1">B6 Icons - Matrix <a href="#" class="link-st1 f-right">Verfügbarkeitsprüfung für Neukunde</a></h2>
+        <div class="media-st1 clearfix">
+            <div class="media-object mr-15 f-left">
+                <i class="ico ico-size-32 ico-color-5 ico-txt ico-info">i</i>
+            </div>
+            <div class="media-body">
+                <h3 class="txt-st4 mb-20">Kabel Voice / Internet</h3>
+                <p class="txt-st7">Kabel Internet & Telefon is not available.</p>
+                <hr>
+            </div>
+        </div>
+        <div class="media-st1 clearfix">
+            <div class="media-object mr-15 f-left">
+                <i class="ico ico-size-32 ico-color-6 ico-txt ico-info">i</i>
+            </div>
+            <div class="media-body">
+                <h3 class="txt-st4 mb-20">Vodafone Voice / Internet</h3>
+                <p class="txt-st7">DSL 6000, 16000, 25000 and 50000 with connection type with base terminal, feature
+                    connection available.</p>
+                <hr>
+            </div>
+        </div>
+        <div class="media-st1 clearfix">
+            <div class="media-object mr-15 f-left">
+                <i class="ico ico-size-32 ico-color-7 ico-txt ico-info">i</i>
+            </div>
+            <div class="media-body">
+                <h3 class="txt-st4 mb-20">Vodafone TV for DSL</h3>
+                <p class="txt-st7"><strong>Warning:</strong> This product is available for private customers only!</p>
+                <p class="txt-st7">Bandwiths 6000 and 16000: Free TV via DSL, Theme package, TV package, Video package,
+                    Sky package.
+                    Bandwiths 25000 and 50000: Video package, Sky (via SAT).</p>
+                <hr>
+            </div>
+        </div>
+        <div class="media-st1 clearfix">
+            <div class="media-object mr-15 f-left">
+                <i class="ico ico-size-32 ico-color-1 ico-txt ico-info">i</i>
+            </div>
+            <div class="media-body">
+                <h3 class="txt-st4 mb-20">Vodafone Voice Internet / LTE</h3>
+                <p class="txt-st7"><strong>Note:</strong> If broadband access from Vodafone, Internet (DSL/CDSL
+                    including regional) with
+                    bandwith 6000 or higher, LTE cannot be booked.</p>
+            </div>
+        </div>
+    </div>
+    <!-- vd end -->
+
+    <!-- B6 Icons -->
+    <div class="cluster-st1 mb-20">
+        <h2 class="title-st1">B6 Icons - Matrix</h2>
+        <div class="grid">
+            <div class="col w-50">
+                <h2>Icon with text</h2>
+                <i class="ico ico-size-14 ico-color-1 ico-txt ico-info">i</i>
+                <i class="ico ico-size-20 ico-color-2 ico-txt ico-info">i</i>
+                <i class="ico ico-size-32 ico-color-3 ico-txt ico-info">i</i>
+                <i class="ico ico-size-32 ico-color-7 ico-txt ico-info">i</i>
+                <i class="ico ico-size-48 ico-color-4 ico-txt ico-info">i</i>
+                <i class="ico ico-size-70 ico-color-5 ico-txt ico-info">i</i>
+                <i class="ico ico-size-128 ico-color-6 ico-txt ico-info">i</i>
+            </div>
+            <div class="col w-50">
+                <h2>Icon with text inverted</h2>
+                <i class="ico ico-size-14 ico-color-1 ico-txt-invert ico-info">i</i>
+                <i class="ico ico-size-20 ico-color-2 ico-txt-invert ico-info">i</i>
+                <i class="ico ico-size-32 ico-color-3 ico-txt-invert ico-info">i</i>
+                <i class="ico ico-size-32 ico-color-7 ico-txt-invert ico-info">i</i>
+                <i class="ico ico-size-48 ico-color-4 ico-txt-invert ico-info">i</i>
+                <i class="ico ico-size-70 ico-color-5 ico-txt-invert ico-info">i</i>
+                <i class="ico ico-size-128 ico-color-6 ico-txt-invert ico-info">i</i>
+            </div>
+        </div>
+        <hr class="hr-st3 mt-20 mb-20">
+        <div class="grid">
+            <div class="col w-100">
+                <h2>Icon List</h2>
+                <i class="ico ico-size-14 ico-color-2 ico-txt ico-txt-color-8 ico-info mr-20">i</i>
+                <i class="ico ico-size-28 ico-color-6 ico-svg ico-round ico-check-white"></i>
+                <i class="ico ico-size-28 ico-color-1 ico-svg ico-round ico-check-green"></i>
+                <i class="ico ico-size-48 ico-user-gray ico-svg mr-10"></i>
+                <i class="ico ico-size-20 ico-bor-color-2 ico-arrows-down"></i>
+                <i class="ico ico-size-20 ico-bor-color-2 ico-arrows-up"></i>
+            </div>
+        </div>
+    </div>
+    <!-- B6 Icons end -->
+
+    <!-- F19 Content nav horizontal -->
+    <div class="cluster-st1 mb-20">
+        <h2 class="title-st1">F19 Content nav horizontal</h2>
+        <div class="grid">
+            <div class="col w-100">
+                <div class="scroll-x-cont-st1" scrollbar="{autoUpdate: true, axis:'x'}">
+                    <div class="contentNavHorizontal-st1">
+                        <div class="contentNav-item">
+                            <p>White Business L EPlus <br> 60/1 (12 Monate)</p>
+                        </div>
+                        <div class="contentNav-item">
+                            <p>White Business L EPlus <br> 60/1 (12 Monate)</p>
+                        </div>
+                        <div class="contentNav-item">
+                            <p>White Business L EPlus <br> 60/1 (12 Monate)</p>
+                        </div>
+                        <div class="contentNav-item active-st1">
+                            <p>White Business L EPlus <br> 60/1 (12 Monate)</p>
+                        </div>
+                        <div class="contentNav-item active-st2">
+                            <p>Red6GB</p>
+                        </div>
+                        <div class="contentNav-item active-st3">
+                            <p>Red6GB</p>
+                        </div>
+                        <div class="contentNav-item">
+                            <p>White Business L EPlus <br> 60/1 (12 Monate)</p>
+                        </div>
+                        <div class="contentNav-item">
+                            <p>White Business L EPlus <br> 60/1 (12 Monate)</p>
+                        </div>
+                        <div class="contentNav-item">
+                            <p>White Business L EPlus <br> 60/1 (12 Monate)</p>
+                        </div>
+                        <div class="contentNav-item">
+                            <p>White Business L EPlus <br> 60/1 (12 Monate)</p>
+                        </div>
+                        <div class="contentNav-item">
+                            <p>White Business L EPlus <br> 60/1 (12 Monate)</p>
+                        </div>
+                        <div class="contentNav-item">
+                            <p>White Business L EPlus <br> 60/1 (12 Monate)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- F19 Content nav horizontal end -->
+
+    <!-- B2 Typography -->
+    <div class="cluster-st1 mb-20">
+        <h2 class="title-st1">B2 Typography</h2>
+        <div class="grid">
+            <div class="col w-100">
+                <h1 class="txt-st0">
+                    Main title H1 30,lh34
+                    <a href="#" class="ico ico-save"></a>
+                </h1>
+                <h1 class="txt-st1">H1 30/34</h1>
+                <h2 class="txt-st2">H2 24/LH28 Vfreg,reg</h2>
+                <h2 class="txt-st3">MDD 20/LH24 Vfreg,reg</h2>
+                <h3 class="txt-st4 mb-20">H3 18/LH22 Vfreg,bold</h3>
+                <h2 class="txt-st5">List/Table Headline 18/LH22 Vfreg,reg</h2>
+                <h2 class="txt-st6">list/table header 16/20 Vfreg,bold</h2>
+                <p class="txt-st7">copy 16/20 Vfreg,reg</p>
+                <p class="txt-st8">caption 12/16 Vfreg,reg</p>
+                <p class="txt-st9">CS Chapter Head 36/36 Vflight,reg</p>
+                <h2 class="txt-st10">CS Chapter Sub 24/24 Vflight,reg</h2>
+            </div>
+        </div>
+        <hr class="hr-st1 mt-40 mb-40"/>
+        <div class="grid">
+            <div class="col w-80">
+                <div class="txt-hold-st2 txt-hold-st2-ch1">
+                    <h2 class="txt-st9 mb-25">Red 20GB <span>member</span></h2>
+                    <div class="grid">
+                        <div class="col w-25">
+                            <p class="txt-st11 mb-0">MSISDN</p>
+                            <p class="txt-st12 text-st12-ch1 mb-0 mt-5">01723456789</p>
+                        </div>
+                        <div class="col w-50">
+                            <div class="txt-hold-st1 txt-hold-st1-ch1">
+                                <p class="txt-st11 mb-0">Subscriber Name (Bronze)</p>
+                                <p class="txt-st12 mb-0 mt-5">Edward Meyerosei</p>
+                            </div>
+                        </div>
+                        <div class="col w-25">
+                            <div class="txt-hold-st1 txt-hold-st1-ch1">
+                                <p class="txt-st11 mb-0">Next regular Sub. Date</p>
+                                <p class="txt-st12 mb-0 mt-5">10/10/20</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col w-20">
+                <a href="" class="link-st link-st1 link-inline-block mb-20">Prolongation</a>
+                <a href="" class="link-st link-st2 link-inline-block mb-20">Modify product</a>
+                <a href="" class="link-st link-st1 link-inline-block">Subscriber details</a>
+            </div>
+        </div>
+        <hr class="hr-st1 mt-40 mb-40"/>
+        <div class="grid">
+            <div class="col col-100">
+                <ul class="list-st1">
+                    <li>Lorem ipsum dolor sit amet, consectetur</li>
+                    <li>adipiscing elit. Donec varius lacus nec ipsum</li>
+                    <li>placerat tempus. Vivamus bibendum ex ex,</li>
+                </ul>
+            </div>
+        </div>
+        <hr class="hr-st1 mt-40 mb-40"/>
+        <div class="grid">
+            <div class="col col-100">
+                <p><i class="ico ico-check mr-20"></i> Kabel Internet & Telefon is not available. #33,16/LH20/VFreg,reg
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- B2 Typography end -->
+
+    <!-- F1. inputs -->
+    <div class="cluster-st1 mb-20">
+        <h2 class="title-st1">F1. Typeinputfields Desktop</h2>
+        <div class="grid">
+            <div class="col w-25">
+                <!-- empty -->
+                <ops-textbox
+                    type="text"
+                    label="First Name"
+                    name="fname"
+                    innerId="fname"
+                    ng-model="fnameempty"
+                    ng-minlength="0"
+                    ng-maxlength="200"
+                    ng-required="false"
+                    ng-disabled="false"
+                    ng-readonly="false">
+                </ops-textbox>
+            </div>
+            <div class="col w-25">
+                <!-- F1.2 typed in -->
+                <ops-textbox
+                    type="text"
+                    label="First Name"
+                    name="fname"
+                    innerId="fname"
+                    ng-model="fname"
+                    ng-minlength="0"
+                    ng-maxlength="200"
+                    ng-required="false"
+                    ng-disabled="false"
+                    ng-readonly="false">
+                </ops-textbox>
+            </div>
+            <div class="col w-25">
+                <!-- F1.4 inactive state -->
+                <ops-textbox
+                    type="text"
+                    label="First Name"
+                    name="fname"
+                    innerId="fname"
+                    ng-model="fname"
+                    ng-minlength="0"
+                    ng-maxlength="200"
+                    ng-required="false"
+                    ng-disabled="true"
+                    ng-readonly="false">
+                </ops-textbox>
+            </div>
+            <div class="col w-25">
+                <!-- F1.6 review mode -->
+                <ops-textbox
+                    type="text"
+                    label="First Name"
+                    name="fname"
+                    innerId="fname"
+                    ng-model="fname"
+                    ng-minlength="0"
+                    ng-maxlength="200"
+                    ng-required="false"
+                    ng-disabled="false"
+                    ng-readonly="true">
+                </ops-textbox>
+            </div>
+        </div>
+        <hr class="hr-st1 mt-40 mb-40">
+        <h3 class="txt-st4 mb-20">Dropdown</h3>
+        <div class="grid">
+            <div class="col w-50">
+                <!-- F1.12 typed in/searchfield COMBO -->
+                <ops-select ng-model="selectModelName1" label="Select label" ng-disabled="false">
+                    <li value="item.id" ops-option="item in list">
+                        <a>{{item.desc}}</a>
+                    </li>
+                </ops-select>
+            </div>
+            <div class="col w-50">
+                <!-- F2.17 dropdown typed in inactive -->
+                <ops-select ng-model="selectModelName1" label="Select label" ng-disabled="true">
+                    <li value="item.id" ops-option="item in list">
+                        <a>{{item.desc}}</a>
+                    </li>
+                </ops-select>
+            </div>
+        </div>
+
+        <h3 class="txt-st4 mb-20">Radiobutton & checkbox</h3>
+        <div class="grid">
+            <div class="col w-100">
+                <!-- F2.13 Radiobuttons COMBO with headline -->
+                <ul class="form-list-st1">
+                    <li class="label">
+                        label
+                    </li>
+                    <li>
+                        <!-- F2.6 Radiobutton -->
+                        <ops-radio
+                            inner-id="radio1"
+                            ng-model="radio1"
+                            value="Gedruckt / elektronisch"
+                            name="radio1"
+                            label="Gedruckt / elektronisch">
+                        </ops-radio>
+                        <!-- F2.6 Radiobutton end -->
+                    </li>
+                    <li>
+                        <!-- F2.14 Radiobuttons <Combo with TEXT -->
+                        <!-- F2.15 Radiobutton selected with TEXT -->
+                        <!-- F2.19 Radiobutton selected with TEXT - inactive -->
+                        <!-- F2.20 Radiobutton default with TEXT - inactive -->
+                        <ops-radio
+                            inner-id="radio2"
+                            ng-model="radio2"
+                            value="Gedruckt / elektronisch"
+                            name="radio1"
+                            label="Gedruckt / elektronisch"
+                            desc="Address-Field or Data. VF Reg 16/20. Body-Text or Label in one or more lines. Address-Field or Data"
+                            ng-disabled="true">
+                        </ops-radio>
+                    </li>
+                    <li>
+                        <!-- F2.8 Radiobutton -->
+                        <ops-radio
+                            inner-id="radio3"
+                            ng-model="radio3"
+                            value="Gedruckt / elektronisch"
+                            name="radio1"
+                            label="Gedruckt / elektronisch"
+                            ng-disabled="true">
+                        </ops-radio>
+                        <!-- F2.8 Radiobutton end -->
+                    </li>
+                </ul>
+                <!-- F2.13 Radiobuttons COMBO with headline end -->
+                <hr class="hr-st1 mt-40 mb-40">
+                <!-- F3.5 Checkbox COMBO -->
+                <!-- F3.6 Checkbox COMBO with headline -->
+                <ul class="form-list-st1">
+                    <li class="label">
+                        label
+                    </li>
+                    <li>
+                        <!-- F3.1 Checkbox unselected -->
+                        <!-- F3.2 Checkbox selected -->
+                        <ops-checkbox
+                            inner-id="checkbox1"
+                            ng-model="checkbox1"
+                            name="checkbox1"
+                            label="Kunde hat keine E-Mail Adresse">
+                        </ops-checkbox>
+                    </li>
+                    <li>
+                        <!-- F3.3 Checkbox unchecked inactive -->
+                        <!-- F3.4 Checkbox checked inactive -->
+                        <ops-checkbox
+                            inner-id="checkbox2"
+                            ng-model="checkbox2"
+                            name="checkbox2"
+                            label="Kunde hat keine E-Mail Adresse"
+                            ng-disabled="true">
+                        </ops-checkbox>
+                    </li>
+                </ul>
+                <!-- F3.5 Checkbox COMBO end -->
+                <!-- F3.6 Checkbox COMBO with headline end -->
+            </div>
+        </div>
+    </div>
+    <!-- F1. inputs end -->
+
+    <!-- F20. single selections, value chooser -->
+    <div class="cluster-st1 mb-20">
+        <h2 class="title-st1">F20. single selections, value chooser </h2>
+        <div class="grid">
+            <div class="col w-100">
+                <div class="selection-st1">
+                    <a href="#" class="link tol"><i class="ico ico-plus"></i></a>
+                    <input type="text" class="link num" value="2">
+                    <a href="#" class="link tol"><i class="ico ico-minus"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- F20. single selections, value chooser -->
+
+    <!-- F11. Tooltip desktop -->
+    <div class="cluster-st1 mb-20">
+        <h2 class="title-st1">Tooltip</h2>
+        <i class="ico ico-size-32 ico-color-3 ico-txt ico-txt-color-2 ico-info mr-20" ops-popover tooltip-title="Peter Mayer" tooltip-desc="s" ops-popover-placement="left|bottom">i</i>
+    </div>
+    <!-- F11. Tooltip desktop end -->
+
+    <!-- F18 Notification -->
+    <div class="cluster-st1 mb-20">
+        <h2 class="title-st1">Notification</h2>
+        <div class="grid">
+            <div class="col w-100">
+                <div class="notification-st notification-st1">
+                    <i class="ico ico-size-32 ico-color-8 ico-txt ico-txt-color-2 ico-info mr-20">i</i>
+                    <p>All unsafed progress will be lost, if you do so. Do you wish to continue anyway?</p>
+                    <button class="btn-st btn-st1 btn-right" ng-init="overlayOpen = false" ng-click="overlayOpen = !overlayOpen">Overlay</button>
+                </div>
+                <div class="notification-st notification-st2">
+                    <i class="ico ico-size-32 ico-color-8 ico-txt ico-txt-color-5 ico-info mr-20">!</i>
+                    <p>All unsafed progress will be lost, if you do so. Do you wish to continue anyway?</p>
+                </div>
+                <div class="notification-st notification-st3">
+                    <i class="ico ico-size-32 ico-color-8 ico-txt ico-txt-color-6 ico-info mr-20">i</i>
+                    <p>All unsafed progress will be lost, if you do so. Do you wish to continue anyway?</p>
+                </div>
+                <div class="notification-st notification-st4">
+                    <i class="ico ico-size-32 ico-color-8 ico-txt ico-txt-color-4 ico-info mr-20">i</i>
+                    <p>All unsafed progress will be lost, if you do so. Do you wish to continue anyway?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- F18 Notification end -->
+
+    <!-- F8. Buttons Desktop -->
+    <div class="cluster-st1 mb-20">
+        <h2 class="title-st1">Buttons</h2>
+        <div class="grid">
+            <div class="col w-16">
+                <ops-submit class="btn-st btn-st1">
+                    Button text
+                </ops-submit>
+            </div>
+            <div class="col w-16">
+                <ops-submit class="btn-st btn-st1" ng-disabled="true">
+                    Button text
+                </ops-submit>
+            </div>
+            <div class="col w-16">
+                <ops-submit class="btn-st btn-st2">
+                    Button text
+                </ops-submit>
+            </div>
+            <div class="col w-16">
+                <ops-submit class="btn-st btn-st2" ng-disabled="true">
+                    Button text
+                </ops-submit>
+            </div>
+            <div class="col w-16">
+                <ops-submit class="btn-st btn-st3">
+                    Button text
+                </ops-submit>
+            </div>
+            <div class="col w-16">
+                <ops-submit class="btn-st btn-st3" ng-disabled="true">
+                    Button text
+                </ops-submit>
+            </div>
+        </div>
+    </div>
+    <!-- F8. Buttons Desktop end -->
+
+    <div class="cluster-st1 mb-20">
+        <h2 class="title-st1">H2 Container Headline #33, 24px/LH28px</h2>
+        <!-- F5.1 List elements -->
+        <table class="table-st1">
+            <tr>
+                <th>Label 1</th>
+                <th>Label 2</th>
+                <th>Label 3</th>
+                <th>Label 4</th>
+            </tr>
+            <tr>
+                <td><span class="ico ico-date"></span><a href="#" class="txt-co4">Lorem ipsum dolor</a></td>
+                <td><a href="#" class="txt-co1">Lorem ipsum dolor</a></td>
+                <td><a href="#" class="txt-co3">Lorem ipsum dolor</a></td>
+                <td><a href="#" class="txt-co2">Lorem ipsum dolor</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">Lorem ipsum dolor</a></td>
+                <td><a href="#">Lorem ipsum dolor</a></td>
+                <td><a href="#" class="txt-co3">Lorem ipsum dolor</a></td>
+                <td><a href="#" class="txt-co2">Lorem ipsum dolor</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">Lorem ipsum dolor</a></td>
+                <td><a href="#">Lorem ipsum dolor</a></td>
+                <td><a href="#" class="txt-co3">Lorem ipsum dolor</a></td>
+                <td><a href="#" class="txt-co2">Lorem ipsum dolor</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">Lorem ipsum dolor</a></td>
+                <td><a href="#">Lorem ipsum dolor</a></td>
+                <td><a href="#" class="txt-co3">Lorem ipsum dolor</a></td>
+                <td><a href="#" class="txt-co2">Lorem ipsum dolor</a></td>
+            </tr>
+        </table>
+        <!-- F5.1 List elements end -->
+        <!-- F5.1 List elements -->
+        <table class="table-st1">
+            <tr>
+                <th class="w-st1">Label 1</th>
+                <th class="w-st2">Label 2</th>
+                <th class="w-st3">Label 3</th>
+                <th class="w-st4">Label 4</th>
+            </tr>
+            <tr>
+                <td><span class="ico ico-date"></span></td>
+                <td><a href="#" class="txt-co1">Lorem ipsum dolor</a></td>
+                <td><a href="#" class="txt-co3">Lorem ipsum dolor</a></td>
+                <td><a href="#" class="txt-co2">Lorem ipsum dolor</a></td>
+            </tr>
+        </table>
+        <!-- F5.1 List elements end -->
+        <!-- F5.2 Table -->
+        <table class="table-st2">
+            <tr>
+                <th>Label 1</th>
+                <th>Label 2</th>
+                <th>Label 3</th>
+                <th>Label 4</th>
+            </tr>
+            <tr>
+                <td><span class="ico ico-date"></span><a href="#">Lorem ipsum dolor</a></td>
+                <td><a href="#">Lorem ipsum dolor</a></td>
+                <td><a href="#" class="txt-co3">Lorem ipsum dolor</a></td>
+                <td><a href="#" class="txt-co2">Lorem ipsum dolor</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">Lorem ipsum dolor</a></td>
+                <td><a href="#">Lorem ipsum dolor</a></td>
+                <td><a href="#" class="txt-co3">Lorem ipsum dolor</a></td>
+                <td><a href="#" class="txt-co2">Lorem ipsum dolor</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">Lorem ipsum dolor</a></td>
+                <td><a href="#">Lorem ipsum dolor</a></td>
+                <td><a href="#" class="txt-co3">Lorem ipsum dolor</a></td>
+                <td><a href="#" class="txt-co2">Lorem ipsum dolor</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">Lorem ipsum dolor</a></td>
+                <td><a href="#">Lorem ipsum dolor</a></td>
+                <td><a href="#" class="txt-co3">Lorem ipsum dolor</a></td>
+                <td><a href="#" class="txt-co2">Lorem ipsum dolor</a></td>
+            </tr>
+        </table>
+        <!-- F5.2 Table end -->
+    </div>
+
+    <div class="cluster-st1 mb-20">
+        <h2 class="title-st1">Kunde hat keine E-Mail Adresse</h2>
+        <!-- F6.7 H2 Container Header with checkbox - unchecked -->
+        <!-- F6.8 H2 Container Header with checkbox - checked -->
+        <h2 class="title-st1">
+            <ops-checkbox
+                inner-id="checkbox3"
+                ng-model="checkbox3"
+                name="checkbox3"
+                label="Kunde hat keine E-Mail Adresse">
+            </ops-checkbox>
+        </h2>
+        <!-- F6.18 H2 Container Header with checkbox - unchecked_inactive -->
+        <!-- F6.19 H2 Container Header with checkbox - checked_inactive -->
+        <h2 class="title-st1" ng-class="{inactive:true}">
+            <ops-checkbox
+                inner-id="checkbox5"
+                ng-model="checkbox5"
+                name="checkbox5"
+                label="Kunde hat keine E-Mail Adresse"
+                ng-disabled="true">
+            </ops-checkbox>
+        </h2>
+        <!-- F6.9 H3 Content header with checkbox - unchecked -->
+        <!-- F6.10 H3 Content header with checkbox - checked -->
+        <h3 class="title-st2">
+            <ops-checkbox
+                inner-id="checkbox4"
+                ng-model="checkbox4"
+                name="checkbox4"
+                label="Kunde hat keine E-Mail Adresse">
+            </ops-checkbox>
+        </h3>
+        <h3 class="title-st2">Combo selection</h3>
+        <p>Copy text #33,16/LH20/VFreg,reg consectetur adipiscing elit. Nam tempor eros nec posuere facilisis. Praesent
+            interdum augue in ornare blandit. Sed sollicitudin sem ac pulvinar tempus. Morbi nec ipsum nec ligula
+            facilisis pretium. Nam porttitor pellentesque justo, aliquam mollis felis viverra eget. Vestibulum massa
+            enim, vulputate eget augue ut, sollicitudin congue sapien. Nulla a nibh justo</p>
+        <ul class="list-st2">
+            <li><i class="ico ico-size-28 ico-svg ico-check-green mr-20"></i> Kabel Internet & Telefon is not available.</li>
+        </ul>
+        <div class="grid combo-selection">
+            <div class="col w-25">
+                <span class="combo-selection-title">Produktfamilie</span>
+            </div>
+            <div class="col w-75">
+                <ul class="combo-selection-list">
+                    <li><a href="#" class="select-item">Tiletitle with 2 Lines</a></li>
+                    <li class="active"><a href="#" class="select-item">Tiletitle with 2 Lines</a></li>
+                    <li class="active inactive"><a href="#" class="select-item">Tiletitle with 2 Lines</a></li>
+                    <li class="inactive"><a href="#" class="select-item">Tiletitle with 2 Lines</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--F16. Basket item start-->
+    <div class="cluster-st1 mb-10 mt-20">
+       <div class="grid">
+            <div class="col w-10">
+                <i class="ico ico-svg ico-size-70 ico-mobile"></i>
+            </div>
+            <div class="col w-75">
+               <h2 class="txt-st10 text-st10-ch1">CS Chapter Sub 24/24 Vflight,reg</h2>
+                <!--copy 16/20 Vfreg,reg-->
+                <p class="txt-st7">Activation | Subsidy 1</p>
+                <ul class="txt-st7">
+                    <li class="link-st link-inline-block mr-10">Addons ( 1 )</li>
+                    <li class="link-st link-inline-block mr-10">Promotions ( 2 )</li>
+                    <li class="link-st link-inline-block mr-10">Rabatte ( 1 )</li>
+                    <li class="link-st link-inline-block">
+                        <a ng-model="vm.details = !vm.details"  class="link-st link-st1 link-block">Details öffnen</a>
+                    </li>
+                </ul>
+
+           </div>
+            <div class="col w-15">
+                <a href="" class="link-st link-st1 link-block align-text-right mb-10">Option 1</a>
+                <a href="" class="link-st link-st1 link-block align-text-right mb-10">Option 2</a>
+                <a href="" class="link-st link-st1 link-block align-text-right">Option 3</a>
+            </div>
+           <div ng-show="vm.details">
+
+           </div>
+           <hr>
+       </div>
+    </div>
+    <!--F16. Basket item end-->
+</div>
+<!-- overlay start -->
+<div class="overlay-st1" ng-show="overlayOpen">
+    <div class="overlay-wrap">
+        <div class="overlay-cell">
+            <div class="overlay-body">
+                <h2 class="title-st1">There was an error with your request</h2>
+                <div class="overlay-content">
+                </div>
+                <div class="btns">
+                    <button class="btn-st btn-st1">Return to „change tarriff“</button>
+                    <button class="btn-st btn-st1 f-right">Return to „change tarriff“</button>
+                    <i class="ico btn-close ico-close-black" ng-click="overlayOpen = !overlayOpen"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay-bg-st1" ng-click="overlayOpen = !overlayOpen"></div>
+</div>
+<!-- overlay end -->

@@ -1,0 +1,67 @@
+// source http://nicolasgallagher.com/micro-clearfix-hack/
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after { clear: both; }
+.lt-ie8 .cf { zoom: 1; }
+
+$lt-ie9: false !default;
+
+//mixins
+@mixin shadow-box($margin-bottom) {
+	border-radius: 3px;
+	@include vf-box-shadow($box-shadow);
+	position: relative;
+	margin-bottom: $margin-bottom;
+}
+
+@mixin grey-box($margin-bottom) {
+  background: $lightest-grey;
+  border: $box-border;
+  border-radius: $border-radius;
+  padding: 10px 15px;
+  margin-bottom: $margin-bottom;
+}
+
+@mixin white-box($margin-bottom) {
+  background: $white;
+  border: $box-border;
+  border-radius: $border-radius;
+  padding: 10px 15px;
+  margin-bottom: $margin-bottom;
+}
+
+@mixin vf-box-shadow($box-shadow) {
+  box-shadow: $box-shadow;
+
+  @if $box-shadow == 'none' {
+    border: none;
+  } @else {
+    border: 1px solid #e9e9e9;
+  }
+
+  .lt-ie9 & {
+    @if $box-shadow == 'none' {
+      border: none;
+    } @else {
+      border: 1px solid $light-grey;
+    }
+  }
+}
+
+// Get's position of icon in sprite ($icon = sprite-map, $i = {filename})
+@mixin get-icon($sprite, $i) {
+  @include sprite-dimensions($sprite, $i);
+  background-position: sprite-position($sprite, $i);
+}
+// Layout detection style - used in utility.js
+@media only screen and (min-width: $mq-lrg) {
+
+  #media-layout {
+    display: none;
+  }
+
+}

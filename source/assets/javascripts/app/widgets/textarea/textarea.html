@@ -1,0 +1,26 @@
+<div class="fm-input fm-text">
+    <!-- LIB_ID:F1.9 -->
+    <textarea class="field"
+        placeholder="{{placeholder}}"
+        name="{{name}}"
+        id="{{innerId}}"
+        ng-minlength="{{ngMinlength}}"
+        ng-maxlength="{{ngMaxlength}}"
+        ng-model="ngModel"
+        ng-required="{{ngRequired}}"
+        ng-disabled="ngDisabled"
+        ng-trim="false"
+        class="field"
+        ng-readonly="ngReadonly">
+    </textarea>
+    <label for="{{innerId}}"
+           ng-class="{'active': ngModel}">
+        {{label}}
+        <span ng-if="ngRequired">*</span>
+    </label>
+    <div ng-if="desc" class="txt desc">{{desc}}</div>
+    <div ng-if="counterLabel" class="txt characters">
+        {{ngModel.length||0 + (ngModel.replace('/[^\n]/', '').length)}}/{{ngMaxlength}} {{counterLabel}}
+    </div>
+    <!-- <p class="error-txt"></p> -->
+</div>

@@ -1,0 +1,78 @@
+// services list
+.services-block {
+	@include border-radius($border-radius);
+	@include vf-box-shadow($box-shadow);
+	display: table;
+	width: 100%;
+
+	.w-33 {
+		width: 33.3333333%;
+	}
+
+	.w-50 {
+		width: 50%;
+	}
+
+}
+
+.sb-item {
+	display: table-cell;
+	text-align: center;
+	border-right: 1px solid $light-grey;
+
+	&:hover, &:active {
+		background-color: $lightest-grey;
+	}
+
+	.icon-wrap {
+		width: 100%;
+		margin: 0 0 $margin-sml;
+
+		i,svg {
+			margin-left: 8px;
+
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+	}
+	a {
+		display: block;
+		padding: 10px 10px 5px;
+		width: 100%;
+		vertical-align: middle;
+
+	}
+	&:last-child {
+		border: none;
+	}
+}
+
+@media only screen and (min-width: $mq-lrg) {
+	.services-block,
+	.sb-item {
+		@include box-shadow(none);
+		border: none;
+		display: block;
+		&:hover {
+			background-color: inherit;
+		}
+	}
+
+	.grid > .sb-item {
+		padding-left: 30px;
+	}
+
+	.sb-item {
+		margin: 0 0 $margin-sml;
+		text-align: left;
+
+		a {
+			display: inline-block;
+			padding: 0;
+			width: auto;
+			vertical-align: inherit;
+			border-right: none;
+		}
+	}
+}

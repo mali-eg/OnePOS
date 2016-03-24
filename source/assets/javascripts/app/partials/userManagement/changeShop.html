@@ -1,0 +1,20 @@
+<div>
+    <form name="changeShop"  autocomplete="off" role="form" novalidate>
+        <h2 class="title-st1 mt-45">Change Shop location</h2>
+        <ops-select
+            ng-model="vm.selected"
+            label="Please choose your new shop location">
+            <li ops-option="shop in vm.shopsList" >
+                <a ng-click = "vm.selected = shop">{{shop.shopName}}&nbsp;{{shop.rmsID}}&nbsp;{{shop.shopAddress.street}}
+                    &nbsp;{{shop.shopAddress.streetNumber}}&nbsp;{{shop.shopAddress.postCode}}
+                    &nbsp;{{shop.shopAddress.city}}
+                </a>
+            </li>
+        </ops-select>
+
+
+        <button ng-click="vm.cancel()" class="btn-st btn-st1 mt-20 mb-20">Cancel</button>
+        <button ng-disabled="vm.defaultShop === vm.selected" ng-click="vm.confirm()" class="btn-st btn-st2 pull-right mt-20 mb-20">Confirm</button>
+    </form>
+</div>
+

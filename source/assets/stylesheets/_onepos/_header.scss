@@ -1,0 +1,104 @@
+//F9.1
+.top-header {
+	height: 64px;
+	background: url("/assets/images/header/top-logo.png") no-repeat left center $red;
+	background-size: auto 100%;
+	position: relative;
+	left: 0;
+	transition: left 0.5s ease;
+
+	.menu-actionbar{
+		position: absolute;
+		left: 10px;
+		top: 25px;
+		width: 22px;
+		height: 14px;
+		background: url("/assets/images/header/menu.png") no-repeat center center transparent;
+		background-size: 100%;
+	}
+
+	.rhombus-action{
+		position: absolute;
+		left: 77px;
+		top: 16px;
+		width: 35px;
+		height: 35px;
+		display: block;
+	}
+
+	.logo-text {
+		font-family: 'VodafoneLight', Arial, sans-serif;
+		font-size: 30px;
+		color: $white;
+		position: absolute;
+		left: 135px;
+		top: 13px;
+
+		> a {
+			color: $white;
+
+			&:hover, &:focus {
+				text-decoration: none;
+			}
+		}
+
+		span {
+			font-family: 'VodafoneBold', Arial, sans-serif;
+		}
+	}
+
+	.belt {
+		height: 100%;
+		text-align: right;
+
+		.links {
+			height: 100%;
+			font-size: 0;
+
+			li {
+				height: 100%;
+				width: 150px;
+				padding: 10px 20px;
+				display: inline-block;
+				vertical-align: middle;
+				font-size: 14px;
+				text-align: left;
+				color: $white;
+
+				> a {
+					font-size: 18px;
+                    color: $white;
+				}
+
+				&.username {
+					width: 290px;
+					position: relative;
+
+					&:after {
+						content: '';
+						height: 54px;
+						width: 1px;
+						background-color: #fff;
+						position: absolute;
+						right: 0;
+						top: 5px;
+						display: inline-block;
+					}
+				}
+
+				&.logout {
+					text-align: center;
+					margin: 0;
+					background-color: #990000;
+
+					a {
+						font-size: 20px;
+						color: $white;
+						display: inline-block;
+						line-height: 44px;
+					}
+				}
+			}
+		}
+	}
+}

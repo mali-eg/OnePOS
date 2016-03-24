@@ -1,0 +1,66 @@
+// -- modals
+
+@media only screen and (min-width: $mq-lrg) {
+
+	.tg-modal {
+
+		.tg-body{
+			position:fixed;
+			width: 100%;
+			height: 100%;
+			z-index: 999;
+			top: 0;
+			left: 0;
+			overflow-y: auto;
+			background: #000;
+			background: rgba(0,0,0,.75);
+		}
+
+		.tg-inner-body {
+			position:relative;
+			margin: 50px auto;
+			width: 800px;
+		}
+
+		.tg-ajax {
+			background: #fff;
+			@include border-radius(3px);
+			@include box-shadow(0 0 40px 3px $black);
+			padding: 27px;
+			width: 800px;
+		}
+
+		.tg-heading {
+			left: 27px;
+			top: 27px;
+			right: 27px;
+			padding-bottom: 12px;
+			border-bottom: $box-border;
+		}
+
+		.tg-close {
+			position: absolute;
+			right: 27px;
+			top: 27px;
+			text-decoration: underline;
+
+			i,svg {
+				margin-left: 8px;
+			}
+		}
+
+		.tg-overlay {
+			height: 100%;
+			width: 100%;
+			top: 0;
+			left: 0;
+			position: absolute;
+			z-index: -1;
+		}
+	}
+
+	// html,
+	.tg-overflow{
+		overflow: hidden;
+	}
+}

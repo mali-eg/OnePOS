@@ -1,0 +1,124 @@
+<form name="addonsForm" ng-submit="vm.submit()" autocomplete="off" role="form" class="tariffs-wrapper" novalidate>
+    <!-- OPS-1686 Customer Header -->
+    <customer-header customer-header-data="customerHeader"></customer-header>
+    <!-- OPS-1686 Customer Header end -->
+    <div class="cluster-st2 mb-10">
+        <h3 class="txt-st4 mb-0">Ihr Tarif: <a ui-sref="customer.tariff" class="txt-co1">{{vm.currentTarrif_name}}</a></h3>
+    </div>
+    <div class="cluster-st1 mb-10">
+        <h2 class="title-st1">Filter</h2>
+        <div class="grid filterContainer">
+            <div class="col w-80">
+                <div class="grid">
+                    <div class="col w-25" ng-repeat="(key, value) in vm.extrasList | groupBy: 'category'">
+                        <div class="fm-input fm-check">
+                            <input type="checkbox"
+                                   class="field"
+                                   id="{{key | slugify:'_'}}"
+                                   ng-model="vm.filters[$index]"
+                                   ng-init="vm.filters[$index] = true"
+                                   ng-change="vm.filterChange()"
+                                   ng-disabled="vm.isTheOnlyOneSelectedn($index, vm.filters)"/>
+                            <label for="{{key | slugify:'_'}}">{{key}}</label>
+                        </div>
+                        <!--<ops-checkbox
+                            inner-id="{{key | slugify:'_'}}"
+                            ng-model="vm.filters[$index]"
+                            label="{{key}}">
+                        </ops-checkbox>-->
+                    </div>
+                </div>
+            </div>
+            <div class="col w-20">
+                <button
+                    ng-disabled="vm.checkAllDisabled"
+                    ng-click="vm.checkAll()"
+                    class="fr">alles anzeigen
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cluster-st1 mb-10">
+        <h2 class="title-st1">Optionen</h2>
+
+
+        <div class="filterationContainer">
+            <table cellpadding="0" cellspacing="0">
+                <thead>
+                <tr>
+                    <td>Auswahl/Name</td>
+                    <td></td>
+                    <td>Laufzeit</td>
+                    <td>Details</td>
+                </tr>
+                </thead>
+                <tbody ng-if="vm.filters[$index]"
+                       ng-repeat="(key, value) in vm.extrasList | groupBy: 'category'">
+                <tr>
+                    <td colspan="4">
+                        <h3>{{key}}</h3>
+                    </td>
+                </tr>
+                <tr ng-repeat="item in value">
+                    <td>
+                        <ops-checkbox
+                            inner-id="{{item.code}}"
+                            ng-model="item.checked">
+                        </ops-checkbox>
+                    </td>
+
+                    <td><label for="{{item.code}}" ng-class="{active: item.checked}">{{item.name}}</label></td>
+                    <td>{{item.validity}}</td>
+                    <td><a ng-if="item.infoURL" class="moreInfo2">Info</a></td>
+                    <!--<td><a href="{{item.infoURL}}" class="moreInfo">i</a></td>-->
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="grid">
+            <div class="col w-100">
+                <div ops-accordion>
+                    <div accordion-panel is-open="vm.panels.hiddenSOCs.isOpened">
+                        <div class="panel-content">
+                            <div accordion-panel-heading>
+                                Hidden SOCs
+                            </div>
+                            <div class="filterationContainer">
+                                <table cellpadding="0" cellspacing="0" class="noHead">
+                                    <thead>
+                                    <tr>
+                                        <td>Auswahl/Name</td>
+                                        <td></td>
+                                        <td>Laufzeit</td>
+                                        <td>Details</td>
+                                    </tr>
+                                    </thead>
+                                    <tbody
+                                           ng-repeat="(key, value) in vm.hiddenExtrasList | groupBy: 'category'">
+                                    <tr ng-repeat="item in value">
+                                        <td>
+                                            <ops-checkbox
+                                                inner-id="{{item.code}}"
+                                                ng-model="item.checked">
+                                            </ops-checkbox>
+                                        </td>
+
+                                        <td><label for="{{item.code}}"
+                                                   ng-class="{active: item.checked}">{{item.name}}</label></td>
+                                        <td>{{item.validity}}</td>
+                                        <td><a ng-if="item.infoURL" class="moreInfo2">Info</a></td>
+                                        <!--<td><a href="{{item.infoURL}}" class="moreInfo">i</a></td>-->
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</form>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html ng-app="onePOS" ng-strict-di>
+  <head>
+      <meta content="IE=edge" http-equiv="X-UA-Compatible">
+      <meta charset="utf-8">
+      <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+      <title><%= current_page.data.title || "OnePOS" %></title>
+
+      <%= stylesheet_link_tag "core", "support", "onepos" %>
+      <!--[if IE]><%= stylesheet_link_tag "core.ie" %><![endif]-->
+      <!--[if IE 8]><%= javascript_include_tag  "respond" %><![endif]-->
+  </head>
+
+  <!--[if lt IE 7]>
+  <body class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+  <!--[if IE 7]>
+  <body class="lt-ie9 lt-ie8"> <![endif]-->
+  <!--[if IE 8]>
+  <body class="lt-ie9"> <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <body> <!--<![endif]-->
+      <div class="wrapper">
+          <div class="spring">
+              <%= yield %>
+          </div>
+      </div>
+
+      <script src="/config/partials-config.js" type="text/javascript"></script>
+      <%= javascript_include_tag "core", "support", "angular-core" %>
+  </body>
+
+  <loader
+          working="loading"
+          disable-background="true"
+          message="Loading..."
+          template="1">
+  </loader>
+</html>

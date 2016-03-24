@@ -1,0 +1,104 @@
+.se-query {
+	padding-right: 70px;
+	position: relative;
+	.btn {
+		margin: 0;
+		padding: 5px 15px;
+		position: absolute;
+		right: 3px;
+		top: 3px;
+		width: 60px;
+	}
+
+	.fm-data {
+		padding: 10px;
+	}
+}
+.se-results {
+
+    display: none;
+	padding-top: 15px;
+
+	img {
+		height: 32px;
+		width: 32px;
+	}
+
+	.link-icon span {
+ 		padding-left: 40px;
+	}
+
+	.link-icon .icon-wrap {
+		margin-bottom: 10px;
+		padding-left: 0;
+	}
+}
+.search-cat {
+
+	border-top: 1px solid #ccc;
+	padding-top: 15px;
+	margin-bottom: 15px;
+
+	&:first-child {
+		border-top: none;
+		padding-top: 0;
+	}
+	a {
+		font-weight: bold;
+
+		&:visited {
+			color: #333;
+		}
+	}
+	.h4 {
+		margin-bottom: 15px;
+	}
+}
+
+.js .se-query .fm-error {
+	display: none;
+}
+
+.js .se-query .fm-error-border {
+	box-shadow: $box-shadow-inset;
+}
+
+@media only screen and (min-width: $mq-lrg) {
+	.search-box {
+		label,
+		input,
+		.btn {
+			vertical-align: middle;
+		}
+	}
+	.se-query {
+		padding: 0;
+
+		.btn {
+			padding: 3px 7px;
+			position: static;
+			margin-top: 3px;
+			width: 45px;
+		}
+
+
+		.fm-data {
+			padding: 6px 10px;
+		}
+	}
+	.se-input {
+		font: normal 18px/22px 'VodafoneRegular', Arial, sans-serif;
+		padding: 7px 10px 8px;
+	}
+	.se-results {
+
+		background: #fff;
+		width: 400px;
+		padding: 10px;
+		position: absolute;
+		right: 0;
+		border-radius: $border-radius;
+		@include vf-box-shadow ($box-shadow);
+        z-index:999;
+	}
+}

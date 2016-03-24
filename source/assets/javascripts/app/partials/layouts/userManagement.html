@@ -1,0 +1,29 @@
+<main-header></main-header>
+<main-menu></main-menu>
+<div class="content mainContent bg-st1" id="content">
+    <div class="belt">
+        <div class="content-wrapper">
+            <div class="content-body">
+                <div ui-view></div>
+            </div>
+
+            <!-- TODO: to be created as a directive -->
+            <div class="content-footer" ng-hide="hideFooter">
+                <div class="col w-50 footer_prev">
+                    <a ng-click="prev()" ng-hide="hidePrevBtn">
+                        {{subPrevText}} <br/>
+                        <span>{{prevText}}</span>
+                    </a>
+                </div>
+                <div class="col w-50 footer_next">
+                    <a ng-click="next()" ng-hide="hideNextBtn">
+                        {{subNextText}} <br/>
+                        <span>{{nextText}}</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-strip"></div>
+</div>
+

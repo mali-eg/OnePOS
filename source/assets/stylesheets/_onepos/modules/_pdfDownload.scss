@@ -1,0 +1,100 @@
+.pdf-download {
+
+    &.customer-data-wrapper {
+        /* removed by asaber margin: 10px 0; */
+    }
+
+    .container2 {
+        padding: 25px 90px;
+    }
+
+    .summary_border {
+        h3 {
+            border-bottom: 5px solid #E8E8E8;
+            padding: 5px 0px 10px;
+            font-weight: normal;
+        }
+    }
+    .inform-message {
+        font-weight: normal;
+        text-align: left;
+        font-size: 16px;
+    }
+
+    table {
+        margin-bottom: 40px;
+        tr {
+            border: none;
+            font-size: 16px;
+
+            &:nth-child(2n) {
+                background-color: #f4f4f4;
+            }
+            &:nth-child(2) {
+                border-top: 1px solid #cccccc;
+            }
+            &:last-child {
+                border-bottom: 1px solid #cccccc;
+            }
+
+            td {
+                padding: 10px;
+            }
+
+            .green {
+                color: #418600;
+            }
+            a {
+                color: #007c92;
+
+                &:visited, &:hover, &:focus, &.downloaded {
+                    color: #9d22a2;
+                    text-decoration: none;
+                }
+                &.btn-disabled {
+                    background: none;
+                    border: none;
+                    box-shadow: none;
+                    color: #b5b5b5;
+                }
+            }
+        }
+
+        .err-mark {
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            background: #D4D4D4;
+            color: #FFF;
+            text-align: center;
+            display: inline-block;
+            margin-right: 3px;
+            line-height: 16px;
+            font-size: 13px;
+        }
+
+    }
+
+    .note {
+        font-size: 16px;
+    }
+}
+
+#server-error-dialog.di-content .di-inner {
+    height: auto;
+
+    .modal-footer {
+        text-align: center;
+
+        .btn {
+            width: auto;
+            width: auto;
+            background-color: white;
+            color: black;
+
+            &:hover {
+                background-color: #E4E4E4;
+            }
+        }
+    }
+}

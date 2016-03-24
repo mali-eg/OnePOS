@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="17px" height="29px" viewBox="0 0 17 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: sketchtool 3.4 (356) - http://www.bohemiancoding.com/sketch -->
+    <title>pfeil copy 4</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path id="path-1" d="M14.5,11.4560536 L4.72078571,1.77626786 C3.64157143,0.740553571 1.89121429,0.740553571 0.809928571,1.77626786 C-0.269285714,2.816125 -0.269285714,4.49605357 0.809928571,5.53176786 L12.5425,16.794125 C13.6258571,17.8298393 15.3762143,17.8298393 16.4554286,16.794125 L28.1900714,5.53176786 C29.2692857,4.49605357 29.2692857,2.816125 28.1900714,1.77626786 C27.1087857,0.740553571 25.3563571,0.740553571 24.2771429,2.06833929 L14.5,11.4560536 L14.5,11.4560536 Z"></path>
+    </defs>
+    <g id="Order-Overview" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Orders-overview" sketch:type="MSArtboardGroup" transform="translate(-1056.000000, -857.000000)">
+            <g id="pfeil-copy-4" sketch:type="MSLayerGroup" transform="translate(1064.000000, 872.000000) scale(-1, 1) rotate(-270.000000) translate(-1064.000000, -872.000000) translate(1049.000000, 863.000000)">
+                <mask id="mask-2" sketch:name="Clip 9" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-9"></g>
+                <path d="M39.3565214,-13.5005179 L39.3565214,23.7851964 L-10.3567286,23.7851964 L-10.3567286,-13.5005179 L39.3565214,-13.5005179 Z" id="Fill-8" fill="#333333" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

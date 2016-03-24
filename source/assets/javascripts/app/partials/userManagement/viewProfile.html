@@ -1,0 +1,102 @@
+<div class="page-view-profile mt-40 mb-20">
+    <div class="cluster-st1 cf">
+    <h2 class="title-st1 mt-45">Data for user {{vm.username}}</h2>
+    <h3 class="txt-st4 mb-20">User information</h3>
+    <a ui-sref="userManagement.changePassword" ng-if="!vm.passwordUpdated" class="link-st link-st1 link-block align-text-right pull-right mt--40">Change password</a>
+   <div class="notification-st notification-st1" ng-if="vm.passwordUpdated">
+        <i class="ico ico-size-32 ico-color-8 ico-txt-invert ico-info mr-20">i</i>
+        <p>Your password was recently updated</p>
+   </div>
+    <div class="grid">
+        <div class="col w-30">
+            <p class="txt-st11 mb-0">First name</p>
+            <p class="txt-st12 mb-0 mt-5">{{vm.first_name}}</p>
+        </div>
+        <div class="col w-30">
+            <p class="txt-st11 mb-0">Second name</p>
+            <p class="txt-st12 mb-0 mt-5">{{vm.last_name}}</p>
+        </div>
+        <div class="col w-40">
+            <p class="txt-st11 mb-0">PUID</p>
+            <p class="txt-st12 mb-0 mt-5">{{vm.username}}</p>
+        </div>
+    </div>
+    <div class="grid mt-20">
+        <div class="col w-30">
+            <p class="txt-st11 mb-0">MSISDN for mTAN</p>
+            <p class="txt-st12 mb-0 mt-5">{{vm.msisdn}}</p>
+        </div>
+        <div class="col w-30">
+            <p class="txt-st11 mb-0">Password</p>
+            <p class="txt-st12 mb-0 mt-5">********</p>
+        </div>
+        <div class="col w-40">
+            <p class="txt-st11 mb-0">User status</p>
+            <p class="txt-st12 mb-0 mt-5" ng-class="{'text-st12-ch3': vm.status === 'ACTIVE'&& 'active' && 'Active'}">
+                {{vm.status}}
+            </p>
+        </div>
+    </div>
+    <div class="grid mt-20">
+        <div class="col w-30">
+            <p class="txt-st11 mb-0">Federation</p>
+            <p class="txt-st12 mb-0 mt-5" ng-repeat="federation in vm.federation">
+                {{federation.serviceProviderName}}
+            </p>
+        </div>
+    </div>
+    <hr class="hr-st3 mt-20 mb-20">
+    <!--{{vm.selected}}-->
+    <h3 class="txt-st4 mb-20">Shop information</h3>
+    <a ng-click="vm.changeShop()" class="link-st link-st1 link-block align-text-right pull-right mt--40">Change shop</a>
+    <div class="grid mt-20">
+        <div class="col w-40">
+            <p class="txt-st11 mb-0">Shop name</p>
+            <div ng-class="">
+                <p class="txt-st12 mb-0 mt-5" >
+                    {{vm.selected.shopName}}
+                </p>
+            </div>
+        </div>
+        <div class="col w-20">
+            <p class="txt-st11 mb-0">RMS-ID</p>
+            <p class="txt-st12 mb-0 mt-5">{{vm.selected.rmsID}}</p>
+        </div>
+    </div>
+    <div class="grid mt-20">
+        <div class="col w-40">
+            <p class="txt-st11 mb-0">Street</p>
+            <p class="txt-st12 mb-0 mt-5">{{vm.selected.shopAddress.street}}</p>
+        </div>
+        <div class="col w-20">
+            <p class="txt-st11 mb-0">Number</p>
+            <p class="txt-st12 mb-0 mt-5">{{vm.selected.shopAddress.streetNumber}}</p>
+        </div>
+        <div class="col w-20">
+            <p class="txt-st11 mb-0">Postcode</p>
+            <p class="txt-st12 mb-0 mt-5">{{vm.selected.shopAddress.postCode}}</p>
+        </div>
+        <div class="col w-20">
+            <p class="txt-st11 mb-0">City</p>
+            <p class="txt-st12 mb-0 mt-5">{{vm.selected.shopAddress.city}}</p>
+        </div>
+    </div>
+    <hr class="hr-st3 mt-20 mb-20">
+    <h3 class="txt-st4 mb-20">VOID information</h3>
+    <table class="table-st1">
+        <tr>
+            <th>Active VOIDs</th>
+            <th class="w-20">In use</th>
+        </tr>
+        <tr ng-class="vm.defaultVoid ? 'in-use' : ''">
+            <td>{{vm.defaultVoid}}</td>
+            <td>{{vm.defaultVoid ? 'Yes' : 'No'}}</td>
+        </tr>
+        <tr ng-repeat="void in vm.voidList" ng-class="!void.voID ? 'in-use' : ''">
+            <td>{{void.voID}}</td>
+            <td>{{!void.voID ? 'Yes' : 'No'}}</td>
+        </tr>
+    </table>
+    <button ng-click="vm.close()" class="btn-st btn-st1 pull-right mt-20 mb-20">Close</button>
+</div>
+</div>

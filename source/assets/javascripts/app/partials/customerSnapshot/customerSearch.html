@@ -1,0 +1,33 @@
+<div class="page-customer-search mt-40 mb-20">
+    <h1 class="txt-st0 mb-0">Customer snapshot</h1>
+    <div class="cluster-st1 mb-20">
+        <form name="vm.customerSearchId" ng-submit="vm.customerSearchId.$valid && vm.submit()" autocomplete="off" role="form" novalidate>
+            <h2 class="title-st1">Customer Search</h2>
+            <msg-container msg-list="vm.messages1" disable-error-listing="true"></msg-container>
+            <div class="grid">
+                <div class="col w-40">
+                    <ops-textbox
+                        type="text"
+                        inner-id="customerID"
+                        ng-model="vm.customerID"
+                        ng-required="true"
+                        name="customerId"
+                        label="Search term"
+                        desc= "Phone number, Customer number or barcode"
+                        auto-focus="true"
+                        >
+                        <!--ng-pattern="/(^01\d{9,10}$)|(^0[2,9]\d{3,13}$)|(^\d{9}$)|(^\d{12}$)|(^[A,a][R,r][C,c]\d{5,10}$)/"
+                        <p class="error-txt" ng-show="vm.customerSearchId.customerId.$error.pattern">ID Pattern is wrong</p>-->
+                    </ops-textbox>
+                </div>
+                <div class="col w-40">&nbsp;</div>
+                <div class="col w-20">
+                    <ops-submit class="btn-st btn-st2" ng-disabled="!vm.customerIDChanged">
+                        Search
+                    </ops-submit>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div ui-view="autentication"></div>
+</div>

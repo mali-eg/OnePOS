@@ -1,0 +1,30 @@
+// margins
+$marginSpaces:(0,5,10,15,20,25,30,35,40,45,50,95,100);
+@each $marginSpace in $marginSpaces{
+    $important: if($marginSpace == 0,'!important','');
+    .mr-#{$marginSpace}{
+        margin-right: $marginSpace + px + $important;
+    }
+    .mt-#{$marginSpace}{
+        margin-top: $marginSpace + px + $important;
+    }
+    .mb-#{$marginSpace}{
+        margin-bottom: $marginSpace + px + $important;
+    }
+    .ml-#{$marginSpace}{
+        margin-left: $marginSpace + px + $important;
+    }
+}
+// floats
+.f-left{
+    float: left;
+}
+.f-right{
+    float: right;
+}
+// media
+.media-st1{
+    .media-body{
+        overflow: hidden;
+    }
+}

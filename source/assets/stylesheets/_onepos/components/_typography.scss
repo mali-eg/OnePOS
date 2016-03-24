@@ -1,0 +1,351 @@
+/* ==========================================================================
+Global tags
+========================================================================== */
+p{
+    color: $grey;
+    font-size: 16px;
+    line-height: 20px;
+}
+/* ==========================================================================
+Text Holders
+========================================================================== */
+// txt-hold-block
+.txt-hold-block{
+    display: block !important
+}
+//F1.6
+.txt-hold-st0{
+    display: inline-block;
+    vertical-align: top;
+}
+//F1.6.2
+.txt-hold-st1{
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 10px;
+    border-left-width:1px;
+    border-style: solid;
+
+    //F1.6.1.3
+    &.txt-hold-st1-ch1{
+        border-color: #007c92;
+    }
+    //F1.6.1.6
+    &.txt-hold-st1-ch2{
+        border-color: #ccc;
+    }
+}
+//F23.0
+.txt-hold-st2{
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 10px;
+    border-left-width: 4px;
+    border-style: solid;
+
+    //F23.0.1 Indicator  Element green
+    &.txt-hold-st2-ch1{
+        border-color: #418600;
+    }
+    //F23.0.2 Indicator  Element grey
+    &.txt-hold-st2-ch2{
+        border-color: #ccc;
+    }
+    //F23.0.3 Indicator  Element red
+    &.txt-hold-st2-ch3{
+        border-color: $red;
+    }
+    //F23.0.4 Indicator  Element yellow
+    &.txt-hold-st2-ch4{
+        border-color: #FFCC00;
+    }
+}
+/* ==========================================================================
+Text styles
+========================================================================== */
+//F9.2, F9.2b
+.txt-st0{
+    position: relative;
+    font-family: $font-vodafoneRegular;
+    font-size:30px;
+    line-height: 34px;
+    color:$white;
+    background-color: $red;
+    padding:10px 20px;
+    text-align: center;
+    @include borderRadius(3px 3px 0 0);
+
+    .ico{
+        position: absolute;
+        right:20px;
+        top: 5px;
+        height:48px;
+        width:48px;
+    }
+}
+//H1 30/34
+.txt-st1{
+    font-family: $font-vodafoneRegular;
+    font-size:30px;
+    line-height: 34px;
+    color:$white;
+    background-color: $red;
+    padding:6px 13px 9px 11px;
+}
+//H2 24/LH28 Vfreg,reg
+.txt-st2{
+    font-family: $font-vodafoneRegular;
+    font-size:24px;
+    line-height: 28px;
+    color:$grey;
+}
+//MDD  20/LH24 Vfreg,reg
+.txt-st3{
+    font-family: $font-vodafoneRegular;
+    font-size:20px;
+    line-height: 24px;
+    color:$white;
+    background-color: $red;
+    padding:26px 13px 0px 11px;
+    min-height: 90px;
+}
+//H3 18/LH22 Vfreg,bold
+.txt-st4{
+    font-family: $font-vodafoneBold;
+    font-size:18px;
+    line-height: 22px;
+    color:$grey;
+    // child links
+    .link-st{
+        font-weight: normal;
+    }
+}
+//F6.12
+.txt-st5{
+    font-family: $font-vodafoneRegular;
+    font-size:18px;
+    line-height: 22px;
+    color:$grey;
+}
+//F6.11
+.txt-st6{
+    font-family: $font-vodafoneBold;
+    font-size:16px;
+    line-height: 20px;
+    color:$grey;
+}
+//copy 16/20  Vfreg,reg
+.txt-st7{
+    font-family: $font-vodafoneRegular;
+    font-size:16px;
+    line-height: 20px;
+    color:$grey;
+}
+//F6.13
+.txt-st8{
+    font-family: $font-vodafoneRegular;
+    font-size:12px;
+    line-height: 16px;
+    color:$grey;
+}
+//F22.0
+//CS Chapter Head 36/36 Vflight,reg
+.txt-st9{
+    font-family: $font-vodafoneRegular;
+    font-size:36px;
+    line-height:36px;
+    color:$grey;
+
+    span{
+        font-size:24px;
+        line-height: 26px;
+        display: inline-block;
+        vertical-align: bottom;
+        margin-left: 10px;
+    }
+}
+//CS Chapter Sub 24/24 Vflight,reg
+.txt-st10{
+    font-family: $font-vodafoneLight;
+    font-size:24px;
+    line-height:24px;
+    color:$grey;
+    //F16.1
+    &.text-st10-ch1{
+        color: $red;
+    }
+}
+//F1.6.1
+.txt-st11{
+    font-family: $font-vodafoneRegular;
+    font-size:12px;
+    line-height:15px;
+    color:#666;
+}
+//F1.6.1
+.txt-st12{
+    font-family: $font-vodafoneBold;
+    font-size:16px;
+    line-height:20px;
+    color:$grey;
+    //F1.6.1.1
+    &.text-st12-ch1{
+        color: $red;
+    }
+    //F1.6.1.2
+    &.text-st12-ch2{
+        color: #ccc;
+    }
+
+    &.text-st12-ch3{
+        color: #418600;
+    }
+}
+/* ==========================================================================
+Titles
+========================================================================== */
+//F6.1
+.title-st1{
+    border-bottom: 5px solid #f4f4f4;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+    //F6.18 H2 Container Header inactive
+    &.inactive{
+        color: #cccccc;
+    }
+}
+.title-st1,.title-st1 .fm-input label{
+    font-family: $font-vodafoneRegular;
+    font-size:24px;
+    line-height: 28px;
+    color:$grey;
+    font-weight: normal;
+}
+.title-st1 .fm-input label{
+    padding-left: 35px;
+}
+//F6.2
+.title-st2{
+    margin-bottom: 20px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+.title-st2, .title-st2 .fm-input label{
+    font-family: $font-vodafoneBold;
+    font-size:18px;
+    line-height: 22px;
+    color:$grey;
+}
+.title-st2 .fm-input label{
+    padding-left: 35px;
+}
+/* ==========================================================================
+Text colors
+========================================================================== */
+.txt-co1{
+    color: $red;
+    &:visited{
+        color:$red;
+    }
+}
+.txt-co2{
+    color: $blue;
+    &:visited{
+        color:$blue;
+    }
+}
+.txt-co3{
+    color: #509500;
+    &:visited{
+        color:#509500;
+    }
+}
+.txt-co4{
+    color: #ff5301;
+    &:visited{
+        color:#ff5301;
+    }
+}
+ .txt-co5{
+     color:#ccc;
+     pointer-events: none;
+     &:visited{
+         color:#ccc;
+     }
+ }
+/* ==========================================================================
+Text alignment
+========================================================================== */
+.align-text-center {
+    text-align: center;
+}
+.align-text-left {
+    text-align: left;
+}
+.align-text-right {
+    text-align: right;
+}
+/* ==========================================================================
+List style
+========================================================================== */
+//List 16/30 Vfreg,reg
+.list-st1 li{
+    font-family: $font-vodafoneRegular;
+    font-size: 16px;
+    line-height: 30px;
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+//F6.4
+.list-st2 li{
+    font-family: $font-vodafoneRegular;
+    font-size: 16px;
+    line-height: 30px;
+    list-style-type: none;
+    list-style-position: inside;
+}
+/* ==========================================================================
+Links
+========================================================================== */
+// links
+.link-st{
+    &.link-block{
+        display: block;
+    }
+    &.link-inline-block{
+        display: inline-block;
+    }
+}
+//F8.01
+.link-st1{
+    font-family: $font-vodafoneRegular;
+    font-size:16px;
+    line-height:125%;
+    color:#007C93;
+    &:visited{
+        color:#007C93;
+    }
+    //F8.02
+    // inactive state
+    &.inactive{
+        color:#ccc;
+        pointer-events: none;
+        &:visited{
+            color:#ccc;
+        }
+    }
+}
+//F8.22
+.link-st3{
+    font-family: $font-vodafoneRegular;
+    font-size:16px;
+    line-height:20px;
+    color:$blue;
+    &:visited{
+        color:$blue;
+    }
+}

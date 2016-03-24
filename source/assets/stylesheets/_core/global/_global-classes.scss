@@ -1,0 +1,116 @@
+.cta-topic {
+    @extend .cf;
+
+    li {
+        float: left;
+        padding: 10px;
+        text-align: center;
+        width: 50%;
+    }
+
+    &, a, div {
+        border-radius:$border-radius;
+    }
+
+    a, div {
+        background: $white;
+        cursor: pointer;
+        display: block;
+        padding: 10px 0;
+        margin: 1px;
+        box-shadow: $box-shadow;
+        border: $box-border;
+
+        &:hover,
+        &:focus {
+            border: 2px solid $brand-9;
+            margin: 0;
+        }
+    }
+}
+
+.ratings {
+    display: inline-block;
+
+    i,svg {
+        float: left;
+        margin-bottom: -2px;
+    }
+}
+
+// Styling for WYSIWYG images
+
+.img-left {
+    float: left;
+    margin: 15px 15px 15px 0;
+    max-width: 50%;
+}
+.img-right {
+    float: right;
+    margin: 15px 0 15px 15px;
+    max-width: 50%;
+}
+.img-wide, .img-block {
+    float: none;
+    display: block;
+    margin: 15px 0;
+    max-width: 100%;
+}
+
+.grey-box {
+    @include grey-box(10px);
+    padding: 10px;
+}
+
+.white-box {
+    @include white-box(20px);
+    padding: 20px;
+}
+
+
+@media only screen and (min-width: $mq-lrg) {
+
+    .cta-topic {
+
+        li {
+            width: 25%;
+        }
+    }
+
+    .content {
+        min-height: 300px;
+    }
+
+    // Margin reset config
+    .no-mrg-btm{
+        margin-bottom: 0 !important;
+    }
+
+    //styling for wysiwyg images
+
+    .img-left {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 5px;
+    }
+    .img-right {
+        float: right;
+        margin-left: 15px;
+        margin-bottom: 5px;
+    }
+    .img-wide {
+        max-width: 70%;
+    }
+    .grey-box {
+        padding: 15px;
+    }
+    .white-box {
+        padding: 20px;
+    }
+    //default styling for marketing banners - vodafone red
+    .mod-banner {
+        background-color: $white;
+        background-color: rgba(255,255,255,0.8);
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    }
+}

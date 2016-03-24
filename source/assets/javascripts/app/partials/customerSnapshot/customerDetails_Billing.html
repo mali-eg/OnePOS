@@ -1,0 +1,143 @@
+<h3 class="txt-st4 mb-20">Rechnungsstatus</h3>
+<p class="txt-st9 txt-co1" ng-class="{'txt-co3': vm.hasBalance()}" >Saldo: {{vm.customerDetails.billing.invoiceStatus.currentBalance | checkBalanceState}}
+    Euro</p>
+<div class="grid mt-20">
+    <div class="col w-40">
+        <p class="txt-st11 mb-0">Erinnerungsstatus</p>
+
+        <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.billing.invoiceStatus.reminderStatus}}</p>
+    </div>
+    <div class="col w-20">
+        <p class="txt-st11 mb-0">Letztes Erinnerungsdatum</p>
+
+        <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.billing.invoiceStatus.lastReminderDate}}</p>
+    </div>
+    <div class="col w-20">
+        <p class="txt-st11 mb-0">Delinquent Indicator</p>
+
+        <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.billing.invoiceStatus.delinquentIndicator}}</p>
+    </div>
+    <div class="col w-20">
+        <p class="txt-st11 mb-0">Zahlungsfähigkeit</p>
+
+        <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.billing.invoiceStatus.solvency}}</p>
+    </div>
+</div>
+<hr class="hr-st1 mt-40 mb-40"/>
+<h3 class="txt-st4 mb-20">Rechnungsinfos</h3>
+<div class="grid mt-20">
+    <div class="col w-20">
+        <p class="txt-st11 mb-0">Rechnungszyklus <i
+                class="ico ico-size-20 ico-color-2 ico-txt ico-txt-color-8 ico-info ml-20">i</i></p>
+
+        <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.billing.billingInfo.billCycle}}</p>
+    </div>
+    <div class="col w-20">
+        <p class="txt-st11 mb-0">Zahlart</p>
+
+        <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.billing.billingInfo.paymentMethod}}</p>
+    </div>
+    <div class="col w-20">
+        <p class="txt-st11 mb-0">Rechnungsart</p>
+
+        <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.billing.billingInfo.billingType}}</p>
+    </div>
+    <div class="col w-40">
+        <p class="txt-st11 mb-0">Rechnungsart</p>
+
+        <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.billing.billingInfo.billingEmail}}</p>
+    </div>
+</div>
+<div class="grid mt-20">
+    <div class="col w-20">
+        <p class="txt-st11 mb-0">Verbindungsübersicht</p>
+
+        <p class="txt-st12 mb-0 mt-5">Mini Overview</p>
+    </div>
+    <div class="col w-20">
+        <p class="txt-st11 mb-0">Zielruffnummer</p>
+
+        <p class="txt-st12 mb-0 mt-5">Complete number</p>
+    </div>
+</div>
+<hr class="hr-st1 mt-40 mb-40"/>
+<h3 class="txt-st4 mb-20">Bankdaten</h3>
+<div class="grid mt-20">
+    <div class="col w-40">
+        <p class="txt-st11 mb-0">Rechnungsart</p>
+
+        <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.billing.bankAccount.accountOwner}}</p>
+    </div>
+    <div class="col w-30">
+        <p class="txt-st11 mb-0">IBAN</p>
+
+        <p class="txt-st12 mb-0 mt-5">{{vm.strMask(vm.customerDetails.billing.bankAccount.iban)}}</p>
+    </div>
+    <div class="col w-30">
+        <p class="txt-st11 mb-0">Bank Name</p>
+
+        <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.billing.bankAccount.bankName}}</p>
+    </div>
+</div>
+<hr class="hr-st1 mt-40 mb-40"/>
+<h3 class="txt-st4 mb-20">Rechnungsadresse</h3>
+<div class="grid mt-20">
+    <div class="col w-40">
+        <p class="txt-st11 mb-0">Name</p>
+
+        <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.billing.billingAddress.name}}</p>
+    </div>
+</div>
+<div class="grid mt-20">
+    <div class="col w-40">
+        <p class="txt-st11 mb-0">Strasse</p>
+
+        <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.billing.billingAddress.street}}</p>
+    </div>
+    <div class="col w-10">
+        <p class="txt-st11 mb-0">Nummer</p>
+
+        <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.billing.billingAddress.streetNumber}}</p>
+    </div>
+    <div class="col w-10">
+        <p class="txt-st11 mb-0">PLZ</p>
+
+        <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.billing.billingAddress.postCode}}</p>
+    </div>
+    <div class="col w-20">
+        <p class="txt-st11 mb-0">Land</p>
+
+        <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.billing.billingAddress.city}}</p>
+    </div>
+    <div class="col w-20">
+        <p class="txt-st11 mb-0">Country</p>
+
+        <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.billing.billingAddress.country}}</p>
+    </div>
+</div>
+<!-- F10.1 accordion -->
+<div class="mt-20" ops-accordion>
+    <div accordion-panel heading="Rechnungsliste" is-open="true">
+        <div class="panel-content">
+            <table class="table-st1">
+                <tr>
+                    <th class="w-st3">Rechnungsnummer</th>
+                    <th class="w-st2">Rechnungsdatum</th>
+                    <th class="w-st2">Fällig am</th>
+                    <th class="w-st2">Betrag</th>
+                    <th class="w-st1">&nbsp;</th>
+                </tr>
+                <tr ng-repeat="invoice in vm.customerDetails.billing.invoices | limitTo: 6">
+                    <td>{{invoice.number}}</td>
+                    <td>{{invoice.date | date: 'dd.MM.yyyy'}}</td>
+                    <td>{{invoice.dueDate | date: 'dd.MM.yyyy'}}</td>
+                    <td>{{invoice.amount}}€</td>
+                    <td class="align-text-right"><a href="" class="txt-co2"
+                                                    data-ng-click="vm.downloadBillDocument(vm.customerDetails.contract.contractMasterData.type,invoice.number,vm.customerDetails.contractMasterData.accountID)">PDF</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- F10.1 accordion end -->

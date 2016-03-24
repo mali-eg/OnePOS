@@ -1,0 +1,149 @@
+// -- tooltips
+.tooltip {
+	display: none;
+	background: $white;
+	@include border-radius(3px);
+	@include box-shadow(0 1px 2px 0 #444);
+	border: 1px solid #ababab;
+	margin-top: 10px;
+	padding: 20px;
+
+	&:before {
+		border: 10px solid transparent;
+		border-bottom-color: $brand-3;
+		bottom: 100%;
+		content: '';
+		position: absolute;
+		left: 19px;
+	}
+	&:after {
+		border: 9px solid transparent;
+		border-bottom-color: $white;
+		bottom: 100%;
+		content: '';
+		position: absolute;
+		left: 20px;
+	}
+}
+.tg-tooltip-icon,
+.tg-dropdown .tg-tooltip-icon {
+	position: relative;
+
+	.tg-head {
+		display: inline-block;
+		border-radius: 3px;
+		padding: 0;
+		margin: 0;
+
+		i,svg {
+			margin: 6px;
+		}
+	}
+
+	.tg-active,
+	.tg-body {
+		background: $lightest-grey;
+		border-radius: 3px;
+		@include vf-box-shadow($box-shadow);
+	}
+	.tg-active {
+		border: none;
+	}
+
+	.tg-active:after {
+		background: none repeat scroll 0 0 $lightest-grey;
+	    bottom: -4px;
+	    content: " ";
+	    height: 8px;
+	    position: absolute;
+	    width: 32px;
+	    z-index: 14;
+	    left: 0;
+	}
+
+	.tg-body {
+		padding: 15px;
+		margin-bottom: 15px;
+	}
+}
+
+.tg-dropdown .tg-tooltip-icon {
+
+	 a.tg-head {
+	 	box-shadow: none;
+	 	border: none;
+	 }
+
+	 a.tg-active {
+	 	padding: 0;
+	 	margin: 0;
+		@include box-shadow(0 1px 2px 0 #444);
+	 }
+	 .tg-display {
+	 	top: auto;
+	 	z-index: 10;
+	 }
+
+}
+
+.js .tg-tooltip-icon .tg-body {
+	margin-top: -2px;
+}
+
+.no-js .mod-toggle[data-scope="sml"] .tg-tooltip-icon .tg-body {
+	display: block;
+}
+
+@media only screen and (min-width: $mq-lrg) {
+
+	.tooltip {
+		position: absolute;
+		z-index: 11;
+	}
+	.js .tg-tooltip-icon {
+
+		.tg-display {
+			position: absolute;
+			z-index: 11;
+		}
+
+		.tg-body {
+			margin-top: -2px;
+		}
+	}
+	.js .tooltip-side {
+		position: relative;
+
+		.tg-body {
+			width: 300px;
+			right: -135px;
+			top: -20px;
+			min-height: 70px;
+		}
+		.tg-active:after {
+			content: " ";
+			width: 6px;
+			height: 33px;
+			top: 0;
+			right: -1px;
+			bottom: auto;
+			left: auto;
+		}
+	}
+	.js .tooltip-left {
+
+		.tg-body {
+			top: -20px;
+			left: -300px;
+			right: auto;
+		}
+		.tg-active:after {
+			right: auto;
+			left: -3px;
+		}
+	}
+
+	a:focus .tooltip {
+		display: block;
+	}
+}

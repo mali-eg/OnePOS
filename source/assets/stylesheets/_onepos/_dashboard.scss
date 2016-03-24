@@ -1,0 +1,131 @@
+.dashboardContent {
+    background: #c0c0c0 url("/assets/images/dashboard/bg.png") center center no-repeat;
+    background-size: cover;
+
+    .belt {
+        padding-top: 50px;
+        padding-bottom: 100px;
+
+        .content-wrapper {
+            .title {
+                h1, h3, h6 {
+                    color: $white;
+                    text-align: center;
+                }
+                h1 {
+                    font-family: 'VodafoneBold', Arial, sans-serif;
+                    font-size: 94px;
+                    letter-spacing: 6px;
+                    margin-bottom: 0px;
+                    text-transform: uppercase;
+                }
+                h3{
+                    font-family: 'VodafoneBold', Arial, sans-serif;
+                    font-size: 46px;
+                    margin-bottom: 15px;
+                }
+                h6{
+                    font-size: 20px;
+                    margin-bottom: 50px;
+                }
+            }
+
+            .items {
+                text-align: center;
+
+                li {
+                    display: inline-block;
+
+                    a{
+                        display: inline-block;
+                        width: 150px;
+                        margin: 0 4px;
+                    }
+
+                    img {
+                        display: block;
+                        max-width: 100%;
+                    }
+
+                    span {
+                        display: block;
+                        font-size: 17px; /*20px*/
+                        padding: 10px 0;
+                    }
+
+                    &.new-customer {
+                        span {
+                            border-bottom: 2px solid #e60000;
+                        }
+                    }
+
+                    &.order-overview {
+                        span {
+                            border-bottom: 2px solid #007c93;
+                        }
+                    }
+
+                    &.existing-customers {
+                        span {
+                            border-bottom: 2px solid #418600;
+                        }
+                    }
+
+                    &.otelo {
+                        span {
+                            border-bottom: 2px solid #ff5301;
+                        }
+                    }
+
+                    &.kabel-deutschland {
+                        span {
+                            border-bottom: 2px solid #ffcc00;
+                        }
+                    }
+                }
+            }
+
+
+            .messageContainer {
+                padding: 20px 30px;
+                font-size: 18px;
+                font-weight: bold;
+                overflow: hidden;
+                min-height: 30px;
+                border-radius: 3px;
+            }
+            .messageContainer.color-red,
+            .messageContainer.color-green,
+            .messageContainer.color-orange {
+                padding: 20px 30px 20px 60px;
+                background-color: #e60000;
+                background-image: url(/assets/images/login/statusMsgs.png) ;
+                background-repeat: no-repeat;
+                background-position: 15px 15px;
+                background-size: 30px;
+                color: #fff;
+            }
+            .messageContainer.color-red {
+                background-position: 15px -785px;
+            }
+            .messageContainer.color-green {
+                background-color: #427d00;
+                background-position: 15px 15px;
+            }
+            .messageContainer.color-orange {
+                background-color: #ff5400;
+                background-position: 15px -385px;
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (min-width: $mq-lrg) {
+
+}
+
+@media only screen and (min-width: $mq-xlrg) {
+
+}

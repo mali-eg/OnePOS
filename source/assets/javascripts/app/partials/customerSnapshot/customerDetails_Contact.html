@@ -1,0 +1,195 @@
+<h3 class="txt-st4 mb-20">Kundenkontakt <a href="" class="link-st link-st1 link-inline-block f-right">Bearbeiten</a></h3>
+<div class="grid">
+    <div class="col w-25">
+        <p class="txt-st11 mb-0">Kontaktperson</p>
+        <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.contact.customerContact.contactPerson}}</p>
+    </div>
+    <div class="col w-15">
+        <p class="txt-st11 mb-0">Rufnummer</p>
+        <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.contact.customerContact.contactPhone}}</p>
+    </div>
+    <div class="col w-10">
+        &nbsp;
+    </div>
+    <div class="col w-50">
+        <p class="txt-st11 mb-0">E-Mail</p>
+        <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.contact.customerContact.email}}</p>
+    </div>
+</div>
+<hr class="hr-st1 mt-40 mb-40"/>
+<div class="head clearfix">
+    <ops-link class="link-st link-st1 link-inline-block f-right" ui-sref="#TODO">Bearbeiten</ops-link>
+    <h3 class="txt-st4 mb-20">Kundenadresse</h3>
+</div>
+<div class="grid">
+    <div class="col w-50">
+        <p class="txt-st11 mb-0">Name</p>
+        <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.contact.customerAddress.name}}</p>
+    </div>
+</div>
+<div class="grid mt-20">
+    <div class="col w-25">
+        <p class="txt-st11 mb-0">Straße</p>
+        <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.contact.customerAddress.street}}</p>
+    </div>
+    <div class="col w-15">
+        <p class="txt-st11 mb-0">Nr.</p>
+        <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.contact.customerAddress.streetNumber}}</p>
+    </div>
+    <div class="col w-10">
+        <p class="txt-st11 mb-0">PLZ</p>
+        <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.contact.customerAddress.postCode}}</p>
+    </div>
+    <div class="col w-25">
+        <p class="txt-st11 mb-0">Ort</p>
+        <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.contact.customerAddress.city}}</p>
+    </div>
+    <div class="col w-25">
+        <p class="txt-st11 mb-0">Staat</p>
+        <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.contact.customerAddress.country}}</p>
+    </div>
+</div>
+<hr class="hr-st1 mt-40 mb-40"/>
+<a href="" class="link-st link-st1 link-block align-text-center">Abweichende Teilnehmer-Adresse hinzufügen</a>
+<hr class="hr-st1 mt-40 mb-40"/>
+<div ng-show="vm.customerDetails.contact.subscriberAddress.addressHashCode != vm.customerDetails.contact.customerAddress.addressHashCode">
+    <div class="head clearfix">
+        <ops-link class="link-st link-st1 link-inline-block f-right" ui-sref="#TODO">Bearbeiten</ops-link>
+        <h3 class="txt-st4 mb-20">Teilnehmeradresse</h3>
+    </div>
+    <div class="grid">
+        <div class="col w-50">
+            <p class="txt-st11 mb-0">Name</p>
+            <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.contact.subscriberAddress.name}}</p>
+        </div>
+    </div>
+    <div class="grid mt-20">
+        <div class="col w-25">
+            <p class="txt-st11 mb-0">Straße</p>
+            <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.contact.subscriberAddress.street}}</p>
+        </div>
+        <div class="col w-15">
+            <p class="txt-st11 mb-0">Nr.</p>
+            <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.contact.subscriberAddress.streetNumber}}</p>
+        </div>
+        <div class="col w-10">
+            <p class="txt-st11 mb-0">PLZ</p>
+            <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.contact.subscriberAddress.postCode}}</p>
+        </div>
+        <div class="col w-25">
+            <p class="txt-st11 mb-0">Ort</p>
+            <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.contact.subscriberAddress.city}}</p>
+        </div>
+        <div class="col w-25">
+            <p class="txt-st11 mb-0">Staat</p>
+            <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.contact.subscriberAddress.country}}</p>
+        </div>
+    </div>
+</div>
+<div ng-show="vm.customerDetails.billing.billingAddress.addressHashCode != vm.customerDetails.contact.customerAddress.addressHashCode">
+    <div class="head clearfix">
+        <ops-link class="link-st link-st1 link-inline-block f-right" ui-sref="#TODO">Bearbeiten</ops-link>
+        <h3 class="txt-st4 mb-20">Rechnungsadresse</h3>
+    </div>
+    <div class="grid">
+        <div class="col w-50">
+            <p class="txt-st11 mb-0">Name</p>
+            <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.billing.billingAddress.name}}</p>
+        </div>
+    </div>
+    <div class="grid mt-20">
+        <div class="col w-25">
+            <p class="txt-st11 mb-0">Straße</p>
+            <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.billing.billingAddress.street}}</p>
+        </div>
+        <div class="col w-15">
+            <p class="txt-st11 mb-0">Nr.</p>
+            <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.billing.billingAddress.streetNumber}}</p>
+        </div>
+        <div class="col w-10">
+            <p class="txt-st11 mb-0">PLZ</p>
+            <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.billing.billingAddress.postCode}}</p>
+        </div>
+        <div class="col w-25">
+            <p class="txt-st11 mb-0">Ort</p>
+            <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.billing.billingAddress.city}}</p>
+        </div>
+        <div class="col w-25">
+            <p class="txt-st11 mb-0">Staat</p>
+            <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.billing.billingAddress.country}}</p>
+        </div>
+    </div>
+</div>
+
+<!-- F10.1 accordion -->
+<div class="mt-20" ops-accordion>
+    <div accordion-panel heading="Homezone">
+        <div class="panel-content">
+            <div class="head clearfix">
+                <ops-link class="link-st link-st1 link-inline-block f-right" ui-sref="#TODO">Bearbeiten</ops-link>
+                <p class="txt-st9">{{vm.customerDetails.contact.homeZoneAddress.homeZoneNumbers.join(' - ')}}</p>
+            </div>
+            <div class="grid">
+                <div class="col w-20">
+                    <p class="txt-st11 mb-0">Straße</p>
+                    <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.contact.homeZoneAddress.street}}</p>
+                </div>
+                <div class="col w-15">
+                    <p class="txt-st11 mb-0">Nr.</p>
+                    <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.contact.homeZoneAddress.streetNumber}}</p>
+                </div>
+                <div class="col w-10">
+                    <p class="txt-st11 mb-0">PLZ</p>
+                    <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.contact.homeZoneAddress.postCode}}</p>
+                </div>
+                <div class="col w-25">
+                    <p class="txt-st11 mb-0">Ort</p>
+                    <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.contact.homeZoneAddress.city}}</p>
+                </div>
+                <div class="col w-25">
+                    <p class="txt-st11 mb-0">Staat</p>
+                    <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.contact.homeZoneAddress.country}}</p>
+                </div>
+            </div>
+            <div class="mt-30">
+                <ops-checkbox
+                    inner-id="ID"
+                    ng-model="vm.customerDetails.contact.homeZone.phoneBookEntryHomeZone"
+                    ng-change="changeFunction()"
+                    name="checkboxName1"
+                    label="Telefonbucheintrag Homezone"
+                    ng-disabled="true">
+                </ops-checkbox>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- F10.1 accordion end -->
+<!-- F10.1 accordion -->
+<div ops-accordion>
+    <div accordion-panel heading="Datenschutz-Einstellungen">
+        <div class="panel-content">
+            <div class="grid">
+                <div class="col w-35">
+                    <p class="txt-st11 mb-0">Werbung</p>
+                    <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.contact.privacySettings.advertisingIndicator}}</p>
+                </div>
+                <div class="col w-50">
+                    <p class="txt-st11 mb-0">Personenbezogene Daten nutzen</p>
+                    <p class="txt-st12 mb-0 mt-5">{{vm.customerDetails.contact.privacySettings.personalDataEvalIndicator}}</p>
+                </div>
+            </div>
+            <div class="mt-30">
+                <ops-checkbox
+                    inner-id="IDD"
+                    ng-model="vm.customerDetails.contact.privacySettings.marketingUsePhoneIndicator"
+                    ng-change="changeFunction()"
+                    name="checkboxName2"
+                    label="Telefonbucheintrag"
+                    ng-disabled="true">
+                </ops-checkbox>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- F10.1 accordion end -->

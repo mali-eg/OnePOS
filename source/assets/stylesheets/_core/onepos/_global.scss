@@ -1,0 +1,244 @@
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    position: relative;
+
+    &.menu-open {
+        overflow-x: hidden;
+
+        .top-header {
+            left: 170px;
+        }
+
+        .spring #content{
+            left: 255px;
+        }
+    }
+}
+
+.header-container {
+    height: 325px;
+    background: url("/assets/images/header/bg.png") no-repeat center;
+    background-size: cover;
+}
+.header-space-container {
+    height: 204px;
+}
+
+.spring {
+    #content{
+        position: absolute;
+        min-height: 100% !important;
+        width: 100%;
+        left: 0;
+        transition: left 0.5s ease;
+
+        &.mainContent{
+            background-color: #f4f4f4;
+            position: relative;
+
+            .content-wrapper {
+               /* margin-top: -60px;*/
+                /* removed by asaber please add class for margins margin-top: 95px; */
+
+                .content-header {
+
+                    .title {
+                        position: relative;
+
+                        h2 {
+                            text-align: center;
+                            height: 60px;
+                            color: $white;
+                            background: $red;
+                            line-height: 56px;
+                            margin: 0;
+                            @include border-radius(3px 3px 0 0);
+                        }
+                        // removed by asaber
+                        /* .redball {
+                            position: absolute;
+                            right: 20px;
+                            top: 4px;
+                            background: url("/assets/images/header/save.svg") no-repeat center transparent;
+                            background-size: 100%;
+                            height: 53px;
+                            width: 53px;
+                        } */
+                    }
+
+                    .progress-bar-container {
+                        background: #FFF none repeat scroll 0% 0%;
+                        /*border: 1px solid #CCC;*/
+                        box-shadow: -1px 2px 2.5px rgba(0, 0, 0, 0.15);
+                        @include border-radius(0 0 3px 3px);
+                        padding: 20px 90px;
+
+                        .progress-bar {
+                            .meter {
+                                height: 15px;
+                                position: relative;
+                                background: #ebebeb;
+                                margin-bottom: 10px;
+                                @include border-radius(25px);
+
+                                span {
+                                    display: block;
+                                    height: 100%;
+                                    @include border-radius(25px);
+                                    background-color: $red;
+                                    position: relative;
+                                    overflow: hidden;
+                                    padding-right: 28px;
+                                    box-sizing: content-box;
+                                }
+                            }
+
+                            .steps {
+                                font-family: 'VodafoneBold', Arial, sans-serif;
+                                font-size: 0;
+                                text-align: center;
+
+                                li {
+                                    display: inline-block;
+                                    color: $red;
+                                    width: 12%;
+                                    text-align: left;
+
+                                    .bubble {
+                                        @include border-radius(50%);
+                                        background-color: #ebebeb;
+                                        color: #4a4a4a;
+                                        width: 28px;
+                                        height: 28px;
+                                        display: inline-block;
+                                        text-align: center;
+                                        //padding-top: 3px;
+                                        font-size: 18px;
+                                    }
+
+                                    .title {
+                                        font-size: 18px;
+                                        margin-left: 10px;
+                                        display: none;
+                                    }
+
+                                    &.active {
+                                        width: 28%;
+
+                                        .title {
+                                            display: inline-block;
+                                        }
+
+                                        .bubble {
+                                            background-color: $red;
+                                            color: $white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .content-footer {
+                    a:link, a:hover, a:focus, a:visited {
+                        text-decoration: none;
+                    }
+                    a {
+                        font-size: 14px;
+                        color: #ffffff;
+                        display: block;
+
+                        span {
+                            font-size: 20px;
+                            font-weight: 500;
+                        }
+                    }
+
+                    .footer_prev,
+                    .footer_next,
+                    .footer_speedCO {
+                        background: #e60000;
+                        padding: 5px 15px;
+                        height: 65px;
+
+                        a {
+                            background: url("/assets/images/footer/arrow-left.png") no-repeat left center transparent;
+                            background-size: 28px;
+                            padding-left: 38px;
+                            display: block;
+                            height: 55px;
+                            padding-top: 5px;
+                        }
+                    }
+                    .footer_next {
+                        text-align: right;
+
+                        a {
+                            background: url("/assets/images/footer/arrow-right.png") no-repeat right center transparent;
+                            background-size: 28px;
+                            padding-left: 0;
+                            padding-right: 38px;
+                        }
+                    }
+                    .footer_speedCO {
+                        a {
+                            background:none;
+                            text-align: center;
+                            border: $white solid 1px;
+                            border-width: 0 1px;
+                            padding-right: 0;
+                            padding-left: 0;
+                        }
+                    }
+                }
+            }
+
+            .footer-strip{
+                height: 30px;
+                background-color: #333;
+                margin-top: -30px;
+            }
+        }
+    }
+}
+
+.rhombus {
+    width: 120px;
+    height: 220px;
+    background: url("/assets/images/rhombus.png") no-repeat center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.access {
+    display: none;
+
+    &.debug {
+        display: inline;
+    }
+}
+
+.captchaImage{
+    cursor: pointer;
+}
+
+.clear{
+    clear:both;
+}
+
+//////////////////////////////////////////////////
+// desktop
+@media only screen and (min-width: $mq-lrg) {
+
+}
+
+@media only screen and (min-width: $mq-xlrg) {
+
+}
+

@@ -1,0 +1,109 @@
+// helpers
+.bold {
+	font-weight: 700;
+}
+.noBold {
+    font-weight: 400;
+}
+.regular {
+	font-weight: 300;
+}
+
+.pl-20 {
+	padding-left: 20px;
+}
+
+.pt-20 {
+	padding-top: 20px;
+}
+.pt-10 {
+    padding-top: 10px;
+}
+.pb-20 {
+    padding-bottom: 20px;
+}
+.pb-15 {
+    padding-bottom: 15px;
+}
+.pb-5 {
+    padding-bottom: 5px !important;
+}
+.pb-0 {
+    padding-bottom: 0 !important;
+}
+.pt-0 {
+    padding-top: 0 !important;
+}
+.mt-0 {
+    margin-top: 0 !important;
+}
+.mb-flex {
+    margin-bottom: 10px !important;
+}
+.flex-padding {
+    padding: 10px !important;
+}
+// Where SASS a modules HTML is not certain float classes (e.g. header aux links)
+.fr {
+	float:right!important;
+}
+.fl {
+	float:left!important;
+}
+.red {
+	color: $brand-0!important;
+}
+
+.tar {
+    text-align: right!important;
+}
+.tal {
+    text-align: left!important;
+}
+.tac {
+    text-align: center!important;
+}
+
+// Desktop
+@media only screen and (min-width: $mq-lrg) {
+    .fr-lrg {
+        float:right!important;
+    }
+    .fl-lrg {
+        float:left!important;
+    }
+    .tar-lrg {
+        text-align: right!important;
+    }
+    .tal-lrg {
+        text-align: left!important;
+    }
+    .tac-lrg {
+        text-align: center!important;
+    }
+    .mb-flex {
+        margin-bottom: 20px !important;
+    }
+        .flex-padding {
+        padding: 20px !important;
+    }
+}
+
+// Mobile only
+@media only screen and (max-width: $mq-lrg) {
+    .fr-sml {
+        float:right!important;
+    }
+    .fl-sml {
+        float:left!important;
+    }
+    .tar-sml {
+        text-align: right!important;
+    }
+    .tal-sml {
+        text-align: left!important;
+    }
+    .tac-sml {
+        text-align: center!important;
+    }
+}

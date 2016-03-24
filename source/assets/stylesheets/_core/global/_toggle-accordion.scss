@@ -1,0 +1,250 @@
+/*
+
+Notes:
+
+1.  The accordion by default has left and right  margins to trim the edges of the top border.
+	When an item is active, we place a negative margin on the .tg-head and .tg-body to counter
+	the content with border and background colour. This also means we have to nudge the paddings
+	when active on the .tg-head and .tg-body below.
+
+*/
+
+.tg-accord {
+	@include border-radius($border-radius);
+	@include vf-box-shadow($box-shadow);
+	margin-bottom: $margin-mod;
+
+	.tg-item {
+		border-top: $border;
+		margin: 0;
+
+		&:first-child {
+			border-top: none;
+		}
+	}
+
+	.tg-head, .ttg-head,
+	.tg-dropdown & .tg-head {
+		display: block;
+		font: 400 20px/30px $body-font;
+		margin: 0;
+		padding: $margin-sml-alt 30px $margin-sml-alt $margin-med;
+
+		h3 {
+			margin-bottom:0;
+			font-weight: 400;
+		}
+		i, svg {
+			top: 50%;
+			margin-top: -10px;
+		}
+	}
+
+	.tg-edit {
+		font-size: 0.7em;
+		margin-right: -20px;
+	}
+
+	.tg-modal {
+		display: inline-block;
+
+		.link-body {
+			font-size: 14px;
+			line-height: 1;
+		}
+	}
+
+	.tg-active {
+		background: $lightest-grey;
+		// Counter the .tg-item margin above
+		margin:0;
+		padding-left: $pad-med;
+
+	}
+
+	.tg-body,
+	.tg-dropdown & .tg-body {
+		background: $lightest-grey;
+		padding: 0 $margin-lrg $margin-lrg;
+		// Counteract the .tg-item margin above
+		margin:0;
+	}
+
+	// When nested in in a dropdown
+	.tg-display & .tg-body {
+		position: static;
+	}
+
+	//Inactive grey colour
+	.tg-inactive {
+		color: $light-grey;
+	}
+}
+
+.tg-accord-lrg {
+	@include vf-box-shadow(none);
+
+	.tg-active {
+		padding-left: 15px;
+	}
+
+	.tg-active,
+	.tg-dropdown & .tg-active {
+		background-color: $white;
+		border-radius: 3px 3px 0 0;
+		@include vf-box-shadow($box-shadow-tgh-ac);
+		border: none;
+		margin: 0;
+	}
+	.tg-body,
+	.tg-dropdown & .tg-body {
+		background: transparent;
+		padding: 0px 15px 0 15px;
+		border: none;
+		width: auto;
+	}
+
+	.tg-display {
+		padding-top: 15px;
+	}
+
+	.tg-item {
+		@include border-radius($border-radius);
+		@include vf-box-shadow($box-shadow);
+		@extend .cf;
+		margin-top: 5px ;
+
+		&:first-child {
+			margin-top: 0;
+			border-top: none;
+		}
+	}
+	.tg-dropdown & .tg-item {
+		@include vf-box-shadow(none);
+
+		.tg-head,
+		.tg-body {
+			@include vf-box-shadow($box-shadow);
+			margin: 0;
+		}
+	}
+}
+
+.tg-accord-em {
+
+	.tg-header, .tg-header.tg-active {
+		position: relative;
+		display: block;
+		padding: 16px 20px 8px 45px;
+
+		.tg-head {
+			padding: 0;
+			position: static;
+
+			i, svg {
+				position: absolute;
+				left: 15px;
+				top: 50%;
+			}
+		}
+	}
+
+	.tg-body {
+		padding: 15px 15px 0 15px;
+	}
+}
+
+.simple-accord {
+
+	.tg-head {
+		padding: 15px;
+		margin: 0;
+
+		h3 {
+			margin: 0;
+		}
+	}
+
+	.tg-item {
+		background: $white;
+	}
+}
+
+@media only screen and (min-width: $mq-lrg) {
+
+	.tg-accord,
+	.tg-accord-lrg {
+		@include vf-box-shadow(none);
+	}
+	.tg-accord {
+
+		.tg-item {
+			@include border-radius(0px);
+			margin:0; // Counter the .tg-item borders in small layout
+			border-top: none;
+		}
+
+		.tg-head,
+		.tg-dropdown & .tg-head {
+			background: none;
+			padding: 0;
+
+			h3 {
+				margin-bottom:20px;
+				font-weight: 700;
+			}
+
+		}
+
+		.tg-edit {
+			margin-right: 0;
+		}
+
+		.tg-active,
+		.tg-body {
+			background: none;
+			padding: 0;
+			margin: 0; // Counter the .tg-item borders in small layout
+
+		}
+
+	}
+
+	.tg-accord-lrg {
+
+		.tg-item {
+			@include border-radius($border-radius);
+			margin-top: 10px;
+
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+
+		.tg-head,
+		.tg-dropdown & .tg-head {
+			padding: 8px 20px;
+
+			i, svg {
+				right: 20px;
+				top: 50%;
+				margin-right: 10px;
+			}
+		}
+
+		.tg-body {
+			padding: 15px 15px 0 15px;
+		}
+	}
+
+	.simple-accord {
+
+		.tg-head {
+			padding: 8px 20px;
+
+			h3 {
+				margin: 4px 0 0;
+			}
+		}
+	}
+}

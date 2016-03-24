@@ -1,0 +1,107 @@
+.mod-accordion {
+    margin: 0 -10px 30px;
+    box-shadow: none;
+    border-top: $box-border;
+    border-bottom: $box-border;
+
+    .ac-body {
+        display: none;
+        padding: 10px;
+        position: relative;
+        background: $brand-4;
+    }
+
+    .ac-head[data-type=Standard]+.ac-body img{
+        max-width: 100%
+    }
+
+    > li {
+        border-bottom: $box-border;
+    }
+
+    .ac-arrow {
+        display: none;
+    }
+
+    .ac-icon {
+        margin-right: 10px;
+        float: left;
+        margin-bottom: 5px;
+    }
+
+    .wm-list {
+        box-shadow: none;
+        // border-bottom: 1px solid $box-border;
+    }
+
+    .ac-head {
+        display: block;
+        padding: 12px 40px 10px 50px;
+        font-size: 16px;
+        position: relative;
+        z-index: 1;
+
+        .ac-arrow {
+            position: absolute;
+            right: 20px;
+            top: 12px;
+            display: none;
+
+            &:first-child {
+                display: inline-block;
+            }
+        }
+
+        .ac-icon {
+            position: absolute;
+            left: 20px;
+        }
+    }
+
+    .ac-head:hover {
+        text-decoration: none;
+    }
+    
+    .ac-active {
+    font-weight: 700;
+    box-shadow: $box-shadow-tgh-ac;
+
+    svg[class*="arrow-down"]:first-child {
+    //Just added the first child to override the previous rule
+    display: none;
+    }
+
+    svg[class*="arrow-up"] {
+    display: inline-block;
+    }
+    }
+    
+}
+
+
+@media only screen and (min-width: $mq-lrg) {
+    .mod-accordion {
+        margin: 0 0 30px;
+        box-shadow: $box-shadow;
+        border-radius: $border-radius;
+        border-bottom: 0px none;
+
+        .ac-body {
+            padding: 20px;
+        }
+
+        a {
+            padding-left: 0;
+        }
+
+        a.btn,
+        a.btn-sml {
+            padding-left: 20px;
+            padding-right: 21px;
+        }
+
+        .alert {
+            margin-top: 15px;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+.alert {
+	@extend .cf;
+	@include border-radius(3px);
+	margin-bottom: 15px;
+	padding: 10px 19px 10px 70px;
+	position: relative; 
+	min-height: 55px;
+
+	
+
+	i {
+		position: absolute;
+		top: 10px;
+		left: 20px;
+	}
+
+	> div {	
+
+    padding: 5px 0;
+
+
+		p:last-child {
+	        margin-bottom: 0;
+	    }	
+	}    
+
+	h2,
+	h3,
+	h4 {
+		margin: 0;
+	}
+}
+
+.alert-sml {
+	padding: 10px;
+	margin-bottom: 10px;
+
+	> div {
+			
+	}
+
+	p {
+		margin: 0;
+	}
+}
+
+.info {
+    background: $info;
+    border: 1px solid $info-border;
+}
+.error {
+	background: $light-red;
+	border: 1px solid $red;
+}
+.warning {
+	background: $light-orange;
+	border: 1px solid $orange;
+}
+.success {
+	background: $light-green;
+	border: 1px solid $green;
+}
+

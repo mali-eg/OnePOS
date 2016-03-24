@@ -1,0 +1,246 @@
+// font stacks
+$font-vodafoneLight: 'VodafoneLight', Arial, sans-serif;
+$font-vodafoneRegular: 'VodafoneRegular', Arial, sans-serif;
+$font-vodafoneBold: 'VodafoneBold', Arial, sans-serif;
+
+// media query break points - values to match vf.util.layout
+$mq-xlrg: 1023px; // tablet landscape
+$mq-lrg: 767px; // tablet - portrait
+$mq-med: 620px;
+$mq-sml: 320px;
+
+// margins
+$margin-sml:  4px;
+$margin-sml-alt: 8px;
+$margin-med: 10px;
+$margin-lrg: 15px;
+$margin-xl: 20px;
+
+// For all mods consistenly on both small and large layouts
+$margin-mod: 30px;
+
+// padding
+$pad-sml:  4px;
+$pad-med: 10px;
+$pad-lrg: 15px;
+$pad-xl: 20px;
+
+// border-radius
+$border-radius: 3px;
+$radius-right: 0 3px 3px 0;
+
+// fonts
+$body-font: 'VodafoneRegular', 'Arial', sans-serif;
+
+// colors
+$body-color:        #333;
+
+//B1.1
+$red:               #e60000;
+//B1.2
+$white:             #fff;
+//B1.3
+$grey:              #333;
+//B1.4
+$grey-20:           #666;
+//B1.5
+$grey-30:           #ccc;
+//B1.6
+$grey-40:           #ebebeb;
+//B1.7
+$grey-50:           #f4f4f4;
+//B1.8
+$light-purple:      #9c2aa0;
+//B1.9
+$color-1:           #428600;
+$color-2:           #418600;
+//B1.10
+$blue:              #007c92;
+//B1.11
+$orange:            #ff5400;
+//B1.12
+$black:             #000;
+
+// secondary colors
+$grey-10:           #333;
+
+
+$light-green:       #f4f7f0;
+$light-yellow:      #fef5cc;
+$light-red:         #fef0f0;
+$light-orange:      #fff5f0;
+$light-blue:        #f0f7f9;
+
+$dark-purple:       #5e2750;        // dark purple
+$green:             #427d00;        // Green
+
+
+// infrastructure colors
+$dark-grey:         $grey-10;
+$medium-grey:       $grey-20;
+$light-grey:        $grey-30;
+$lighter-grey:      $grey-40;
+$lightest-grey:     $grey-50;
+
+// brand swatches
+$brand-0:           $red;           // VF Red
+$brand-1:           $grey-10;       // Grey
+$brand-2:           $grey-20;       // Dark grey
+$brand-3:           $grey-10;       // V.Dark grey
+$brand-4:           $grey-50;       // V.light gray
+$brand-5:           $grey-50;       // V.light gray (mostly white)
+$brand-6:           $grey-50;       // Light grey
+$brand-7:           $green;         // Green
+$brand-8:           $dark-purple;   // Dark Purple
+$brand-9:           $light-purple;  // Light Purple
+$brand-10:          $grey-20;       // Light gray 2
+$brand-11:          $grey-30;       // hr grey
+$box-grey:          $grey-50;
+
+// nav vertical colors
+$v-nav-1:           $white;
+$v-nav-2:           $grey-50;
+$v-nav-3:           $grey-20;
+$v-nav-4:           $grey-40;
+$v-nav-5:           $grey-30;
+
+// alert colors
+$info:              $white;         //info
+$info-border:       $light-grey;    //info-border
+$error:             $light-red;     //error
+$error-border:      $red;           //error-border
+$warning:           $light-orange;  //warning background
+$warning-border:    $orange;        //warning-border
+$success:           $light-green;   //success background
+$success-border:    $green;         //success-border
+$forminfo:          $light-blue;         //info
+$forminfo-border:   $blue;    //info-border
+
+// inline block spacing due to html line breaks
+$inline-block-margin: 4px;
+
+// outline style
+$outline-color: #007c92; // focus border, tab color, Teal
+
+$outline: 3px solid $outline-color;
+
+$box-shadow: 0 1px 3px rgba(50, 50, 50, .6);
+
+$box-shadow-inset: 0 1px 3px rgba(50, 50, 50, .6) inset;
+
+
+$box-shadow-light: 0 1px 2px rgba(50, 50, 50, .50);
+
+$box-shadow-light-inset: 0 1px 2px rgba(50, 50, 50, .50) inset;
+
+
+$box-shadow-inset-dark: 0 1px 2px rgba(0, 0, 0, .75) inset;
+
+//$box-shadow-tgh-ac: 0px 1px 2px rgba(50,50,50,.75);
+$box-shadow-tgh-ac: 0 1px 3px rgba(50, 50, 50, .75);
+
+$border: 1px solid #ccc;
+
+$border-hr: 1px solid $grey-30;
+
+$box-border: 1px solid $grey-30;
+
+$shadow-color: rgba(50, 50, 50, .75);
+
+//helpers
+$debug: #ff0;
+
+$content-width-lrg: 643px;
+
+// mixins
+@mixin placeholder($color:#007C92){
+    &::-webkit-input-placeholder{
+        color:$color;
+    }
+    &:-moz-placeholder{
+        color:$color;
+    }
+    &:-moz-placeholder{
+        color:$color;
+    }
+    &:-moz-placeholder{
+        color:$color;
+    }
+}
+// opacity
+@mixin opacity($trans) {
+    filter: alpha(opactiy=($trans * 100));
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$trans * 100})";
+    -moz-opacity: $trans;
+    -khtml-opacity: $trans;
+    opacity: $trans;
+}
+// border radius
+@mixin borderRadius($radius:3px){
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    border-radius: $radius;
+}
+// transform
+@mixin transformRotate($deg){
+    -moz-transform: rotate($deg);
+    -webkit-transform: rotate($deg);
+    -o-transform: rotate($deg);
+    -ms-transform: rotate($deg);
+    transform: rotate($deg);
+}
+// close icon
+@mixin closeIcon($color){
+    cursor: pointer;
+
+    &:hover {
+        &::before, &::after {
+            background:darken(invert($color),50%);
+        }
+    }
+    &::before, &::after {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        top: 50%;
+        left: 0;
+        margin-top: -1px;
+        background: $color;
+        border-radius: 5px;
+    }
+    &::before {
+        @include transformRotate(45deg);
+    }
+    &::after {
+        @include transformRotate(-45deg);
+    }
+}
+// buttons style
+@mixin buttonStyle($color,$borderColor){
+    outline:0;
+    background-color: $color;
+    @include borderRadius();
+
+    &:hover{
+        background-color:darken($color,4%);
+        text-decoration: none;
+    }
+    &:active{
+        border:1px solid rgba(0,0,0,0) !important;
+        background-color:darken($color,4%);
+        -webkit-box-shadow:inset 0 1px 3px 0 rgba(0,0,0,0.6);
+        box-shadow:inset 0 1px 3px 0 rgba(0,0,0,0.6);
+    }
+    &:focus{
+        border:1px solid $borderColor;
+    }
+    &[disabled]{
+        @include opacity(0.5);
+    }
+}
+
+// button colors
+$btn-color-1:       $white;
+$btn-color-2:       $light-purple;
+$btn-color-3:       #3d3d3d;

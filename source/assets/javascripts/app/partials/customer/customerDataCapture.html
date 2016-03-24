@@ -1,0 +1,965 @@
+<form name="customerDataForm" ng-submit="vm.submit()" autocomplete="off" role="form" novalidate>
+    <!-- OPS-1686 Customer Header -->
+    <customer-header customer-header-data="customerHeader"></customer-header>
+    <!-- OPS-1686 Customer Header end -->
+    <div class="cluster-st1 mb-10">
+        <h2 class="title-st1">Vertragsdaten</h2>
+        <div class="grid">
+            <div class="col w-40">
+                <ops-textbox
+                    type="text"
+                    inner-id="password"
+                    ng-model="vm.inputs.contractData.password"
+                    ng-required="true"
+                    label="Kundenkennwort">
+                </ops-textbox>
+            </div>
+            <div class="col w-40">
+                <ops-textbox
+                    type="text"
+                    inner-id="contractNum"
+                    ng-model="vm.inputs.contractData.num"
+                    label="Rahmenvertragsnummer">
+                </ops-textbox>
+            </div>
+            <div class="col w-20">
+                <ops-textbox
+                    type="text"
+                    inner-id="custType"
+                    ng-model="vm.inputs.contractData.type"
+                    ng-required="true"
+                    label="Kundenart">
+                </ops-textbox>
+            </div>
+        </div>
+    </div>
+    <div class="cluster-st1 mb-10">
+        <h2 class="title-st1">Kundendaten</h2>
+        <div class="grid">
+            <div class="col w-20">
+                <ops-select
+                    ng-model="vm.inputs.customerData.salutation"
+                    label="Anrede">
+                    <li ops-option="option in vm.anrede">
+                        <a>{{option}}</a>
+                    </li>
+                </ops-select>
+            </div>
+            <div class="col w-20">
+                <ops-select
+                    ng-model="vm.inputs.customerData.title"
+                    label="Akad. Titel">
+                    <li ops-option="option in vm.acdemicTitle">
+                        <a>{{option}}</a>
+                    </li>
+                </ops-select>
+            </div>
+            <div class="col w-20">
+                <ops-textbox
+                    type="text"
+                    inner-id="expiryDate2"
+                    ng-model="vm.inputs.customerData.birth"
+                    label="Geburtsdatum"
+                    ng-required="true"
+                    iconed="date">
+                </ops-textbox>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="col w-40">
+                <ops-textbox
+                    type="text"
+                    inner-id="surName"
+                    ng-model="vm.inputs.customerData.surName"
+                    label="Nachname"
+                    ng-required="true">
+                </ops-textbox>
+            </div>
+            <div class="col w-40">
+                <ops-textbox
+                    type="text"
+                    inner-id="fname"
+                    ng-model="vm.inputs.customerData.firstName"
+                    label="Vorname"
+                    ng-required="true">
+                </ops-textbox>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="col w-40">
+                <ops-textbox
+                    type="text"
+                    inner-id="id"
+                    ng-model="vm.inputs.customerData.ID"
+                    label="Ausweisnummer"
+                    ng-required="true">
+                </ops-textbox>
+            </div>
+        </div>
+        <div>
+            <div class="grid">
+                <div class="col w-100">
+                    <!--TODO:check-->
+                    <ops-checkbox
+                        inner-id="checkbox1"
+                        ng-model="vm.inputs.customerData.noID"
+                        name="checkbox1"
+                        label="Kein deutscher Personalausweis">
+                    </ops-checkbox>
+                </div>
+            </div>
+            <div class="grid mt-20" ng-show="vm.inputs.customerData.noID">
+                <div class="col w-40">
+                    <div class="fm-data ">
+                        <ops-textbox
+                            type="text"
+                            inner-id="creditInst"
+                            ng-model="vm.inputs.customerData.creditInst"
+                            label="Kreditinstitut">
+                        </ops-textbox>
+                    </div>
+                </div>
+                <div class="col w-40">
+                    <ops-textbox
+                        type="text"
+                        inner-id="creditNum"
+                        ng-model="vm.inputs.customerData.creditNum"
+                        label="Kartennummer">
+                    </ops-textbox>
+                </div>
+                <div class="col w-20">
+                    <ops-textbox
+                        type="text"
+                        inner-id="expiryDate"
+                        ng-model="vm.inputs.customerData.expiryDate"
+                        label="Gültig bis"
+                        iconed="date">
+                    </ops-textbox>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cluster-st1 mb-10">
+        <h2 class="title-st1">Kundenanschrift</h2>
+        <div class="grid">
+            <div class="col w-40">
+                <ops-textbox
+                    type="text"
+                    inner-id="street"
+                    ng-model="vm.inputs.customerAdd.street"
+                    label="Straße"
+                    ng-required="true">
+                </ops-textbox>
+            </div>
+            <div class="col w-10">
+                <ops-textbox
+                    type="text"
+                    inner-id="num"
+                    ng-model="vm.inputs.customerAdd.num"
+                    label="Nr."
+                    ng-required="true">
+                </ops-textbox>
+            </div>
+            <div class="col w-10">
+                <ops-textbox
+                    type="text"
+                    inner-id="postal"
+                    ng-model="vm.inputs.customerAdd.postal"
+                    label="PLZ"
+                    ng-required="true">
+                </ops-textbox>
+            </div>
+            <div class="col w-40">
+                <ops-textbox
+                    type="text"
+                    inner-id="city"
+                    ng-model="vm.inputs.customerAdd.city"
+                    label="Ort"
+                    ng-required="true">
+                </ops-textbox>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="col w-40">
+                <ops-select
+                    ng-model="vm.inputs.customerAdd.country"
+                    label="Land">
+                    <li ops-option="option in vm.countriesData">
+                        <a>{{option}}</a>
+                    </li>
+                </ops-select>
+            </div>
+        </div>
+    </div>
+    <div class="cluster-st1 mb-10">
+        <h2 class="title-st1">Kontaktdaten</h2>
+        <div class="grid">
+            <div class="col w-20">
+                <ops-select
+                    ng-model="vm.inputs.contactDetails.prefix"
+                    label="Anrede">
+                    <li ops-option="option in vm.anrede">
+                        <a>{{option}}</a>
+                    </li>
+                </ops-select>
+            </div>
+            <div class="col w-40">
+                <ops-textbox
+                    type="text"
+                    inner-id="custContact"
+                    ng-model="vm.inputs.contactDetails.contact"
+                    label="Ansprechpartner"
+                    ng-required="true">
+                </ops-textbox>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="col w-40">
+                <ops-select
+                    ng-model="vm.inputs.contactDetails.preset"
+                    ng-required="true"
+                    label="Rückruf: Vorwahl">
+                    <li ops-option="option in vm.prefix">
+                        <a>{{option}}</a>
+                    </li>
+                </ops-select>
+            </div>
+            <div class="col w-40">
+                <ops-textbox
+                    type="text"
+                    inner-id="nummer"
+                    ng-model="vm.inputs.contactDetails.num"
+                    label="Rückruf: Rufnummer"
+                    ng-required="true">
+                </ops-textbox>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="col w-40">
+                <ops-textbox
+                    type="text"
+                    inner-id="email"
+                    ng-model="vm.inputs.contactDetails.email"
+                    label="E-Mail-Adresse"
+                    ng-required="true">
+                </ops-textbox>
+            </div>
+            <div class="col w-40 mt-25">
+                <ops-checkbox
+                    inner-id="checkbox2"
+                    ng-model="vm.inputs.contactDetails.noEmail"
+                    name="checkbox2"
+                    label="Kunde hat keine E-Mail Adresse">
+                </ops-checkbox>
+            </div>
+        </div>
+    </div>
+    <div class="cluster-st1 mb-10">
+        <h2 class="title-st1">Rechnungsdaten</h2>
+        <div class="grid">
+            <div class="col w-40">
+                <ops-select
+                    ng-model="vm.inputs.billDetails.type"
+                    label="Rechnungstyp">
+                    <li ops-option="option in vm.invoiceTyp">
+                        <a>{{option}}</a>
+                    </li>
+                </ops-select>
+            </div>
+            <div class="col w-40">
+                <ops-textbox
+                    type="text"
+                    inner-id="custCostCenter"
+                    ng-model="vm.inputs.billDetails.custCostCenter"
+                    label="Kostenstelle">
+                </ops-textbox>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="col w-100">
+                <ops-checkbox
+                    inner-id="checkbox3"
+                    ng-model="vm.inputs.billDetails.sms"
+                    name="checkbox3"
+                    label="SMS-Benachrichtigung">
+                </ops-checkbox>
+            </div>
+        </div>
+        <div class="grid"
+             ng-show="vm.inputs.billDetails.sms">
+            <div class="col w-40">
+                <ops-select
+                    ng-model="vm.inputs.billDetails.area"
+                    label="Vorwahl"
+                    ng-required="true">
+                    <li ops-option="option in vm.prefix">
+                        <a>{{option}}</a>
+                    </li>
+                </ops-select>
+            </div>
+            <div class="col w-40">
+                <ops-textbox
+                    type="text"
+                    inner-id="billSms"
+                    ng-model="vm.inputs.billDetails.num"
+                    label="Mobilrufnummer für SMS"
+                    ng-required="true">
+                </ops-textbox>
+            </div>
+        </div>
+    </div>
+    <div class="cluster-st1 mb-10">
+        <h2 class="title-st1">
+            <ops-checkbox
+                inner-id="checkbox-title-1"
+                ng-model="vm.abweichende"
+                name="checkbox-title-1"
+                label="Abweichende Rechnungsadresse">
+            </ops-checkbox>
+        </h2>
+        <div ng-show="vm.abweichende">
+            <div class="grid">
+                <div class="col w-20">
+                    <ops-select
+                        ng-model="vm.inputs.diffBill.salutation"
+                        label="Anrede">
+                        <li ops-option="option in vm.anrede">
+                            <a>{{option}}</a>
+                        </li>
+                    </ops-select>
+                </div>
+                <div class="col w-20">
+                    <ops-select
+                        ng-model="vm.inputs.diffBill.title"
+                        label="Akad. Titel">
+                        <li ops-option="option in vm.acdemicTitle">
+                            <a>{{option}}</a>
+                        </li>
+                    </ops-select>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col w-40">
+                    <ops-textbox
+                        type="text"
+                        inner-id="surname2"
+                        ng-model="vm.inputs.diffBill.surName"
+                        label="Nachname">
+                    </ops-textbox>
+                </div>
+                <div class="col w-40">
+                    <ops-textbox
+                        type="text"
+                        inner-id="firstname2"
+                        ng-model="vm.inputs.diffBill.firstName"
+                        label="Vorname">
+                    </ops-textbox>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col w-40">
+                    <ops-textbox
+                        type="text"
+                        inner-id="billStreet"
+                        ng-model="vm.inputs.diffBill.street"
+                        label="Straße"
+                        ng-required="true">
+                    </ops-textbox>
+                </div>
+                <div class="col w-10">
+                    <ops-textbox
+                        type="text"
+                        inner-id="billNum"
+                        ng-model="vm.inputs.diffBill.num"
+                        label="Nr."
+                        ng-required="true">
+                    </ops-textbox>
+                </div>
+                <div class="col w-10">
+                    <ops-textbox
+                        type="text"
+                        inner-id="billPostal"
+                        ng-model="vm.inputs.diffBill.postal"
+                        label="PLZ"
+                        ng-required="true">
+                    </ops-textbox>
+                </div>
+                <div class="col w-40">
+                    <ops-textbox
+                        type="text"
+                        inner-id="billCity"
+                        ng-model="vm.inputs.diffBill.city"
+                        label="Ort"
+                        ng-required="true">
+                    </ops-textbox>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col w-40">
+                    <ops-select
+                        ng-model="vm.inputs.diffBill.country"
+                        label="Land">
+                        <li ops-option="option in vm.countriesData">
+                            <a>{{option}}</a>
+                        </li>
+                    </ops-select>
+                </div>
+                <div class="col w-20">
+                    <ops-textbox
+                        type="text"
+                        inner-id="post"
+                        ng-model="vm.inputs.diffBill.PObox"
+                        label="Postfach">
+                    </ops-textbox>
+                </div>
+            </div>
+            <div>
+                <h3 class="title-st2">Ansprechpartner</h3>
+                <div class="grid">
+                    <div class="col w-20">
+                        <ops-select
+                            ng-model="vm.inputs.diffBill.contactTitle"
+                            label="Anrede">
+                            <li ops-option="option in vm.anrede">
+                                <a>{{option}}</a>
+                            </li>
+                        </ops-select>
+                    </div>
+                    <div class="col w-40">
+                        <ops-textbox
+                            type="text"
+                            inner-id="Rückrufnummer1"
+                            ng-model="vm.inputs.diffBill.contactPerson"
+                            label="Nachname">
+                        </ops-textbox>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="col w-40">
+                        <ops-select
+                            ng-model="vm.inputs.diffBill.preset"
+                            label="Rückruf: Vorwahl"
+                            ng-required="true">
+                            <li ops-option="option in vm.prefix">
+                                <a>{{option}}</a>
+                            </li>
+                        </ops-select>
+                    </div>
+                    <div class="col w-40">
+                        <ops-textbox
+                            type="text"
+                            inner-id="contactCall"
+                            ng-model="vm.inputs.diffBill.contactNumber"
+                            label="Rückruf: Rufnummer"
+                            ng-required="true">
+                        </ops-textbox>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cluster-st1 mb-10">
+        <h2 class="title-st1">
+            <ops-checkbox
+                inner-id="checkbox-title-3"
+                ng-model="vm.bankData"
+                name="checkbox-title-3"
+                label="Bankeinzug erwünscht">
+            </ops-checkbox>
+        </h2>
+        <div ng-show="vm.bankData">
+            <div class="grid">
+                <div class="col w-40">
+                    <ops-textbox
+                        type="text"
+                        inner-id="acc_holder"
+                        ng-model="vm.inputs.bankDetails.accHolder"
+                        label="Kontoinhaber"
+                        ng-required="true">
+                    </ops-textbox>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col w-40">
+                    <ops-textbox
+                        type="text"
+                        inner-id="IBAN"
+                        ng-model="vm.inputs.bankDetails.IBAN"
+                        label="IBAN"
+                        ng-required="true">
+                    </ops-textbox>
+                </div>
+                <div class="col w-20">
+                    <ops-textbox
+                        type="text"
+                        inner-id="BIC"
+                        ng-model="vm.inputs.bankDetails.BIC"
+                        label="BIC"
+                        ng-required="true">
+                    </ops-textbox>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col w-20">
+                    <ops-textbox
+                        type="text"
+                        inner-id="accNum"
+                        ng-model="vm.inputs.bankDetails.accNum"
+                        label="Kontonummer"
+                        ng-required="true">
+                    </ops-textbox>
+                </div>
+                <div class="col w-20">
+                    <ops-textbox
+                        type="text"
+                        inner-id="bankCode_1"
+                        ng-model="vm.inputs.bankDetails.bankCode"
+                        label="Bankleitzahl"
+                        ng-required="true">
+                    </ops-textbox>
+                </div>
+                <div class="col w-40">
+                    <a class="btn-st btn-st1 btn-st-xbig">In IBAN umwandeln</a>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col w-40">
+                    <ops-textbox
+                        type="text"
+                        inner-id="creditInst2"
+                        ng-model="vm.inputs.bankDetails.creditInst"
+                        label="Kreditinstitut">
+                    </ops-textbox>
+                </div>
+                <div class="col w-40">
+                    <ops-textbox
+                        type="text"
+                        inner-id="usage"
+                        ng-model="vm.inputs.bankDetails.usage"
+                        label="Verwendungszweck">
+                    </ops-textbox>
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="col w-30">
+                    <ops-textbox
+                        type="text"
+                        inner-id="street3"
+                        ng-model="vm.inputs.bankDetails.street"
+                        label="Straße"
+                        ng-required="true">
+                    </ops-textbox>
+                </div>
+                <div class="col w-20">
+                    <ops-textbox
+                        type="text"
+                        inner-id="num3"
+                        ng-model="vm.inputs.bankDetails.num"
+                        label="Hausnummer"
+                        ng-required="true">
+                    </ops-textbox>
+                </div>
+                <div class="col w-20">
+                    <ops-textbox
+                        type="text"
+                        inner-id="postal3"
+                        ng-model="vm.inputs.bankDetails.postal"
+                        label="Postleitzahl"
+                        ng-required="true">
+                    </ops-textbox>
+                </div>
+                <div class="col w-30">
+                    <ops-textbox
+                        type="text"
+                        inner-id="city3"
+                        ng-model="vm.inputs.bankDetails.city"
+                        label="Ort"
+                        ng-required="true">
+                    </ops-textbox>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col w-40">
+                    <ops-select
+                        ng-model="vm.inputs.bankDetails.country"
+                        label="Land"
+                        ng-required="true">
+                        <li ops-option="option in vm.countriesData">
+                            <a>{{option}}</a>
+                        </li>
+                    </ops-select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cluster-st1 mb-10">
+        <h2 class="title-st1">
+            <ops-checkbox
+                inner-id="checkbox-title-2"
+                ng-model="vm.checkedTel"
+                name="checkbox-title-2"
+                label="Telefonbucheintrag">
+            </ops-checkbox>
+        </h2>
+        <div ng-show="vm.checkedTel">
+            <div class="grid">
+                <div class="col w-30">
+                    <ops-select
+                        ng-model="vm.inputs.phonebook.academicTitle"
+                        label="Akad. Titel">
+                        <li ops-option="option in vm.acdemicTitle">
+                            <a>{{option}}</a>
+                        </li>
+                    </ops-select>
+                </div>
+                <div class="col w-30">
+                    <ops-select
+                        ng-model="vm.inputs.phonebook.title"
+                        label="Aristrokratischer Titel">
+                        <li ops-option="option in vm.anrede">
+                            <a>{{option}}</a>
+                        </li>
+                    </ops-select>
+                </div>
+                <div class="col w-30">
+
+                    <ops-select
+                        ng-model="vm.inputs.phonebook.intent"
+                        label="Vorsatzwort">
+                        <li ops-option="option in vm.intent">
+                            <a>{{option}}</a>
+                        </li>
+                    </ops-select>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col w-40">
+                    <ops-textbox
+                        type="text"
+                        inner-id="phoneBook_fName"
+                        ng-model="vm.inputs.phonebook.fName"
+                        label="Vorname">
+                    </ops-textbox>
+                </div>
+                <div class="col w-40">
+                    <ops-textbox
+                        type="text"
+                        inner-id="phoneBook_lName"
+                        ng-model="vm.inputs.phonebook.lName"
+                        label="Nachname / Firma">
+                    </ops-textbox>
+                </div>
+                <div class="col w-20">
+                    <ops-select
+                        ng-model="vm.inputs.phonebook.prefix"
+                        label="Namenszusatz">
+                        <li ops-option="option in vm.intent">
+                            <a>{{option}}</a>
+                        </li>
+                    </ops-select>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col w-40">
+                    <ops-textbox
+                        type="text"
+                        inner-id="phoneBook_street"
+                        ng-model="vm.inputs.phonebook.street"
+                        label="Straße">
+                    </ops-textbox>
+                </div>
+                <div class="col w-10">
+                    <ops-textbox
+                        type="text"
+                        inner-id="phoneBook_num"
+                        ng-model="vm.inputs.phonebook.num"
+                        label="Nr.">
+                    </ops-textbox>
+                </div>
+                <div class="col w-10">
+                    <ops-textbox
+                        type="text"
+                        inner-id="phoneBook_zusatz"
+                        ng-model="vm.inputs.phonebook.zusatz"
+                        label="Zusatz">
+                    </ops-textbox>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col w-30">
+                    <ops-select
+                        ng-model="vm.inputs.phonebook.country"
+                        label="Land">
+                        <li ops-option="option in vm.countriesData">
+                            <a>{{option}}</a>
+                        </li>
+                    </ops-select>
+                </div>
+                <div class="col w-10">
+                    <ops-textbox
+                        type="text"
+                        inner-id="phoneBook_postal"
+                        ng-model="vm.inputs.phonebook.postal"
+                        label="PLZ">
+                    </ops-textbox>
+                </div>
+                <div class="col w-40">
+                    <ops-textbox
+                        type="text"
+                        inner-id="phoneBook_city"
+                        ng-model="vm.inputs.phonebook.city"
+                        label="Ort">
+                    </ops-textbox>
+                </div>
+                <div class="col w-20">
+                    <ops-textbox
+                        type="text"
+                        inner-id="phoneBook_district"
+                        ng-model="vm.inputs.phonebook.district"
+                        label="Ortsteil">
+                    </ops-textbox>
+                </div>
+            </div>
+            <div class="grid mb-20">
+                <div class="col w-40">
+                    <ops-textbox
+                        type="text"
+                        inner-id="phoneBook_profession"
+                        ng-model="vm.inputs.phonebook.profession"
+                        label="Beruf">
+                    </ops-textbox>
+                </div>
+                <div class="col w-30">
+                    <ops-select
+                        ng-model="vm.inputs.phonebook.searchTerm"
+                        label="Suchbegriff">
+                        <li ops-option="option in vm.invoiceTyp">
+                            <a>{{option}}</a>
+                        </li>
+                    </ops-select>
+                </div>
+            </div>
+            <div class="grid mb-40">
+                <div class="col w-40">
+                    <ul class="form-list-st1">
+                        <li class="label">Art des Eintrags</li>
+                        <li>
+                            <ops-radio
+                                inner-id="entryTyp-1"
+                                ng-model="vm.inputs.phonebook.entryType"
+                                value="Gedruckt / elektronisch"
+                                name="entryType"
+                                label="Gedruckt / elektronisch">
+                            </ops-radio>
+                        </li>
+                        <li>
+                            <ops-radio
+                                inner-id="entryTyp-2"
+                                ng-model="vm.inputs.phonebook.entryType"
+                                value="Gedruckter Eintrag"
+                                name="entryType"
+                                label="Gedruckter Eintrag">
+                            </ops-radio>
+                        </li>
+                        <li>
+                            <ops-radio
+                                inner-id="entryTyp-3"
+                                ng-model="vm.inputs.phonebook.entryType"
+                                value="Elektronischer Eintrag"
+                                name="entryType"
+                                label="Elektronischer Eintrag">
+                            </ops-radio>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col w-40">
+                    <ul class="form-list-st1">
+                        <li class="label">Auskunft</li>
+                        <li>
+                            <ops-radio
+                                inner-id="information-1"
+                                ng-model="vm.inputs.phonebook.information"
+                                value="Vollständige Auskunft"
+                                name="information"
+                                label="Vollständige Auskunft">
+                            </ops-radio>
+                        </li>
+                        <li>
+                            <ops-radio
+                                inner-id="information-2"
+                                ng-model="vm.inputs.phonebook.information"
+                                value="Nur für VF-Nummern"
+                                name="information"
+                                label="Nur für VF-Nummern">
+                            </ops-radio>
+                        </li>
+                        <li>
+                            <ops-radio
+                                inner-id="information-3"
+                                ng-model="vm.inputs.phonebook.information"
+                                value="Keine Auskunft"
+                                name="information"
+                                label="Keine Auskunft">
+                            </ops-radio>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid mb-40">
+                <div class="col w-40">
+                    <ul class="form-list-st1">
+                        <li>Art der Veröffentlichung</li>
+                        <li>
+                            <ops-radio
+                                inner-id="publicationTyp-1"
+                                ng-model="vm.inputs.phonebook.publicationType"
+                                value="Vollständige Adresse"
+                                name="publicationType"
+                                label="Vollständige Adresse">
+                            </ops-radio>
+                        </li>
+                        <li>
+                            <ops-radio
+                                inner-id="publicationTyp-2"
+                                ng-model="vm.inputs.phonebook.publicationType"
+                                value="Keine Adresse"
+                                name="publicationType"
+                                label="Keine Adresse">
+                            </ops-radio>
+                        </li>
+                        <li>
+                            <ops-radio
+                                inner-id="publicationTyp-3"
+                                ng-model="vm.inputs.phonebook.publicationType"
+                                value="Nur Ort"
+                                name="publicationType"
+                                label="Nur Ort">
+                            </ops-radio>
+                        </li>
+                        <li>
+                            <ops-radio
+                                inner-id="publicationTyp-4"
+                                ng-model="vm.inputs.phonebook.publicationType"
+                                value="Ort und Straße"
+                                name="publicationType"
+                                label="Ort und Straße">
+                            </ops-radio>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col w-40">
+                    <ul class="form-list-st1">
+                        <li>Übertragung</li>
+                        <li>
+                            <ops-radio
+                                inner-id="transmission-1"
+                                ng-model="vm.inputs.phonebook.transmission"
+                                value="kompletter Datensatz"
+                                name="transmission"
+                                label="kompletter Datensatz">
+                            </ops-radio>
+                        </li>
+                        <li>
+                            <ops-radio
+                                inner-id="transmission-2"
+                                ng-model="vm.inputs.phonebook.transmission"
+                                value="Nur für VF-Nummern"
+                                name="transmission"
+                                label="Nur für VF-Nummern">
+                            </ops-radio>
+                        </li>
+                        <li>
+                            <ops-radio
+                                inner-id="transmission-3"
+                                ng-model="vm.inputs.phonebook.transmission"
+                                value="Keine Daten"
+                                name="transmission"
+                                label="Keine Daten">
+                            </ops-radio>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col w-100">
+                    <ul class="form-list-st1">
+                        <li class="label">Weitere Optionen</li>
+                        <li>
+                            <ops-checkbox
+                                inner-id="reverseSearch"
+                                ng-model="vm.inputs.phonebook.reverseSearch"
+                                name="reverseSearch"
+                                label="Rückwärtssuche verhindern">
+                            </ops-checkbox>
+                        </li>
+                        <li>
+                            <ops-checkbox
+                                inner-id="commercialUse"
+                                ng-model="vm.inputs.phonebook.commercialUse"
+                                name="commercialUse"
+                                label="Kommerzielle Verwendung erlauben">
+                            </ops-checkbox>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cluster-st1 mb-10">
+        <h2 class="title-st1">Beratungseinwilligung</h2>
+        <div class="grid">
+            <div class="col w-100">
+                <ops-checkbox
+                    inner-id="checkbox9"
+                    ng-model="vm.inputs.agreement.noColdCalling"
+                    name="checkbox9"
+                    label="Keine Nutzung von Bestands- und Verbindungsdaten">
+                </ops-checkbox>
+            </div>
+        </div>
+    </div>
+    <div class="cluster-st1 mb-10">
+        <h2 class="title-st1">Nachricht ans Backoffice</h2>
+        <div class="grid">
+            <div class="col w-40">
+                <ul class="form-list-st1">
+                    <li>
+                        <ops-radio
+                            inner-id="Nachricht-1"
+                            ng-model="vm.inputs.AVD.choice"
+                            value="Keine Nachricht"
+                            name="Nachricht"
+                            label="Keine Nachricht">
+                        </ops-radio>
+                    </li>
+                    <li>
+                        <ops-radio
+                            inner-id="Nachricht-2"
+                            ng-model="vm.inputs.AVD.choice"
+                            value="Bitte manuell prüfen"
+                            name="Nachricht"
+                            label="Bitte manuell prüfen">
+                        </ops-radio>
+                    </li>
+                    <li>
+                        <ops-radio
+                            inner-id="Nachricht-3"
+                            ng-model="vm.inputs.AVD.choice"
+                            value="Eigene Nachricht"
+                            name="Nachricht"
+                            label="Eigene Nachricht">
+                        </ops-radio>
+                    </li>
+                    <li>
+                        <ops-textarea
+                            inner-id="avd-message"
+                            ng-model="vm.inputs.AVD.message"
+                            label="Nachricht">
+                        </ops-textarea>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</form>

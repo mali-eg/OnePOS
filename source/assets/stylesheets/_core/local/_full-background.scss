@@ -1,0 +1,79 @@
+.mod-full-background {
+	max-width: 100%;
+	padding: 0;
+
+	position: relative;
+	overflow: hidden;
+
+	clear: both;
+
+	// "underlay" is used to place the element behind the main menu
+	&.full-background-underlay {z-index:-1;}
+
+	// use class full-background-sml-u-X to set the offset (on small screens)
+	@for $underlayMargin from 1 through 15 {
+		&.full-background-sml-u-#{$underlayMargin*10} {
+			top: -#{$underlayMargin*10}px;
+			padding-top: #{$underlayMargin*10}px;
+			margin-bottom: #{$underlayMargin*10-20}px;
+		}
+	}
+
+	.full-background-bg-image {
+
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		overflow: visible;
+
+		&.full-background-parallax {
+		    background-repeat: no-repeat;
+		    background-position: 0 0;
+		    background-attachment: fixed;
+		    background-size: 100% auto;
+		    height: 100%;
+		    width: 100%;
+		    overflow: hidden;
+
+		    img {
+		    	visibility:hidden;
+		    }
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+
+
+	.belt {
+
+		// enable parallax
+		position: relative;
+
+		&> * {
+			margin: 0;
+		}
+	}
+
+	.teaser {
+		margin-bottom: 0px;
+	}
+}
+
+
+@media only screen and (min-width: $mq-lrg) {
+	.mod-full-background {
+		// use class full-background-sml-u-X to set the offset (on small screens)
+		@for $underlayMargin from 1 through 15 {
+			&.full-background-u-#{$underlayMargin*10} {
+				top: -#{$underlayMargin*10}px;
+				padding-top: #{$underlayMargin*10}px;
+				margin-bottom: #{$underlayMargin*10}px;
+			}
+		}
+	}
+}

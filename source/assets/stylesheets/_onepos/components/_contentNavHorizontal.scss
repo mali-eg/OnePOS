@@ -1,0 +1,85 @@
+/* ==========================================================================
+Content nav horizontal style
+========================================================================== */
+//F19 .0
+$contentNavHorizontal-st1-padding: 10px;
+$contentNavHorizontal-st1-item-height: 90px;
+$contentNavHorizontal-st1-active-item-height: 110px;
+$contentNavHorizontal-st1-item-border-width: 1px;
+$contentNavHorizontal-st1-active-item-border-width: 2px;
+$contentNavHorizontal-st1-padding: 10px;
+
+.contentNavHorizontal-st1 {
+    display: flex;
+    align-items: center;
+
+    // item
+    //F19.1 21+
+    .contentNav-item {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        height: $contentNavHorizontal-st1-item-height + ($contentNavHorizontal-st1-padding*2) + ($contentNavHorizontal-st1-item-border-width*2);
+        padding: $contentNavHorizontal-st1-padding;
+        border: $contentNavHorizontal-st1-item-border-width solid #ccc;
+        margin: 0 5px;
+        flex: 0 0 200px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        // txt
+        p {
+            flex: 1;
+            color: $grey;
+            font-size: 16px;
+            line-height: 20px;
+            font-family: $font-vodafoneRegular;
+            text-align: center;
+            margin: 0;
+        }
+        // active
+        //F19.2 21+
+        &.active-st1 {
+            cursor: default;
+            height: $contentNavHorizontal-st1-active-item-height + ($contentNavHorizontal-st1-padding*2) + ($contentNavHorizontal-st1-active-item-border-width*2);
+            border: $contentNavHorizontal-st1-active-item-border-width solid $red;
+            -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
+            // txt
+            p {
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+        //F19.3 1-21
+        &.active-st2 {
+            cursor: default;
+            // txt
+            p {
+                font-family: $font-vodafoneBold;
+                color: $red;
+            }
+        }
+        // active
+        //F19.4 1-21
+        &.active-st3 {
+            cursor: default;
+            height: $contentNavHorizontal-st1-active-item-height + ($contentNavHorizontal-st1-padding*2) + ($contentNavHorizontal-st1-active-item-border-width*2);
+            border: $contentNavHorizontal-st1-active-item-border-width solid $red;
+            -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
+            // txt
+            p {
+                font-family: $font-vodafoneBold;
+                color: $red;
+                font-size: 30px;
+                line-height: 34px;
+            }
+        }
+    }
+}
+

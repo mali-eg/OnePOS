@@ -1,0 +1,16 @@
+<div class="page-customer-details mt-40 mb-20">
+    <div class="cluster-st1">
+        <h2 class="txt-st9 mb-25">{{vm.customerDetails.contract.contractMasterData.customerName}} ( {{vm.customerDetails.contract.contractMasterData.customerNumber}} )</h2>
+        <ops-tabs ng-model="vm.yourModel">
+            <ops-pane title="Contract" id="contractPane">
+                <div ng-include="'/assets/javascripts/app/partials/customerSnapshot/customerDetails_Contract.html'"></div>
+            </ops-pane>
+            <ops-pane title="Billing" id="billingPane">
+                <div ng-include="'/assets/javascripts/app/partials/customerSnapshot/customerDetails_Billing.html'"></div>
+            </ops-pane>
+            <ops-pane title="Contact" id="contactPane">
+                <div ng-include="'/assets/javascripts/app/partials/customerSnapshot/customerDetails_Contact.html'"></div>
+            </ops-pane>
+        </ops-tabs>
+    </div>
+</div>

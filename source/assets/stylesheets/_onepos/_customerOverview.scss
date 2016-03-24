@@ -1,0 +1,402 @@
+.customer-overview-content-wrapper {
+
+  padding: 0px;
+
+  .nop-l {
+    padding-left: 0px !important;
+  }
+
+  .nop-b {
+    padding-bottom: 0px !important;
+  }
+
+  .nop {
+    padding: 0px !important;
+  }
+
+  .nop-r {
+    padding-right: 0px !important;
+  }
+
+  .fr {
+    float: right !important;
+  }
+
+  .pl-15 {
+    padding-left: 15px !important;
+  }
+
+  .pl-12 {
+    padding-left: 12px !important;
+  }
+
+  .pt-26 {
+    padding-top: 26px;
+  }
+
+  .pb-26 {
+    padding-bottom: 26px;
+  }
+
+  .pt-30 {
+    padding-top: 30px;
+  }
+
+  .pt-18 {
+    padding-top: 18px;
+  }
+
+  .pb-30 {
+    padding-bottom: 30px;
+  }
+
+  .pl-17 {
+    padding-left: 17px;
+  }
+
+  .border-l {
+    border-left: solid #007c93 2px;
+  }
+  .border-remove {
+    border-right: 0 !important;
+  }
+
+  .margin-l-5 {
+    margin-left: 10px;
+  }
+
+  .margin-t-26 {
+    margin-top: 26px;
+  }
+
+  .margin-t-10 {
+    margin-top: 10px;
+  }
+
+  .invisible {
+    visibility: hidden;
+  }
+
+  .customer-overview-button {
+    color: #007c93;
+    font-size: 14px;
+  }
+
+  .remove-padding-l {
+    padding-left: 0px !important;
+  }
+
+  .attribute-header {
+    font-size: 12px;
+    color: #666666;
+    font-family: "VodafoneRegular";
+  }
+
+  .border-left-color {
+    border-left: solid #418600 4px;
+  }
+
+
+  .customer-overview-master {
+
+    .customer-overview-title {
+      padding: 10px 0px 15px 0px;
+      text-align: center;
+      font-family: 'VodafoneRegular';
+      color: #ffffff;
+      font-size: 30px;
+      background-color: #e60000;
+
+    }
+
+    .customer-overview-info-box {
+      padding-top: 28px;
+      padding-right: 98px;
+      padding-bottom: 38px;
+      padding-left: 90px;
+      background-color: #ffffff;
+
+      .customer-info-col1 {
+
+        .customer-name {
+          color: #333333;
+          font-size: 38px;
+          font-family: "VodafoneLight";
+
+        }
+
+        .mobile-icon {
+          background-image: url(/assets/images/customer/Vodafone-Mobile.svg);
+          background-repeat: no-repeat;
+          background-size: 18px 34px;
+          width: 18px;
+          height: 34px;
+          margin-left: 50px;
+        }
+
+        .home-icon {
+          background-image: url(/assets/images/customer/Vodafone-Mobile.svg);
+          background-repeat: no-repeat;
+          background-size: 18px 34px;
+          width: 18px;
+          height: 34px;
+
+        }
+
+      }
+
+      .customer-info-col2 {
+        margin-top: 29px;
+
+        .customer-info-col2-div {
+
+          border-right: #007c93 solid 2px;
+
+          .customer-info-col2-header {
+            font-size: 12px;
+            font-family: "VodafoneRegular";
+            color: #666666;
+
+          }
+
+          .customer-info-col2-value {
+            font-size: 16px;
+            font-family: 'VodafoneBold';
+            color: #333333;
+            font-weight: bold;
+          }
+
+        }
+      }
+
+      .customer-info-col3 {
+
+        padding-bottom: 38px;
+
+        .customer-info-col3-div {
+
+          border-right: #007c93 solid 2px;
+
+          .customer-info-col3-header {
+            font-size: 12px;
+            font-family: "VodafoneRegular";
+            color: #666666;
+
+          }
+
+          .customer-info-col3-value {
+            font-size: 16px;
+            font-family: 'VodafoneBold';
+            color: #333333;
+            font-weight: bold;
+          }
+
+        }
+      }
+    }
+  }
+
+
+  .prepaid-customer-ban-container {
+    background-color: #ffffff;
+
+    .overview-title {
+      text-align: center;
+    }
+    .prepaid-customer-ban-body {
+      padding: 0px 90px 50px 90px;
+
+      .line {
+        background-color: #ebebeb;
+        height: 2px;
+        margin-bottom:  13px;
+      }
+
+      .package-name {
+        padding-bottom: 27px;
+        font-family: "VodafoneLight";
+        font-size: 36px;
+        color: #333333;
+      }
+
+
+    }
+  }
+
+.linked-customer-container {
+  background-color: #ffffff;
+  margin-top: 10px;
+  padding: 28px 89px 31px 89px;
+
+  .customer-name {
+    padding-bottom: 27px;
+    font-family: "VodafoneLight";
+    font-size: 36px;
+    color: #333333;
+  }
+
+}
+
+.linked-customer-subscribers-container {
+  padding-left: 20px;
+  background-color: #ffffff;
+
+
+  .subscription-name {
+    padding-bottom: 27px;
+    font-family: "VodafoneLight";
+    font-size: 36px;
+    color: #333333;
+  }
+
+  .subscriber-bottom-line {
+    background-color: #cccccc;
+    height: 2px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+
+}
+
+
+
+
+  .customer-overview-subscriber {
+    margin-top: 10px;
+    background-color: #ffffff;
+    padding: 21px 89px 46px 80px;
+
+    .subscriber-title {
+      padding-left: 9px;
+      padding-bottom: 14px;
+      font-size: 24px;
+      color: #333333;
+      font-family: "VodafoneRegular";
+
+    }
+
+    .subscriber-bottom-line {
+      background-color: #cccccc;
+      margin-left: 9px;
+      height: 2px;
+      margin-top: 20px;
+    }
+
+    .subscriber-top-line {
+      background-color: #ebebeb;
+      margin-left: 9px;
+      height: 5px;
+    }
+
+    .subscriber-info {
+      margin-top: 20px;
+      border-left: solid #418600 4px;
+
+      .subscriber-product-name {
+        padding-bottom: 27px;
+        padding-left: 14px;
+        font-family: "VodafoneLight";
+        font-size: 36px;
+        color: #333333;
+      }
+
+      .subscriber-details-container {
+        padding-left: 14px;
+
+        .subscriber-details-header {
+          font-size: 12px;
+          font-family: "VodafoneRegular";
+          color: #666666;
+          padding-left: 23px;
+        }
+
+        .subscriber-details-values {
+          font-size: 16px;
+          font-family: 'VodafoneBold';
+          color: #333333;
+          padding-left: 23px;
+        }
+      }
+
+    }
+
+  }
+
+
+
+    .fixed-net-customer-name {
+      color: #333333;
+      font-size: 24px;
+      font-family: "VodafoneRegular";
+      padding-left: 0px !important;
+    }
+
+    .fixed-net-line {
+      margin-top: 39px;
+      margin-bottom: 13px;
+      background-color: #ebebeb;
+      height: 2px;
+    }
+
+    .fixed-net-desc {
+      color: #333333;
+      font-size: 36px;
+      font-family: "VodafoneLight";
+      padding-bottom: 27px;
+    }
+
+    .fixed-net-info-header {
+      color: #666666;
+      font-size: 12px;
+      font-family: "VodafoneRegular";
+    }
+
+    .fixed-net-info-value {
+      color: #333333;
+      font-family: 'VodafoneBold';
+      font-size: 16px;
+    }
+
+
+  .info-container {
+      margin-top: 10px;
+      background-color: #ffffff;
+      padding: 21px 89px 46px 80px;
+
+      .info-title {
+        padding-left: 9px;
+        padding-bottom: 14px;
+        font-size: 24px;
+        color: #333333;
+        font-family: "VodafoneRegular";
+
+      }
+
+      .info-top-line {
+        background-color: #ebebeb;
+        margin-left: 9px;
+        height: 5px;
+      }
+
+      .info-line {
+        padding: 0 0 0 50px;
+        margin: 20px 0 0;
+
+        &:last-child .info-line-content {
+                border-bottom: none;
+            }
+      }
+      .info-line-content {
+          border-bottom: 1px solid #ccc;
+
+          span {
+            font-weight: bold;
+          }
+
+      }
+
+  }
+
+}
+

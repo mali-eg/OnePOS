@@ -1,0 +1,2626 @@
+{
+    "CYOPBI601": {
+        "template": "",
+        "tariffName": "&lt;p&gt;CallYa OpenEnd Internet&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/privat/callya-prepaid-karte/callya-openend-smartphone.htm",
+        "bulletpoints": [
+            {
+                "icon": "",
+                "text": "Es tut uns leid. Zu diesem Tarif liegen keine Infos vor."
+            }
+        ]
+    },
+    "CYOPB_602": {
+        "template": "",
+        "tariffName": "&lt;p&gt;CallYa OpenEnd Talk&amp;amp;SMS&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4409.pdf",
+        "bulletpoints": [
+            {
+                "icon": "",
+                "text": "Es tut uns leid. Zu diesem Tarif liegen keine Infos vor."
+            }
+        ]
+    },
+    "CYOPB_601": {
+        "template": "",
+        "tariffName": "&lt;p&gt;CallYa OpenEnd Talk&amp;amp;SMS&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4409.pdf",
+        "bulletpoints": [
+            {
+                "icon": "",
+                "text": "Es tut uns leid. Zu diesem Tarif liegen keine Infos vor."
+            }
+        ]
+    },
+    "CY_SMF2_1": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;CallYa Smartphone Fun M&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/cy_smartphone_fun_m.html",
+        "bulletpoints": [
+            {
+                "icon": "phoneflat",
+                "text": "Unbegrenzt ins dt. Vodafone Netz"
+            },
+            {
+                "icon": "smsflat",
+                "text": "Unbegrenzte SMS pro Monat in alle dt. Netze"
+            }
+        ]
+    },
+    "CY_SF10": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;CallYa Smartphone Allnet Basic&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4412.pdf",
+        "bulletpoints": [
+            {
+                "icon": "phoneflat",
+                "text": "Unbegrenzt ins dt. Vodafone-Netz"
+            },
+            {
+                "icon": "smsflat",
+                "text": "Unbegrenzte SMS pro Monat in alle dt. Netze"
+            },
+            {
+                "icon": "dataflat",
+                "text": "250 MB mit bis zu 21,6 Mbit/s."
+            }
+        ]
+    },
+    "CY_SMT_7M": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;CallYa New Smartphone Fun 15-WK&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4411.pdf",
+        "bulletpoints": [
+            {
+                "icon": "phoneflat",
+                "text": "100 Minuten in alle dt. Netze"
+            },
+            {
+                "icon": "smsflat",
+                "text": "Unbegrenzte SMS pro Monat in alle dt. Netze"
+            }
+        ]
+    },
+    "CY_SMT28M": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;CallYa New Smartphone Fun 15-28&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4411.pdf",
+        "bulletpoints": [
+            {
+                "icon": "phoneflat",
+                "text": "100 Minuten in alle dt. Netze"
+            },
+            {
+                "icon": "smsflat",
+                "text": "Unbegrenzte SMS pro Monat in alle dt. Netze"
+            }
+        ]
+    },
+    "CY_SMT_7S": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;CallYa New Smartphone Fun 10-WK&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4411.pdf",
+        "bulletpoints": [
+            {
+                "icon": "",
+                "text": "Es tut uns leid. Zu diesem Tarif liegen keine Infos vor."
+            }
+        ]
+    },
+    "32322": {
+        "template": "",
+        "tariffName": "&lt;p&gt;Callya New Smartphone Fun 10-28&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4411.pdf",
+        "bulletpoints": [
+        ]
+    },
+    "CY_SMTL": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;CallYa New Smartphone Fun 25&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4411.pdf",
+        "bulletpoints": [
+            {
+                "icon": "phoneflat",
+                "text": "500 Minuten in alle dt. Netze"
+            },
+            {
+                "icon": "smsflat",
+                "text": "Unbegrenzte SMS pro Monat in alle dt. Netze"
+            }
+        ]
+    },
+    "CY_SMTM": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;CallYa New Smartphone Fun 15&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4411.pdf",
+        "bulletpoints": [
+            {
+                "icon": "phoneflat",
+                "text": "100 Minuten in alle dt. Netze"
+            },
+            {
+                "icon": "smsflat",
+                "text": "Unbegrenzte SMS pro Monat in alle dt. Netze"
+            }
+        ]
+    },
+    "CY_SMTS": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;CallYa Smartphone Fun 10&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4411.pdf",
+        "bulletpoints": [
+            {
+                "icon": "smsflat",
+                "text": "Unbegrenzte SMS pro Monat in alle dt. Netze"
+            }
+        ]
+    },
+    "REDXSOS": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red 1.5 GB&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/red-s.html",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 225 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "REDXSH5": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red 1.5 GB&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/red-s.html",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 225 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "REDXSH10": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red 1.5 GB&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/red-s.html",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 225 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "REDXSHPR": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red 1.5 GB&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/red-s.html",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 225 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "REDSOS": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red 3 GB&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/red-m.html",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 225 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "REDSH5": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red 3 GB&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/red-m.html",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 225 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "REDSH10": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red 3 GB&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/red-m.html",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 225 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "REDSHPR": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red 3 GB&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/red-m.html",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 225 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "REDMOS": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red 8 GB&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/red-l.html",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 225 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "REDMH5": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red 8 GB&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/red-l.html",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 225 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "REDMH10": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red 8 GB&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/red-l.html",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 225 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "REDMHPR": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red 8 GB&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/red-l.html",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 225 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "REDLOS": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red 20 GB&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/red-premium.html",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 225 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "REDLH5": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red 20 GB&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/red-premium.html",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 225 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "REDLH10": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red 20 GB&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/red-premium.html",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 225 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "REDLHPR": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red 20 GB&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/red-premium.html",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 225 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "SMARTSOS": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Smart S&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/smart-s.html",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "200 MB Daten-Flat, 21,6 Mbit/s"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "50 Minuten telefonieren inklusive"
+            },
+            {
+                "icon": "smsflat",
+                "text": "200 SMS inklusive"
+            }
+        ]
+    },
+    "SMARXLH05": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Smart S&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/smart-s.html",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "200 MB Daten-Flat, 21,6 Mbit/s"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "50 Minuten telefonieren inklusive"
+            },
+            {
+                "icon": "smsflat",
+                "text": "200 SMS inklusive"
+            }
+        ]
+    },
+    "SMARXLH10": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Smart S&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/smart-s.html",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "200 MB Daten-Flat, 21,6 Mbit/s"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "50 Minuten telefonieren inklusive"
+            },
+            {
+                "icon": "smsflat",
+                "text": "200 SMS inklusive"
+            }
+        ]
+    },
+    "SMARXLH20": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Smart S&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/smart-s.html",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "200 MB Daten-Flat, 21,6 Mbit/s"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "50 Minuten telefonieren inklusive"
+            },
+            {
+                "icon": "smsflat",
+                "text": "200 SMS inklusive"
+            }
+        ]
+    },
+    "SMARTMOS": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Smart M&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/smart-m.html",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "300 MB Daten-Flat, 21,6 Mbit/s"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "300 Minuten telefonieren inklusive"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "SMARTMH05": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Smart M&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/smart-m.html",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "300 MB Daten-Flat, 21,6 Mbit/s"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "300 Minuten telefonieren inklusive"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "SMARTMH10": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Smart M&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/smart-m.html",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "300 MB Daten-Flat, 21,6 Mbit/s"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "300 Minuten telefonieren inklusive"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "SMARTMH20": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Smart M&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/smart-m.html",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "300 MB Daten-Flat, 21,6 Mbit/s"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "300 Minuten telefonieren inklusive"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "SMARTLOS": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Smart L&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4028.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "500 MB Daten-Flat, 21,6 Mbit/s"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon- und SMS-Flat"
+            }
+        ]
+    },
+    "SMARTLH05": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Smart L&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4028.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "500 MB Daten-Flat, 21,6 Mbit/s"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon- und SMS-Flat"
+            }
+        ]
+    },
+    "SMARTLH10": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Smart L&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4028.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "500 MB Daten-Flat, 21,6 Mbit/s"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon- und SMS-Flat"
+            }
+        ]
+    },
+    "SMARTLH20": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Smart L&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4028.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "500 MB Daten-Flat, 21,6 Mbit/s"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon- und SMS-Flat"
+            }
+        ]
+    },
+    "SMARTLHPR": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Smart L&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4028.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "500 MB Daten-Flat, 21,6 Mbit/s"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon- und SMS-Flat"
+            }
+        ]
+    },
+    "SMARXLOS": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Smart XL&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4028.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "1 GB Daten-Flat, 21,6 Mbit/s"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon- und SMS-Flat"
+            }
+        ]
+    },
+    "SMARXLH05": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Smart XL&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4028.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "1 GB Daten-Flat, 21,6 Mbit/s"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon- und SMS-Flat"
+            }
+        ]
+    },
+    "SMARXLH10": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Smart XL&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4028.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "1 GB Daten-Flat, 21,6 Mbit/s"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon- und SMS-Flat"
+            }
+        ]
+    },
+    "SMARXLH20": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Smart XL&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4028.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "1 GB Daten-Flat, 21,6 Mbit/s"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon- und SMS-Flat"
+            }
+        ]
+    },
+    "SMARXLHPR": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Smart XL&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4028.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "1 GB Daten-Flat, 21,6 Mbit/s"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon- und SMS-Flat"
+            }
+        ]
+    },
+    "DPAAXSOS": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red XS&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/tarif-red-xs.html",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 100 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "dataflat",
+                "text": "200 Highspeed-MB"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "DPAAXSH5": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red XS&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/tarif-red-xs.html",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 100 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "dataflat",
+                "text": "200 Highspeed-MB"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "DPAAXSH10": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red XS&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/tarif-red-xs.html",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 100 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "dataflat",
+                "text": "200 Highspeed-MB"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "DPAAXSH20": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red XS&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/tarif-red-xs.html",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 100 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "dataflat",
+                "text": "200 Highspeed-MB"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "DP13ASOS": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red S&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4025.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 100 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "dataflat",
+                "text": "500 Highspeed-MB"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "DP13ASH5": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red S&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4025.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 100 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "dataflat",
+                "text": "500 Highspeed-MB"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "DP13ASH10": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red S&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4025.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 100 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "dataflat",
+                "text": "500 Highspeed-MB"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "DP13ASH20": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red S&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4025.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 100 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "dataflat",
+                "text": "500 Highspeed-MB"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "DPAASOS": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red S&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4025.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 100 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "dataflat",
+                "text": "200 Highspeed-MB"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat ins deutsche Vodafone-Mobilfunknetz"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "DPAASH5": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red S&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4025.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 100 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "dataflat",
+                "text": "200 Highspeed-MB"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat ins deutsche Vodafone-Mobilfunknetz"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "DPAASH10": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red S&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4025.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 100 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "dataflat",
+                "text": "200 Highspeed-MB"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat ins deutsche Vodafone-Mobilfunknetz"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "DPAASH20": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red S&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4025.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 100 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "dataflat",
+                "text": "200 Highspeed-MB"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat ins deutsche Vodafone-Mobilfunknetz"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "DPAAMOS": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red M&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4025.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 100 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "dataflat",
+                "text": "1 GB Daten-Flat"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "DPAAMH10": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red M&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4025.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 100 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "dataflat",
+                "text": "1 GB Daten-Flat"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "DPAAMH10": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red M&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4025.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 100 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "dataflat",
+                "text": "1 GB Daten-Flat"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "DPAAMH20": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red M&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4025.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 100 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "dataflat",
+                "text": "1 GB Daten-Flat"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "DPAALOS": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red L&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4025.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 100 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "dataflat",
+                "text": "4 GB Daten-Flat"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "DPAALH5": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red L&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4025.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 100 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "dataflat",
+                "text": "4 GB Daten-Flat"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "DPAALH10": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red L&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4025.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 100 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "dataflat",
+                "text": "4 GB Daten-Flat"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "DPAALH20": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red L&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4025.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 100 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "dataflat",
+                "text": "4 GB Daten-Flat"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "DPAAPROS": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red Premium&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4025.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 100 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "dataflat",
+                "text": "10 GB Daten-Flat"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "DPAAPRH5": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red Premium&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4025.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 100 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "dataflat",
+                "text": "10 GB Daten-Flat"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "DPAAPRH10": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red Premium&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4025.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 100 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "dataflat",
+                "text": "10 GB Daten-Flat"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "DPAAPRH20": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red Premium&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4025.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 100 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "dataflat",
+                "text": "10 GB Daten-Flat"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat"
+            }
+        ]
+    },
+    "REDPLDOS": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;3 GB&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4232.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 225 Mbit/s 4G|LTE"
+            }
+        ]
+    },
+    "REDPLDH10": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;3 GB&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4232.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 225 Mbit/s 4G|LTE"
+            }
+        ]
+    },
+    "REDPLDH20": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;3 GB&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4232.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 225 Mbit/s 4G|LTE"
+            }
+        ]
+    },
+    "MBB_S": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;DataGo S&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4104.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 21,6 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "dataflat",
+                "text": "1 GB Daten"
+            }
+        ]
+    },
+    "MBB_S5": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;DataGo S&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4104.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 21,6 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "dataflat",
+                "text": "1 GB Daten"
+            }
+        ]
+    },
+    "MBB_S10": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;DataGo S&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4104.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 21,6 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "dataflat",
+                "text": "1 GB Daten"
+            }
+        ]
+    },
+    "MBB_M": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;DataGo M&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4104.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 50 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "dataflat",
+                "text": "3 GB Daten"
+            }
+        ]
+    },
+    "MBB_M5": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;DataGo M&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4104.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 50 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "dataflat",
+                "text": "3 GB Daten"
+            }
+        ]
+    },
+    "MBB_M10": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;DataGo M&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4104.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 50 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "dataflat",
+                "text": "3 GB Daten"
+            }
+        ]
+    },
+    "MBB_L": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;DataGo L&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4104.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 150 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "dataflat",
+                "text": "6 GB Daten"
+            }
+        ]
+    },
+    "MBB_L5": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;DataGo L&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4104.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 150 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "dataflat",
+                "text": "6 GB Daten"
+            }
+        ]
+    },
+    "MBB_L10": {
+        "template": "",
+        "tariffName": "&lt;p&gt;DataGo L&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4104.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Internet Flat 150 Mbit/s 4G|LTE"
+            },
+            {
+                "icon": "dataflat",
+                "text": "6 GB Daten"
+            }
+        ]
+    },
+    "DPPREXLOS": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Vodafone Black&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/vodafone-black.html",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "30 GB flat surfen und mailen"
+            },
+            {
+                "icon": "dataflat",
+                "text": "4G|LTE bis zu 225 Mbit/s"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Flat telefonieren und simsen"
+            }
+        ]
+    },
+    "DPPREXLMS": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Vodafone Black&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/vodafone-black.html",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "30 GB flat surfen und mailen"
+            },
+            {
+                "icon": "dataflat",
+                "text": "4G|LTE bis zu 225 Mbit/s"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Flat telefonieren und simsen"
+            }
+        ]
+    },
+    "RBXSN60": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Vodafone Red Business XS&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4225.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "200 MB mit 14,4 Mbit/s inklusive"
+            }
+        ]
+    },
+    "RBXSY60": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Vodafone Red Business XS&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4225.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "200 MB mit 14,4 Mbit/s inklusive"
+            }
+        ]
+    },
+    "RBSN60": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Vodafone Red Business S&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4225.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "1 GB mit 21,6 Mbit/s inklusive"
+            },
+            {
+                "icon": "dataflat",
+                "text": "50 MB + Inklusiv-Minuten f&#252;r Europa"
+            }
+        ]
+    },
+    "RBSY60": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Vodafone Red Business S&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4225.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "1 GB mit 21,6 Mbit/s inklusive"
+            },
+            {
+                "icon": "dataflat",
+                "text": "50 MB + Inklusiv-Minuten f&#252;r Europa"
+            }
+        ]
+    },
+    "RBMN60": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Vodafone Red Business M&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4225.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "3 GB mit 50 Mbit/s inklusive"
+            },
+            {
+                "icon": "dataflat",
+                "text": "150 MB + Inkl.-Minuten f&#252;r Europa"
+            }
+        ]
+    },
+    "RBMY60": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Vodafone Red Business M&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4225.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "3 GB mit 50 Mbit/s inklusive"
+            },
+            {
+                "icon": "dataflat",
+                "text": "150 MB + Inkl.-Minuten f&#252;r Europa"
+            }
+        ]
+    },
+    "RBLN60": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Vodafone Red Business L&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4225.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "5 GB mit 50 Mbit/s inklusive"
+            },
+            {
+                "icon": "dataflat",
+                "text": "500 MB + Inkl.-Minuten f&#252;r Europa"
+            }
+        ]
+    },
+    "RBLY60": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Vodafone Red Business L&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4225.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "5 GB mit 50 Mbit/s inklusive"
+            },
+            {
+                "icon": "dataflat",
+                "text": "500 MB + Inkl.-Minuten f&#252;r Europa"
+            }
+        ]
+    },
+    "RB5LN60": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Red Business L Europe+&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/4231.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Sprach-, SMS- und MMS-Flat in alle deutschen Netze"
+            },
+            {
+                "icon": "dataflat",
+                "text": "LTE surfen mit bis zu 100 Mbit/s"
+            },
+            {
+                "icon": "dataflat",
+                "text": "10 GB Highspeed-Volumen"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat ins europ&#228;ische Ausland"
+            }
+        ]
+    },
+    "CY_SF25": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;CallYa Smartphone&lt;br /&gt;Allnet Flat&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/cy-smartphone-allnet-flat.html",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "500 MB Highspeed inkl. 4G|LTE"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat in alle dt. Netze"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat in alle dt. Netze"
+            }
+        ]
+    },
+    "CY_SF15": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;CallYa Smartphone Allnet&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/cy-smartphone-allnet.html",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "250 MB Highspeed inkl. 4G|LTE"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "100 Inklusiv-Minuten in alle deutschen Netze"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS-Flat in alle dt. Netze"
+            }
+        ]
+    },
+    "CY_SMT10": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;CallYa Smartphone Special&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/cy-smartphone-special.html",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "500 MB Highspeed inkl. 4G|LTE"
+            },
+            {
+                "icon": "smsflat",
+                "text": "200 Minuten oder SMS in alle dt. Netze"
+            }
+        ]
+    },
+    "FLATSXLOS": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;SuperFlat Allnet&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/superflat-allnet.html",
+        "bulletpoints": [
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat in alle dt. Mobilfunknetze u. ins  dt. Festnetz inkl Video-Telefonie"
+            }
+        ]
+    },
+    "FLATSXLMS": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;SuperFlat Allnet&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/superflat-allnet.html",
+        "bulletpoints": [
+            {
+                "icon": "phoneflat",
+                "text": "Telefon-Flat in alle dt. Mobilfunknetze u. ins  dt. Festnetz inkl Video-Telefonie"
+            }
+        ]
+    },
+    "Z3GBAS601": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;KombiComfort&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/448.pdf",
+        "bulletpoints": [
+            {
+                "icon": "phoneflat",
+                "text": "Vodafone Zuhause Option"
+            },
+            {
+                "icon": "dataflat",
+                "text": "Vodafone HappyLive! UMTS"
+            }
+        ]
+    },
+    "DAT_NML": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Vodafone Mobile Connect Flat&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/527.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Unbegrenzte nationale Datennutzung enthalten"
+            },
+            {
+                "icon": "dataflat",
+                "text": "Nutzung des Vodafone live!-Portals enthalten"
+            },
+            {
+                "icon": "dataflat",
+                "text": "Schnelle Daten&#252;bertragung bis 14,4 MBit/s im Downstream durch Nutzung von UMTS-Broadband"
+            }
+        ]
+    },
+    "DAT_YMF": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Vodafone Mobile Connect Flat&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "http://eweb8.vfd2-testnet.de/infofaxe/527.pdf",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "Unbegrenzte nationale Datennutzung enthalten"
+            },
+            {
+                "icon": "dataflat",
+                "text": "Nutzung des Vodafone live!-Portals enthalten"
+            },
+            {
+                "icon": "dataflat",
+                "text": "Schnelle Daten&#252;bertragung bis 14,4 MBit/s im Downstream durch Nutzung von UMTS-Broadband"
+            }
+        ]
+    },
+    "FLATVFOS": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;SuperFlat Mobil&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/superflat-mobil-simonly.html",
+        "bulletpoints": [
+            {
+                "icon": "phoneflat",
+                "text": "Flat ins deutsche Vodafone-Netz"
+            }
+        ]
+    },
+    "FLATVFMS": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;SuperFlat Mobil&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/superflat-mobil-simonly.html",
+        "bulletpoints": [
+            {
+                "icon": "phoneflat",
+                "text": "Flat ins deutsche Vodafone-Netz"
+            },
+            {
+                "icon": "dataflat",
+                "text": "Vodafone HappyLive! UMTS"
+            }
+        ]
+    },
+    "FLATWENOS": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;SuperFlat Wochenende&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/superflat-wochenende.html",
+        "bulletpoints": [
+            {
+                "icon": "phoneflat",
+                "text": "Sie telefonieren ohne extra Berechnung am Wochenende von Samstag 0 bis Sonntag 24 Uhr unbegrenzt ins  deutsche Vodafone-Mobilfunknetz und Festnetz"
+            }
+        ]
+    },
+    "FLATWEMSP": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;SuperFlat Wochenende&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/superflat-wochenende.html",
+        "bulletpoints": [
+            {
+                "icon": "phoneflat",
+                "text": "Sie telefonieren ohne extra Berechnung am Wochenende von Samstag 0 bis Sonntag 24 Uhr unbegrenzt ins  deutsche Vodafone-Mobilfunknetz und Festnetz"
+            }
+        ]
+    },
+    "FLATWENMS": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;SuperFlat Wochenende&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/superflat-wochenende.html",
+        "bulletpoints": [
+            {
+                "icon": "phoneflat",
+                "text": "Sie telefonieren ohne extra Berechnung am Wochenende von Samstag 0 bis Sonntag 24 Uhr unbegrenzt ins  deutsche Vodafone-Mobilfunknetz und Festnetz"
+            }
+        ]
+    },
+    "1234": {
+        "template": "",
+        "tariffName": "&lt;h2&gt;Optionen zu den Tarifen&lt;/h2&gt;&lt;p&gt;&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "()",
+        "bulletpoints": [
+        ]
+    },
+    "DEEZER1": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Vodafone Deezer Musik-Flat&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/deezermusikflat.html",
+        "bulletpoints": [
+            {
+                "icon": "hook",
+                "text": "Mehr als 35 Millionen Songs"
+            },
+            {
+                "icon": "hook",
+                "text": "Deezer funktioniert auf Smartphone, Tablet, PC, Smart-TV und vielen Audio-Systemen"
+            },
+            {
+                "icon": "hook",
+                "text": "Auch ohne Daten-Verbindung: Musik im Offline-Modus h&#246;ren"
+            }
+        ]
+    },
+    "BILD1": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Vodafone BILDplus Digital&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/bildplusdigital-2.html",
+        "bulletpoints": [
+            {
+                "icon": "hook",
+                "text": "Zugang zu BILDplus Digital und Bundesliga bei BILD"
+            }
+        ]
+    },
+    "03BILDPA": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Vodafone BILDplus Digital&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/bildplusdigital.html",
+        "bulletpoints": [
+            {
+                "icon": "hook",
+                "text": "Zugang zu BILDplus Digital und Bundesliga bei BILD"
+            },
+            {
+                "icon": "hook",
+                "text": "500 MB Highspeed-Volumen pro Monat zus&#228;tzlich"
+            }
+        ]
+    },
+    "MOBTVGRAT": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Vodafone MobileTV&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/mobiletv.html",
+        "bulletpoints": [
+            {
+                "icon": "hook",
+                "text": "Mit &#252;ber 20 Handy-TV-Sendern immer gut informiert und bestens unterhalten"
+            },
+            {
+                "icon": "hook",
+                "text": "MobileTV ist &#252;ber UMTS, LTE und W-LAN verf&#252;gbar"
+            },
+            {
+                "icon": "hook",
+                "text": "MobileTV-Programmvorschau"
+            },
+            {
+                "icon": "hook",
+                "text": "TV-Erinnerungen"
+            }
+        ]
+    },
+    "24UMTS_I1": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Vodafone MobileInternet HandyFlat S&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/mobile-internet-handyflat-s.html",
+        "bulletpoints": [
+            {
+                "icon": "hook",
+                "text": "Unbegrenzte nationale Datennutzung enthalten"
+            },
+            {
+                "icon": "hook",
+                "text": "Taktung 100KB"
+            }
+        ]
+    },
+    "24UMTS_I2": {
+        "template": "",
+        "tariffName": "&lt;p&gt;Vodafone MobileInternet HandyFlat L&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/mobile-internet-handyflat-l.html",
+        "bulletpoints": [
+            {
+                "icon": "hook",
+                "text": "1 GB Daten-Flat"
+            },
+            {
+                "icon": "hook",
+                "text": "Taktung 100 KB"
+            }
+        ]
+    },
+    "01INTMIN6": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Vodafone Internationale MinutenOption&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/minutenoptionenred.html",
+        "bulletpoints": [
+            {
+                "icon": "hook",
+                "text": "Sie telefonieren bis zu 60 Minuten ins EU-Ausland, in die Schweiz und die T&#252;rkei, ob Mobilfunk oder Festnetz"
+            }
+        ]
+    },
+    "01INTMIN3": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Vodafone Internationale MinutenOption&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/minutenoptionensmart.html",
+        "bulletpoints": [
+            {
+                "icon": "hook",
+                "text": "Sie telefonieren bis zu 30 Minuten ins EU-Ausland, in die Schweiz und die T&#252;rkei, ob Mobilfunk oder Festnetz"
+            }
+        ]
+    },
+    "RFLATMONT": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;EasyTravel Flat&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/easytravel-flat.html",
+        "bulletpoints": [
+            {
+                "icon": "hook",
+                "text": "Ankommende sowie abgehende Gespr&#228;che nach Deutschland und innerhalb des besuchten Landes (mit Rufweiterleitung)"
+            },
+            {
+                "icon": "hook",
+                "text": "Versand von SMS nach Deutschland und innerhalb des besuchten Landes"
+            },
+            {
+                "icon": "hook",
+                "text": "Datennutzung je nach Smartphone-Tarif"
+            }
+        ]
+    },
+    "RFLATDAY": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;EasyTravel Tag&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/easytravel-tag-woche-monat.html",
+        "bulletpoints": [
+            {
+                "icon": "hook",
+                "text": "Ankommende sowie abgehende Gespr&#228;che nach Deutschland und innerhalb des besuchten Landes (inkl. Rufweiterleitung)"
+            },
+            {
+                "icon": "hook",
+                "text": "Versand von SMS nach Deutschland und innerhalb des besuchten Landes"
+            },
+            {
+                "icon": "hook",
+                "text": "Datennutzung je nach Smartphone-Tarif"
+            }
+        ]
+    },
+    "DASDAY30": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;ReisePaket Plus&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/vodafone_reisepaket_plus.html",
+        "bulletpoints": [
+            {
+                "icon": "hook",
+                "text": "Ankommende sowie abgehende Gespr&#228;che nach Deutschland und innerhalb des besuchten Landes (mit Rufweiterleitung)"
+            },
+            {
+                "icon": "hook",
+                "text": "Versand von SMS nach Deutschland und innerhalb des besuchten Landes"
+            },
+            {
+                "icon": "hook",
+                "text": "Datennutzung je nach Smartphone-Tarif"
+            }
+        ]
+    },
+    "VF_ASOPT": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;ReiseVersprechen Asien&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/reiseversprechen-asien.html",
+        "bulletpoints": [
+            {
+                "icon": "hook",
+                "text": "Telefonieren Sie mit dem Vodafone ReiseVersprechen Asien besonders preisg&#252;nstig in zehn attraktiven asiatischen L&#228;ndern: China, Indien, Hong Kong, Russland, Singapur, Thailand Taiwan, Malaysia, S&#252;dkorea, Vietnam"
+            }
+        ]
+    },
+    "NO_LIMEU": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Data Roaming Limit&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/kostenkontrolle-ausland.html",
+        "bulletpoints": [
+            {
+                "icon": "hook",
+                "text": "Per Smartphone oder Laptop im Internet surfen und immer die Kosten unter Kontrolle haben"
+            },
+            {
+                "icon": "hook",
+                "text": "Optimale Kostenkontrolle durch Info-SMS"
+            },
+            {
+                "icon": "hook",
+                "text": "Die Buchung und die Nutzung von Vodafone Data Roaming Limit sind kostenlos"
+            }
+        ]
+    },
+    "24MESFLAT": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Vodafone MessagingFlat&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/messaging_flat.html",
+        "bulletpoints": [
+            {
+                "icon": "hook",
+                "text": "Monatliche 3.000 Inklusiv-SMS ins deutsche Vodafone-Netz"
+            },
+            {
+                "icon": "hook",
+                "text": "Monatliche 1.500 Inklusiv-MMS ins deutsche Vodafone-Netz"
+            },
+            {
+                "icon": "hook",
+                "text": "Monatliche 40 Inklusiv-SMS in alle deutschen Netze"
+            }
+        ]
+    },
+    "24MESALLN": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Vodafone MessagingFlat Allnet&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/messaging_flat_allnet.html",
+        "bulletpoints": [
+            {
+                "icon": "hook",
+                "text": "Monatliche 3.000 Inklusiv-SMS in alle deutschen Netze"
+            },
+            {
+                "icon": "hook",
+                "text": "1.500 MMS ins deutsche Vodafone-Netz"
+            }
+        ]
+    },
+    "01REDPL1G": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Vodafone Red 1GB Datenoption&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/red-1gb-datenoption.html",
+        "bulletpoints": [
+            {
+                "icon": "hook",
+                "text": "Bei Buchung der Tarifoption erh&#246;ht sich Ihr gesamtes Highspeed-Datenvolumen mit maximal verf&#252;gbarer Bandbreite bis zu 100 Mbit/s um 1 GB. Nach Verbrauch des Highspeed-Datenvolumens stehen max. 32 kBit/s zur Verf&#252;gung"
+            }
+        ]
+    },
+    "01REDPL2G": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Vodafone Red 2GB Datenoption&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/red-2gb-datenoption.html",
+        "bulletpoints": [
+            {
+                "icon": "hook",
+                "text": "Bei Buchung der Tarifoption erh&#246;ht sich Ihr gesamtes Highspeed-Datenvolumen mit maximal verf&#252;gbarer Bandbreite bis zu 100 Mbit/s um 2 GB. Nach Verbrauch des Highspeed-Datenvolumens stehen max. 32 kBit/s zur Verf&#252;gung"
+            }
+        ]
+    },
+    "01REDPL3G": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Vodafone Red 3GB Datenoption&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/red-3gb-datenoption.html",
+        "bulletpoints": [
+            {
+                "icon": "hook",
+                "text": "Bei Buchung der Tarifoption erh&#246;ht sich Ihr gesamtes Highspeed-Datenvolumen mit maximal verf&#252;gbarer Bandbreite bis zu 100 Mbit/s um 3 GB. Nach Verbrauch des Highspeed-Datenvolumens stehen max. 32 kBit/s zur Verf&#252;gung"
+            }
+        ]
+    },
+    "01REDPL4G": {
+        "template": "",
+        "tariffName": "&lt;p&gt;Vodafone Red 4GB Datenoption&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/red-4gb-datenoption.html",
+        "bulletpoints": [
+            {
+                "icon": "hook",
+                "text": "Bei Buchung der Tarifoption erh&#246;ht sich Ihr gesamtes Highspeed-Datenvolumen mit maximal verf&#252;gbarer Bandbreite bis zu 100 Mbit/s um 4 GB. Nach Verbrauch des Highspeed-Datenvolumens stehen max. 32 kBit/s zur Verf&#252;gung"
+            }
+        ]
+    },
+    "01REDPL5G": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Vodafone Red 5GB Datenoption&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/red-5gb-datenoption.html",
+        "bulletpoints": [
+            {
+                "icon": "hook",
+                "text": "Bei Buchung der Tarifoption erh&#246;ht sich Ihr gesamtes Highspeed-Datenvolumen mit maximal verf&#252;gbarer Bandbreite bis zu 100 Mbit/s um 5 GB. Nach Verbrauch des Highspeed-Datenvolumens stehen max. 32 kBit/s zur Verf&#252;gung"
+            }
+        ]
+    },
+    "01REDPL6G": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Vodafone Red 6GB Datenoption&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/red-6gb-datenoption.html",
+        "bulletpoints": [
+            {
+                "icon": "hook",
+                "text": "Bei Buchung der Tarifoption erh&#246;ht sich Ihr gesamtes Highspeed-Datenvolumen mit maximal verf&#252;gbarer Bandbreite bis zu 100 Mbit/s um 6 GB. Nach Verbrauch des Highspeed-Datenvolumens stehen max. 32 kBit/s zur Verf&#252;gung"
+            }
+        ]
+    },
+    "01REDPL7G": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Vodafone Red 7GB Datenoption&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/red-7gb-datenoption.html",
+        "bulletpoints": [
+            {
+                "icon": "hook",
+                "text": "Bei Buchung der Tarifoption erh&#246;ht sich Ihr gesamtes Highspeed-Datenvolumen mit maximal verf&#252;gbarer Bandbreite bis zu 100 Mbit/s um 7 GB. Nach Verbrauch des Highspeed-Datenvolumens stehen max. 32 kBit/s zur Verf&#252;gung."
+            }
+        ]
+    },
+    "01REDPL8G": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Vodafone Red 8GB Datenoption&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/red-8gb-datenoption.html",
+        "bulletpoints": [
+            {
+                "icon": "hook",
+                "text": "Bei Buchung der Tarifoption erh&#246;ht sich Ihr gesamtes Highspeed-Datenvolumen mit maximal verf&#252;gbarer Bandbreite bis zu 100 Mbit/s um 8 GB. Nach Verbrauch des Highspeed-Datenvolumens stehen max. 32 kBit/s zur Verf&#252;gung"
+            }
+        ]
+    },
+    "01REDPL9G": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Vodafone Red 9GB Datenoption&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/red-9gb-datenoption.html",
+        "bulletpoints": [
+            {
+                "icon": "hook",
+                "text": "Bei Buchung der Tarifoption erh&#246;ht sich Ihr gesamtes Highspeed-Datenvolumen mit maximal verf&#252;gbarer Bandbreite bis zu 100 Mbit/s um 9 GB. Nach Verbrauch des Highspeed-Datenvolumens stehen max. 32 kBit/s zur Verf&#252;gung"
+            }
+        ]
+    },
+    "01REPL10G": {
+        "template": "standard",
+        "tariffName": "&lt;p&gt;Vodafone Red 10GB Datenoption&lt;/p&gt;",
+        "scheme": "",
+        "description": "()",
+        "prepaidTariffDuration": "",
+        "tariffDetailsLink": "/meinvodafone/css/tarif_info/red-10gb-datenoption.html",
+        "bulletpoints": [
+            {
+                "icon": "hook",
+                "text": "Bei Buchung der Tarifoption erh&#246;ht sich Ihr gesamtes Highspeed-Datenvolumen mit maximal verf&#252;gbarer Bandbreite bis zu 100 Mbit/s um 10 GB. Nach Verbrauch des Highspeed-Datenvolumens stehen max. 32 kBit/s zur Verf&#252;gung"
+            }
+        ]
+    },
+    "VF00000": {
+        "template": "standard",
+        "tariffName": "Vodafone Zuhause Talk Changed",
+        "description": "Vodafone Zuhause Talk Changed",
+        "bulletpoints": [
+            {
+                "icon": "dataflat",
+                "text": "3 GB inklusive"
+            },
+            {
+                "icon": "smsflat",
+                "text": "SMS inklusive"
+            },
+            {
+                "icon": "phoneflat",
+                "text": "100 Minuten in das deutsche Vodafonenetz inklusive"
+            },
+            {
+                "icon": "hook",
+                "text": "Deezer 6 Monate inklusive"
+            },
+            {
+                "icon": "feature",
+                "text": "LTE inklusive"
+            }
+        ],
+        "tariffDetailsLink": "https://eweb8.vfd2-testnet.de"
+    }
+}

@@ -1,0 +1,65 @@
+.tg-dropdown {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	margin: 0 10px 10px 0;
+
+	.tg-head {
+		display: block;
+		padding: 10px 20px 10px 15px;
+		margin: 0;
+		border: $border;
+		border-radius: 4px;
+		background: $white;
+		padding-right: 50px;
+		font: 300 16px/1 $body-font;
+		i,svg {
+			right: 15px;
+			top: 15px;
+			margin-top: 0;
+		}
+	}
+
+	.tg-active {
+		border-radius: 4px 4px 0 0;
+		box-shadow: none;
+		border-bottom: none;
+		border-bottom: 1px solid transparent;
+		position: relative;
+		z-index: 11;
+	}
+
+	.tg-body {
+		border: $border;
+		margin-top: -1px;
+		padding: 8px 20px 8px 15px;
+		border-radius: 0 0 4px 4px;
+	}
+
+	.tg-display {
+		background: $white;
+		width: 100%;
+		z-index: 1;
+	}
+}
+
+
+@media only screen and (min-width: $mq-lrg) {
+	.tg-dropdown {
+		width: auto;
+
+		.tg-head {
+			box-shadow: 0 2px 3px -3px $black;
+			cursor: pointer;
+		}
+
+		.tg-active {
+			box-shadow: none;
+		}
+
+		.tg-display {
+			box-shadow: 0 2px 3px -3px $black;
+			position: absolute;
+		}
+	}
+}
